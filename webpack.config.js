@@ -46,7 +46,7 @@ const javascriptRules = {
 
 module.exports = {
   output: {
-    filename: 'app.[contenthash].js'
+    filename: 'app.[contentHash].js'
   },
   module: {
     rules: [javascriptRules, sassRules, imageRules]
