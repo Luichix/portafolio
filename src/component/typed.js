@@ -6,8 +6,12 @@ const Instruction = () => {
 
   useEffect(() => {
     const typed = new Typed(typeTarget.current, {
-      strings: ['Buenos Dias Mundo', 'Ohaiyoo Sekai', 'Good Morning World'],
-      typeSpeed: 50
+      strings: ['Programador VBA', 'Gamer', 'Administrador de Empresas'],
+      typeSpeed: 50,
+      backSpeed: 60,
+      backDelay: 800,
+      loop: true,
+      loopCount: Infinity
     })
 
     return () => {

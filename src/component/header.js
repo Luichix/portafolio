@@ -1,5 +1,5 @@
 import React from 'react'
-import cohete from '../assets/cohete.svg'
+import perfil from '../assets/img/perfil.jpg'
 import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
 import { HiMenu } from 'react-icons/hi'
@@ -9,7 +9,7 @@ function Header () {
     <header id="header" >
     <div className="d-flex flex-column">
       <div className="profile">
-        <img src={cohete} alt="Imagen de perfil" className="img-fluid rounded-circle" />
+        <img src={perfil} alt="Imagen de perfil" className="img-fluid rounded-circle" />
         <h1 className="text-light"><a href="index.html">Luichix Rex</a></h1>
         <div className="social-links mt-3 text-center">
           <a href="https://github.com/Luichix" target="_blank" rel="noreferrer" ><i><FaGithub/></i></a>

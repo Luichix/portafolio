@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const imageRules = {
-  test: /\.(svg|png|jpg|jpeg|gif)$/,
+  test: /\.(svg|png|jpg|jpeg|gif|pdf)$/,
   use: [
     {
       loader: 'file-loader',
