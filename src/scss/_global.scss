@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu a {
+.nav-menu .nav-menu-link {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -167,18 +167,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-.nav-menu a i {
+.nav-menu .nav-menu-link i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu .nav-menu-link:hover, .nav-menu .active > .nav-menu-link, .nav-menu li:hover > .nav-menu-link {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+.nav-menu .nav-menu-link:hover i, .nav-menu .active > .nav-menu-link i, .nav-menu li:hover > .nav-menu-link i {
   color: #149ddd;
 }
 

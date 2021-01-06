@@ -3,6 +3,7 @@ import perfil from '../assets/img/perfil.jpg'
 import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
 import { HiMenu } from 'react-icons/hi'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 function Header () {
   return (
@@ -22,11 +23,71 @@ function Header () {
 {/* Nav Menu */}
     <nav className="nav-menu">
       <ul>
-        <li className="active"><a href="#hero"><i><GoHome/></i><span>Inicio</span></a></li>
-        <li><a href="#about"><i><GoPerson/></i><span>Sobre mi</span></a></li>
-        <li><a href="#resume"><i><GoFile/></i><span>Estudios</span></a></li>
-        <li><a href="#portfolio"><i><GoProject/></i><span>Portafolio</span></a></li>
-        <li><a href="#contact"><i><GoMail/></i><span>Contacto</span></a></li>
+        <li className="active">
+          <Link
+            className="nav-menu-link"
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i><GoHome/></i><span>Inicio</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="nav-menu-link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i><GoPerson/></i><span>Sobre mi</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="nav-menu-link"
+            activeClass="active"
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i><GoFile/></i><span>Estudios</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="nav-menu-link"
+            activeClass="active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i><GoProject/></i><span>Portafolio</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="nav-menu-link"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i><GoMail/></i><span>Contacto</span>
+          </Link>
+        </li>
       </ul>
     </nav>
 
