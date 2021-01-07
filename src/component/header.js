@@ -3,7 +3,7 @@ import perfil from '../assets/img/perfil.jpg'
 import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
 import { HiMenu } from 'react-icons/hi'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 function Header () {
   return (
@@ -29,9 +29,9 @@ function Header () {
             activeClass="active"
             to="hero"
             spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            smooth='easeInOutQuint'
+            offset={0}
+            duration={1500}
           >
             <i><GoHome/></i><span>Inicio</span>
           </Link>
@@ -42,9 +42,9 @@ function Header () {
             activeClass="active"
             to="about"
             spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            smooth='easeInOutQuint'
+            offset={0}
+            duration={1500}
           >
             <i><GoPerson/></i><span>Sobre mi</span>
           </Link>
@@ -55,9 +55,9 @@ function Header () {
             activeClass="active"
             to="resume"
             spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            smooth='easeInOutQuint'
+            offset={0}
+            duration={1500}
           >
             <i><GoFile/></i><span>Estudios</span>
           </Link>
@@ -68,9 +68,9 @@ function Header () {
             activeClass="active"
             to="portfolio"
             spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            smooth='easeInOutQuint'
+            offset={0}
+            duration={1500}
           >
             <i><GoProject/></i><span>Portafolio</span>
           </Link>
@@ -81,9 +81,9 @@ function Header () {
             activeClass="active"
             to="contact"
             spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            smooth='easeInOutQuint'
+            offset={0}
+            duration={1500}
           >
             <i><GoMail/></i><span>Contacto</span>
           </Link>

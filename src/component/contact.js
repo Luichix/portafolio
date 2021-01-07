@@ -16,7 +16,6 @@ function Contact () {
                                 <h4>Ubicación:</h4>
                                 <p>Chinandega, Nicaragua</p>
                             </div>
-
                             <div className="email">
                                 <i><BiMailSend/></i>
                                 <h4>Email:</h4>

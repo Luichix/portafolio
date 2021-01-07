@@ -6,9 +6,9 @@ const Instruction = () => {
 
   useEffect(() => {
     const typed = new Typed(typeTarget.current, {
-      strings: ['Programador VBA', 'Gamer', 'Administrador de Empresas'],
+      strings: ['Programación en Microsoft Excel', 'Sistemas de Información', 'Administración de Empresas'],
       typeSpeed: 50,
-      backSpeed: 60,
+      backSpeed: 40,
       backDelay: 800,
       loop: true,
       loopCount: Infinity
