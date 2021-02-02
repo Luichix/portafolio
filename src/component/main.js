@@ -10,7 +10,7 @@ function Main () {
           <About/>
           <Resume/>
           <Portfolio/>
-          <Contact/>
+          {/* <Contact/> */}
         </main>
   )
 }
