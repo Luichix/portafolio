@@ -1,29 +1,33 @@
-import React from 'react'
-import { BiMap, BiMailSend } from 'react-icons/bi'
+import React from "react";
+import { BiMap, BiMailSend } from "react-icons/bi";
 
-function Contact () {
+function Contact() {
   return (
-        <section id="contact" className="contact">
-            <div className="container">
-                <div className="section-title">
-                    <h2>Contacto</h2>
-                </div>
-                <div className="row">
-                    <div className="col-lg-5 d-flex align-items-stretch">
-                        <div className="info">
-                            <div className="address">
-                                <i><BiMap/></i>
-                                <h4>Ubicación:</h4>
-                                <p>Chinandega, Nicaragua</p>
-                            </div>
-                            <div className="email">
-                                <i><BiMailSend/></i>
-                                <h4>Email:</h4>
-                                <p>luichix.rex@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+    <section id="contact" className="contact">
+      <div className="container">
+        <div className="section-title">
+          <h2>Contacto</h2>
+        </div>
+        <div className="row">
+          <div className="col-lg-5 d-flex align-items-stretch">
+            <div className="info">
+              <div className="address">
+                <i>
+                  <BiMap />
+                </i>
+                <h4>Ubicación:</h4>
+                <p>Chinandega, Nicaragua</p>
+              </div>
+              <div className="email">
+                <i>
+                  <BiMailSend />
+                </i>
+                <h4>Email:</h4>
+                <p>luisreynaldo.pch@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form action="forms/enviar.php" method="post" role="form" className="php-email-form">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
@@ -51,11 +55,11 @@ function Contact () {
                             </div>
                             <div className="text-center"><button type="submit">Enviar mensaje</button></div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-  )
+                    </div> */}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;
