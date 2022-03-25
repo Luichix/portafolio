@@ -1,0 +1,80 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/attack.jpg");
+  background-size:cover;
+}
+
+.hero:before {
+  content: "";
+  background: #050d184d;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+.hero h1 {
+  margin: 0 300px 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+.hero p {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 340px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .hero h1, h2, p{
+    margin-left: 40px;
+    margin-top: 600px;
+  }
+}
+
+@media (max-width: 480px){
+  .hero p{
+    font-size: 17px;
+  }
+  .hero p, h1{
+    padding-left: 10%;
+  }
+  .hero h1{
+    margin-left: 20px;
+  }
+}

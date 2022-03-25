@@ -1,0 +1,46 @@
+@import '../App.css';
+
+.footer {
+  padding: 15px 0;
+  color: var(--color-white);
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-ebony);
+}
+
+.mobile {
+  padding: 15px 0;
+  color: var(--color-white);
+  font-size: 14px;
+  position: relative;
+  width: 300px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-ebony);
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-white);
+}
+
+.back {
+  position: fixed;
+  background: none;
+  cursor: pointer;
+  text-align: right;
+  transition: all 0.4s;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-size: 2em;
+  line-height: 0;
+  z-index: 9999;
+  padding: 0;
+  border: 0;
+  color: var(--color-sky);
+}
