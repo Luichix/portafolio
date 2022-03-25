@@ -1,12 +1,12 @@
-import React from "react";
-import App1 from "../assets/img/app1.png";
-import App2 from "../assets/img/app2.png";
-import App3 from "../assets/img/app3.png";
-import App4 from "../assets/img/app4.png";
-import App5 from "../assets/img/app5.png";
-import App6 from "../assets/img/app6.png";
-import { FcInfo, FcLink } from "react-icons/fc";
-import Fade from "react-reveal/Fade";
+import React from 'react'
+import App1 from '../assets/img/app1.png'
+import App2 from '../assets/img/app2.png'
+import App3 from '../assets/img/app3.png'
+import App4 from '../assets/img/app4.png'
+import App5 from '../assets/img/app5.png'
+import App6 from '../assets/img/app6.png'
+import { FcInfo, FcLink } from 'react-icons/fc'
+import { Fade } from 'react-awesome-reveal'
 
 function Portfolio() {
   return (
@@ -147,7 +147,7 @@ function Portfolio() {
         </Fade>
       </div>
     </section>
-  );
+  )
 }
 
-export default Portfolio;
+export default Portfolio

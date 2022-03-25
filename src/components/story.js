@@ -1,5 +1,5 @@
-import React from "react";
-import Typed from "./typed";
+import React from 'react'
+import Typed from './typed'
 
 function Story() {
   return (
@@ -16,6 +16,6 @@ function Story() {
         </p>
       </div>
     </section>
-  );
+  )
 }
-export default Story;
+export default Story

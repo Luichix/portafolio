@@ -1,8 +1,8 @@
-import React from "react";
-import cohete from "../assets/img/perfil.png";
-import { FcNext, FcDocument } from "react-icons/fc";
-import pdfCv from "../assets/pdf/cvoficial.pdf";
-import Fade from "react-reveal/Fade";
+import React from 'react'
+import cohete from '../assets/img/perfil.png'
+import { FcNext, FcDocument } from 'react-icons/fc'
+import pdfCv from '../assets/pdf/cvoficial.pdf'
+import { Fade } from 'react-awesome-reveal'
 
 function About() {
   return (
@@ -169,7 +169,7 @@ function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

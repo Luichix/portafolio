@@ -1,8 +1,8 @@
-import React from "react";
-import About from "./about";
-import Resume from "./resume";
-import Portfolio from "./portfolio";
-import Contact from "./contact";
+import React from 'react'
+import About from './about'
+import Resume from './resume'
+import Portfolio from './portfolio'
+import Contact from './contact'
 
 function Main() {
   return (
@@ -12,7 +12,7 @@ function Main() {
       <Portfolio />
       <Contact />
     </main>
-  );
+  )
 }
 
-export default Main;
+export default Main

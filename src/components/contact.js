@@ -1,5 +1,5 @@
-import React from "react";
-import { BiMap, BiMailSend } from "react-icons/bi";
+import React from 'react'
+import { BiMap, BiMailSend } from 'react-icons/bi'
 
 function Contact() {
   return (
@@ -59,7 +59,7 @@ function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

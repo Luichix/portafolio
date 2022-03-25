@@ -1,15 +1,15 @@
-import React from "react";
-import perfil from "../assets/img/perfil.jpg";
+import React from 'react'
+import perfil from '../assets/img/perfil.jpg'
 import {
   FaGithub,
   FaLinkedin,
   FaMailBulk,
   FaTwitter,
   FaWhatsapp,
-} from "react-icons/fa";
-import { GoFile, GoHome, GoPerson, GoProject, GoMail } from "react-icons/go";
-import { HiMenu } from "react-icons/hi";
-import { Link } from "react-scroll";
+} from 'react-icons/fa'
+import { GoFile, GoHome, GoPerson, GoProject } from 'react-icons/go'
+import { HiMenu } from 'react-icons/hi'
+import { Link } from 'react-scroll'
 
 function Header() {
   return (
@@ -162,6 +162,6 @@ function Header() {
         </button>
       </div>
     </header>
-  );
+  )
 }
-export default Header;
+export default Header
