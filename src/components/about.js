@@ -3,10 +3,11 @@ import cohete from '../assets/img/perfil.png'
 import { FcNext, FcDocument } from 'react-icons/fc'
 import pdfCv from '../assets/pdf/cvoficial.pdf'
 import { Fade } from 'react-awesome-reveal'
+import style from '../css/module/about.module.css'
 
 function About() {
   return (
-    <section id="about" className="about">
+    <section id="about" className={style.about}>
       <div className="container">
         <div className="section-title">
           <h2>Sobre mi</h2>
