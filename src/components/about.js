@@ -1,135 +1,53 @@
 import React from 'react'
-import cohete from '../assets/img/perfil.png'
+import perfil from '../assets/img/perfil.png'
 import { FcNext, FcDocument } from 'react-icons/fc'
 import pdfCv from '../assets/pdf/cvoficial.pdf'
 import { Fade } from 'react-awesome-reveal'
 import style from '../css/module/about.module.css'
+import { about, personal, skillWeb, skillData } from '../data/info'
+
 
 function About() {
   return (
     <section id="about" className={style.about}>
-      <div className="container">
-        <div className="section-title">
+      <div className={style.container}>
+        <div className={style.section}>
           <h2>Sobre mi</h2>
-          <p>
-            Hola, mi nombre es Luis Reynaldo, soy administrador de empresas.
-            Descubri el mundo de la programación por medio de Excel VBA, con el
-            cual desarrolle diversos sistemas de venta, contabilidad y recursos
-            humanos para algunas empresas. Puedo decir que me encanta la
-            programación y actualmente estoy enfocado en el desarrollo web.
-          </p>
-        </div>
-        <div className="row">
+          <p>{about.paragraph[0]}</p>
+          <p>{about.paragraph[1]}</p>
           <Fade left>
-            <div className="col-lg-4">
-              <img src={cohete} className="img-fluid" alt="" />
-            </div>
+            <figure><img src={perfil} className={style.imagen} alt="foto de perfil" /></figure>
           </Fade>
+        </div>
+        <div className={style.skills} >
           <Fade right>
-            <div className="col-lg-8 pt-4 pt-lg-0 content">
+            <div className={style.content}>
               <h3>Desarrollador &amp; Administrador de Empresas</h3>
-              <div className="row">
-                <div className="col-lg-6">
-                  <ul>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      <strong>Fecha de nacimiento:</strong> 24/09/1995
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      <strong>Ciudad:</strong> Chinandega, Nicaragua
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-lg-6">
-                  <ul>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      <strong>Cel:</strong> +505 84584479
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      <strong>Email:</strong> luisreynaldo.pch@gmail.com
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <ul>
+                {personal.map((e,i) => (
+                  <li key={i}>
+                    <i><FcNext/></i>
+                    <strong>{e[0]}</strong>{e[1]}
+                  </li>
+                ))}
+              </ul>
               <h3>Habilidades</h3>
-              <div className="row">
-                <div className="col-lg-6">
+              <div>
+                <div>
                   <ul>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      HTML, CSS y JavaScript
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Webpack, Bootstrap, ReactJS
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      NodeJS con Express
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      ORM Sequelize, MySQL - MongoDB
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Git con Github
-                    </li>
+                    {skillWeb.map((e,i) => (
+                      <li key={i} className={style.align}>
+                        <i><FcNext/></i>{e}</li>
+                    ))}
                   </ul>
                 </div>
-                <div className="col-lg-6">
+                <div>
                   <ul>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Programación Excel VBA
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Analisis de datos con Microsoft Excel
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Macros, Formularios, Formulas Complejas
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Manejo de Microsoft Access
-                    </li>
-                    <li>
-                      <i>
-                        <FcNext />
-                      </i>
-                      Jamovi, Tableu, Simulacíon de Monte Carlo
-                    </li>
+                    {skillData.map((e,i) => (
+                      <li key={i} className={style.align}>
+                        <i><FcNext/></i>{e}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <span className="cv m-lg-2">

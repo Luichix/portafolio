@@ -1,28 +1,41 @@
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about .content h3 {
+@import '../App.css';
+
+.about{
+  display: flex;
+  justify-content: center;
+}
+
+.content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
 }
 
-.about .content ul {
+.content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
+.content ul li {
+  padding: 10px;
+  vertical-align: center;
 }
 
-.about .content ul i {
+.content ul i {
   font-size: 20px;
   padding-right: 2px;
   color: #149ddd;
 }
 
-.about .content p:last-child {
+.align{
+  display: flex;
+  word-spacing: 0.5em;
+  letter-spacing: 2px;
+  vertical-align:text-top;
+  padding: 20px;
+}
+
+.content p:last-child {
   margin-bottom: 0;
 }
 
@@ -38,9 +51,40 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .about h2, p{
-    margin-top: 0;
-  }
+.container {
+  padding: 60px 0;
+  overflow: hidden;
+  width: 90%;
+}
 
+.section {
+  padding-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section p {
+  margin-bottom: 0;
+}
+
+.icono {
+  width: 1.5em;
 }

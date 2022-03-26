@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #272829;
-  background-color: #272829;
+  /* background-color: #272829; */
 }
 
 code {
@@ -27,4 +27,59 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.html, .css, .js, .react, .node, .mongo, .mysql, .git, .github, .heroku, .firebase {
+  font-size: 1.5em;
+  padding-right: 5px;
+}
+
+.excel, .access, .vba, .powerbi, .tableau, .jamovi{
+  width: 1.5em;
+  height: 1.5em;
+  padding-right: 5px;
+}
+
+.html {
+  color: #fc490b;
+}
+
+.css {
+  color: #2299f8;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #689f63;
+}
+
+.mongo {
+  color: #10aa50;
+}
+
+.mysql{
+  color: #007699;
+}
+
+.git {
+  color: #f05133;
+}
+
+.github{
+  color: #000000;
+}
+
+.heroku{
+  color: #430098;
+}
+
+.firebase{
+  color: #ffcc2b;
 }

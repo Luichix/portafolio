@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 
 
 function Header() {
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false)
 
   const handleToggle = () => {
     if(toggle) setToggle(false)

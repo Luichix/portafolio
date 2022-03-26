@@ -11,17 +11,6 @@
   background-color: var(--color-ebony);
 }
 
-.mobile {
-  padding: 15px 0;
-  color: var(--color-white);
-  font-size: 14px;
-  position: relative;
-  width: 300px;
-  left: 0;
-  bottom: 0;
-  background-color: var(--color-ebony);
-}
-
 .credits {
   padding-top: 5px;
   text-align: center;
