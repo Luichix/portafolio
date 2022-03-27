@@ -1,0 +1,7 @@
+@import '../App.css';
+
+.main {
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+}

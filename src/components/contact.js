@@ -1,6 +1,18 @@
 import React from 'react'
 import { BiMap, BiMailSend } from 'react-icons/bi'
 
+// {/* <div className={style.content}>
+//   <h3>Información Adicional</h3>
+//   <ul>
+//     {personal.map((e,i) => (
+//       <li key={i} className={style.info}>
+//         <i><FcNext/></i>
+//         <strong>{e[0]}</strong>{e[1]}
+//       </li>
+//     ))}
+//   </ul>
+// </div> */}
+
 function Contact() {
   return (
     <section id="contact" className="contact">
