@@ -15,3 +15,22 @@
   transition: all 1s;
   transition-delay: 0.4s;
 }
+
+@media screen and (max-width: 700px){
+  .all {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    transition: all ease-in-out 1s;
+    transition: all 1s;
+  }
+  
+  .margin {
+    position: relative;
+    margin-left: 0;
+    transition: all ease-in-out 1s;
+    transition: all 1s;
+    transition-delay: 0.4s;
+  }
+  
+}
