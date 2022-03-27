@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { social, elements, icons } from '../data/info'
 import style from '../css/module/header.module.css'
 import perfil from '../assets/img/perfil.jpg'
 import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { HiMenu, HiCode } from 'react-icons/hi'
-import { Link } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
+import { HiArrowCircleUp } from 'react-icons/hi'
 
 
-function Header() {
-  const [toggle, setToggle] = useState(false)
+function Header( { toggle, setToggle } ) {
+
+  const scrollToTop= () => {
+    scroll.scrollToTop()
+  }
 
   const handleToggle = () => {
     if(toggle) setToggle(false)
@@ -17,7 +21,6 @@ function Header() {
 
   return (
     <>
-
       <header id="header" className={toggle ? style.header : style.mobile} >
         <div className={style.container} >
           <div className={style.profile} >
@@ -55,6 +58,7 @@ function Header() {
         </div>
       </header>
       <button onClick={handleToggle} type="button" className={style.toggle}><i>{toggle ? <HiMenu/> : <HiCode/>}</i></button>
+      <a onClick={scrollToTop} className={style.back}><i><HiArrowCircleUp/></i></a>
     </>
   )
 }

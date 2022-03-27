@@ -4,13 +4,13 @@
   background: var(--color-ebony);
   position: fixed;
   overflow-y: auto;
-  transition: all ease-in-out 0.5s;
-  transition: all 0.5s;
-  width: auto;
+  transition: all ease 1s;
+  transition: all 1s;
+  width: 220px;
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 3em;
+  padding: 0 50px;
   z-index: 9000;
 }
 
@@ -18,13 +18,14 @@
   background: var(--color-ebony);
   position: fixed;
   overflow-y: auto;
-  transition: all ease-in-out 0.5s;
-  transition: all 0.5s;
-  width: auto;
+  transition: all ease 1.5s;
+  transition: all 1.5s;
+  transition-delay: 0.4s;
+  width: 220px;
   top: 0;
   left :-500px;
   bottom: 0;
-  padding: 0 3em;
+  padding: 0 50px;
   z-index: 9000;
 }
 
@@ -151,3 +152,18 @@
   color: var(--color-sky);
 }
 
+.back {
+  position: fixed;
+  background: none;
+  cursor: pointer;
+  text-align: right;
+  transition: all 0.4s;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-size: 2em;
+  line-height: 0;
+  z-index: 1;
+  padding: 0;
+  border: 0;
+  color: var(--color-sky);
+}

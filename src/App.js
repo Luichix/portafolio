@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/header'
 import Main from './components/main'
 import Footer from './components/footer'
 
 function App () {
+  const [toggle, setToggle] = useState(true)
+
   return (
     <div>
-      <Header/>
-      <Main/>
+      <Header toggle={toggle} setToggle={setToggle} />
+      <Main toggle={toggle} />
       <Footer/>
     </div>
   )

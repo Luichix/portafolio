@@ -6,9 +6,9 @@ import Portfolio from './portfolio'
 import Contact from './contact'
 import style from '../css/module/main.module.css'
 
-function Main() {
+function Main( { toggle } ) {
   return (
-    <main id="main" className={style.main}>
+    <main id="main" className={toggle ?  style.margin : style.all}>
       <Story/>
       <About />
       <Resume />
