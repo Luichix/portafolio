@@ -10,6 +10,7 @@ import powerbi from '../assets/ico/powerbi.ico'
 import tableau from '../assets/ico/tableau.ico'
 import jamovi from '../assets/ico/jamovi.ico'
 import pdfCv from '../assets/pdf/cvoficial.pdf'
+import App1 from '../assets/img/app1.png'
 
 // Info Header
 
@@ -54,24 +55,24 @@ export const about = {
 }
 
 export const skill = [['Desarrollo Web' ,
-  [[<><FaHtml5 key='html' className='html'/>HTML &nbsp; </>,
+  [<><FaHtml5 key='html' className='html'/>HTML &nbsp; </>,
     <><FaCss3 key='css' className='css' />CSS &nbsp; </>,
-    <><SiJavascript key='js' className='js' />JavaScript &nbsp; </>],
-  [<><FaReact key='react' className='react'/>ReactJS &nbsp; </>,
-    <><FaNodeJs key='node' className='node' />NodeJS &nbsp; </>],
-  [<><SiMongodb key='mongo' className='mongo'/>MongoDB &nbsp; </>,
-    <><GrMysql key='mysql' className='mysql' />MySQL &nbsp; </>],
-  [<><FaGitAlt key='git' className='git'/>Git &nbsp; </>,
-    <><FaGithub key='github' className='github' />Github &nbsp; </>],
-  [<><GrHeroku key='heroku' className='heroku'/>Heroku &nbsp; </>,
-    <><SiFirebase key='firebase' className='firebase'/>Firebase &nbsp; </>]]],
+    <><SiJavascript key='js' className='js' />JavaScript &nbsp; </>,
+    <><FaReact key='react' className='react'/>ReactJS &nbsp; </>,
+    <><FaNodeJs key='node' className='node' />NodeJS &nbsp; </>,
+    <><SiMongodb key='mongo' className='mongo'/>MongoDB &nbsp; </>,
+    <><GrMysql key='mysql' className='mysql' />MySQL &nbsp; </>,
+    <><FaGitAlt key='git' className='git'/>Git &nbsp; </>,
+    <><FaGithub key='github' className='github' />Github &nbsp; </>,
+    <><GrHeroku key='heroku' className='heroku'/>Heroku &nbsp; </>,
+    <><SiFirebase key='firebase' className='firebase'/>Firebase &nbsp; </>]],
 [ 'Analisis de datos',
-  [[<><img className='excel' src={excel} alt='icono excel'/>Excel  &nbsp; </>,
+  [<><img className='excel' src={excel} alt='icono excel'/>Excel  &nbsp; </>,
     <><img className='access' src={access} alt='icono access'/>Access  &nbsp; </>,
-    <><img className='vba' src={vba} alt='icono vba'/>Vba  &nbsp; </>],
-  [<><img className='powerbi' src={powerbi} alt='icono powerbi'/>PowerBi  &nbsp; </>,
-    <><img className='tableau' src={tableau} alt='icono powerbi'/>Tableau  &nbsp; </>],
-  [<><img className='jamovi' src={jamovi} alt='icono powerbi'/>Jamovi  &nbsp; </>]
+    <><img className='vba' src={vba} alt='icono vba'/>Vba  &nbsp; </>,
+    <><img className='powerbi' src={powerbi} alt='icono powerbi'/>PowerBi  &nbsp; </>,
+    <><img className='tableau' src={tableau} alt='icono powerbi'/>Tableau  &nbsp; </>,
+    <><img className='jamovi' src={jamovi} alt='icono powerbi'/>Jamovi  &nbsp; </>
   ]]]
 
 export const document = [
@@ -103,6 +104,15 @@ export const resume = [
 
 // Info Portfolio
 
+export const task = [
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+  ['Sistema de Nomina', App1, '#'],
+]
 
 // Info Contact
 

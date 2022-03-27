@@ -4,6 +4,7 @@
   --color-graphite: #2c2f3f;
   --color-blue: #4675cc;
   --color-water: #37b3ed;
+  --color-lightblue: #97d8f7;
   --color-sky: #149ddd;
   --color-turqui: #173b6c;
   --color-white: #ffffff;
@@ -11,6 +12,8 @@
   --color-pearl: #a8a9b4;
   --color-gray: #6f7180;
   --opacity-black: #050d184d;
+  --color-red: #971717;
+  --color-green: #176933;
 }
 
 .section {

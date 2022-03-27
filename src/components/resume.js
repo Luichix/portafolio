@@ -5,7 +5,7 @@ import style from '../css/module/resume.module.css'
 
 function Resume () {
   return (
-    <section id="resume" className={style.resume}>
+    <section id='Estudios' className={style.resume}>
       <div className={style.container}>
         <h2 className={style.title}>Estudios</h2>
       </div>
@@ -17,7 +17,7 @@ function Resume () {
               <h5><em>{e[1]}</em></h5>
               <ul>
                 <li>{e[2]}</li>
-                <li>{e[3]}</li>
+                <li className={e[3] === 'Suspendido' ? style.red : style.green} >{e[3]}</li>
               </ul>
             </div>
           ))}

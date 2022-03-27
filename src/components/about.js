@@ -7,7 +7,7 @@ import { about, skill, document } from '../data/info'
 
 function About() {
   return (
-    <section id="about" className={style.about}>
+    <section id='Sobre mi' className={style.about}>
       <div className={style.container}>
         <div className={style.section}>
           <Fade triggerOnce>
@@ -23,7 +23,7 @@ function About() {
               {skill.map((s,o) => (
                 <div key={o} className={style.content}>
                   <h3>{s[0]}</h3>
-                  <ul>
+                  <ul className={style.group}>
                     {s[1].map((e,i) => (
                       <li key={i} className={style.align}>
                         <i><FcNext/></i>{e}</li>

@@ -80,9 +80,14 @@
   padding-bottom: 0;
 }
 
-.item ul:last-child {
-  padding-bottom: 0;
-  color:var(--color-graphite);
+.red {
+  color:var(--color-red);
+  font-weight: 600;
+}
+
+.green {
+  color:var(--color-green);
+  font-weight: 600;
 }
 
 .item::before {

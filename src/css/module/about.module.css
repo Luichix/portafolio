@@ -41,12 +41,12 @@
 
 .section p {
   margin-bottom: 0;
-  line-height: 2;
+  line-height: 2.5;
   text-align: justify;
   text-indent: 3em;
 }
 .figure {
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
   padding: 0 0 2em 2em; 
   margin: 0;
@@ -63,35 +63,35 @@
 
 .skills{
   padding-top: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   clear: both;
 }
 
 .content{
-  padding: 2em;
   text-align: center;
 }
 
 .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #173b6c;
+  font-size: 1.6em;
+  color: var(--color-turqui);
 }
 
-.content ul {
+.group{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   list-style: none;
-  padding: 0;
+  padding:  0 2em 3em 2em;
 }
 
-.content ul li {
+.group li {
   padding: 10px;
   vertical-align: center;
 }
 
-.content ul i {
-  font-size: 20px;
+.group i {
+  font-size: 1em;
   padding-right: 2px;
   color: #149ddd;
 }
@@ -101,7 +101,6 @@
 }
 
 .align{
-  display: flex;
   word-spacing: 0.5em;
   letter-spacing: 2px;
   vertical-align:text-top;
@@ -124,8 +123,4 @@
 .cv:hover{
   background-color: #00bbff18;
   color: white;
-}
-
-.icono {
-  width: 1.5em;
 }
