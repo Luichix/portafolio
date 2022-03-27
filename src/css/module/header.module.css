@@ -50,6 +50,7 @@
   margin: 1em auto;
   width: 120px;
   height: 120px;
+  object-fit: cover;
 }
 
 .title {

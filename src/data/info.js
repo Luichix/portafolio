@@ -3,6 +3,7 @@ import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaGitAlt, FaGithub } from 'react-icons/fa'
 import { SiJavascript, SiMongodb, SiFirebase } from 'react-icons/si'
 import { GrMysql, GrHeroku } from 'react-icons/gr'
+import { BiMap, BiMailSend, BiPhoneCall } from 'react-icons/bi'
 import access from '../assets/ico/access.ico'
 import excel from '../assets/ico/excel.ico'
 import vba from '../assets/ico/vba.ico'
@@ -11,6 +12,11 @@ import tableau from '../assets/ico/tableau.ico'
 import jamovi from '../assets/ico/jamovi.ico'
 import pdfCv from '../assets/pdf/cvoficial.pdf'
 import App1 from '../assets/img/app1.png'
+import Quesos from '../assets/img/quesos.png'
+import Elina from '../assets/img/elina.png'
+import Amazon from '../assets/img/amazon.png'
+import Barbershop from '../assets/img/barbershop.png'
+import Portafolio from '../assets/img/portafolio.png'
 
 // Info Header
 
@@ -105,20 +111,26 @@ export const resume = [
 // Info Portfolio
 
 export const task = [
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
-  ['Sistema de Nomina', App1, '#'],
+  ['Quesos El Rey', Quesos, 'https://quesoselrey.com/','Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades.'],
+  ['Elina Closet', Elina, 'https://hidden-reaches-57430.herokuapp.com/','Esta ya tiene material para ser una tienda online, pero no tiene su carro de la compra. Pero al menos tienes que iniciar sesión y administrar los productos.'],
+  ['Amazon Clone', Amazon, 'https://challenge-1c21a.web.app/','Este reto fue bastante difícil de seguir, fue el primer proyecto de práctica, tiene muchos errores creo y no está completo. Todavía me perdí de hacer algunas cosas.'],
+  ['Barbershop', Barbershop, 'https://luichix.github.io/barbershop/','Aquí anduve traveseando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento.'],
+  ['Portafolio', Portafolio, 'https://luichix.github.io/portafolio/','Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible desde mi punto de vista. Me tomé mi tiempo poniendo el color a algunos íconos jeje.'],
+  ['Nomina Vba', App1, 'https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing','Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo.'],
 ]
 
 // Info Contact
 
 export const personal = [
-  ['Fecha de nacimiento: ', '24/09/1995'],
-  ['Ciudad: ', 'Chinandega, Nicaragua'],
-  ['Teléfono: ', '+ 505 8458-4479'],
-  ['Email: ', 'luisreynaldo.pch@gmail.com']
+  [<BiMap key='map'/> ,'Ciudad: ', 'Chinandega, Nicaragua'],
+  [<BiPhoneCall key='phone'/> ,'Teléfono: ', '+ 505 8458-4479'],
+  [<BiMailSend key='email'/>,'Email: ', 'luisreynaldo.pch@gmail.com']
 ]
+
+export const form = {
+  contact: 'Nombre*',
+  email: 'Correo*',
+  issue: 'Asunto*',
+  message: 'Mensaje*',
+  submit: 'Enviar'
+}

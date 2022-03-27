@@ -1,74 +1,79 @@
-import React from 'react'
-import { BiMap, BiMailSend } from 'react-icons/bi'
-
-// {/* <div className={style.content}>
-//   <h3>Información Adicional</h3>
-//   <ul>
-//     {personal.map((e,i) => (
-//       <li key={i} className={style.info}>
-//         <i><FcNext/></i>
-//         <strong>{e[0]}</strong>{e[1]}
-//       </li>
-//     ))}
-//   </ul>
-// </div> */}
+import React, { useState } from 'react'
+import { personal, form } from '../data/info'
+import style from '../css/module/contact.module.css'
+import emailjs from '@emailjs/browser'
+import { Fade } from 'react-awesome-reveal'
 
 function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [issue, setIssue] = useState('')
+  const [message, setMessage] = useState('')
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    const messageObject ={
+      name, email, issue, message
+    }
+
+    console.log('prueba')
+    emailjs.send('service_portfolio', 'template_portfolio', messageObject , 'cLLFrT38MYC7J_zBS')
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+    setName('')
+    setEmail('')
+    setIssue('')
+    setMessage('')
+  }
+
   return (
-    <section id='Contacto' className="contact">
-      <div className="container">
-        <div className="section-title">
-          <h2>Contacto</h2>
+    <section id='Contacto' className={style.contact}>
+      <Fade>
+        <div className={style.cover}>
+          <h2 className={style.title}>Contacto</h2>
         </div>
-        <div className="row">
-          <div className="col-lg-5 d-flex align-items-stretch">
-            <div className="info">
-              <div className="address">
-                <i>
-                  <BiMap />
-                </i>
-                <h4>Ubicación:</h4>
-                <p>Chinandega, Nicaragua</p>
-              </div>
-              <div className="email">
-                <i>
-                  <BiMailSend />
-                </i>
-                <h4>Email:</h4>
-                <p>luisreynaldo.pch@gmail.com</p>
+      </Fade>
+      <div className={style.container}>
+        <Fade>
+          <div className={style.section}>
+            <div className={style.group}>
+              <div className={style.info}>
+                <h3>Información de Contacto</h3>
+                {personal.map((e,i) => (
+                  <div key={i} >
+                    <i>{e[0]}</i>
+                    <h4>{e[1]}</h4>
+                    <p>{e[2]}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-          <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/enviar.php" method="post" role="form" className="php-email-form">
-              <div className="form-row">
-                <div className="form-group col-md-6">
-                  <label htmlFor="name">Nombre</label>
-                  <input type="text" name="nombre" className="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
-                  <div className="validate"></div>
-                </div>
-                <div className="form-group col-md-6">
-                  <label htmlFor="name">Email</label>
-                  <input type="email" className="form-control" name="correo" id="email" data-rule="email" data-msg="Please enter a valid email" required />
-                  <div className="validate"></div>
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="name">Asunto</label>
-                <input type="text" className="form-control" name="asunto" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
-                <div className="validate"></div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="name">Mensaje</label>
-                <textarea className="form-control" name="mensaje" rows="10" data-rule="required" data-msg="Please write something for us" required></textarea>
-                <div className="validate"></div>
-              </div>
-              <div className="mb-3">
-              </div>
-              <div className="text-center"><button type="submit">Enviar mensaje</button></div>
+        </Fade>
+        <Fade>
+          <div className={style.section}>
+            <h3>¡Envía un mensaje!</h3>
+            <form onSubmit={sendEmail} className={style.form} autoComplete='off' >
+              <fieldset className={style.data} >
+                <label htmlFor='name'>{form.contact}</label>
+                <input id='name' type='text' required value={name} onChange={({ target }) => setName(target.value)}/>
+                <label htmlFor='email' >{form.email}</label>
+                <input id='email' type='text' required value={email} onChange={({ target }) => setEmail(target.value)} />
+                <label htmlFor='issue'>{form.issue}</label>
+                <input id='issue' type='text' required value={issue} onChange={({ target }) => setIssue(target.value)}/>
+              </fieldset>
+              <fieldset className={style.data}>
+                <label htmlFor='message'>{form.message}</label>
+                <textarea id='message' required value={message} onChange={({ target }) => setMessage(target.value)}/>
+                <button>{form.submit}</button>
+              </fieldset>
             </form>
           </div>
-        </div>
+        </Fade>
       </div>
     </section>
   )
