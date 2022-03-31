@@ -4,7 +4,7 @@ import Main from './components/main'
 import Footer from './components/footer'
 
 function App () {
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false)
 
   return (
     <div>

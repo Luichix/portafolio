@@ -112,10 +112,10 @@ export const resume = [
 
 export const task = [
   ['Quesos El Rey', Quesos, 'https://quesoselrey.com/','Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades.'],
-  ['Elina Closet', Elina, 'https://hidden-reaches-57430.herokuapp.com/','Esta ya tiene material para ser una tienda online, pero no tiene su carro de la compra. Pero al menos tienes que iniciar sesión y administrar los productos.'],
-  ['Amazon Clone', Amazon, 'https://challenge-1c21a.web.app/','Este reto fue bastante difícil de seguir, fue el primer proyecto de práctica, tiene muchos errores creo y no está completo. Todavía me perdí de hacer algunas cosas.'],
-  ['Barbershop', Barbershop, 'https://luichix.github.io/barbershop/','Aquí anduve traveseando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento.'],
-  ['Portafolio', Portafolio, 'https://luichix.github.io/portafolio/','Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible desde mi punto de vista. Me tomé mi tiempo poniendo el color a algunos íconos jeje.'],
+  ['Elina Closet', Elina, 'https://hidden-reaches-57430.herokuapp.com/','Esta ya tiene material para ser una tienda online, pero no tiene su carrito de compra. Aunque si se pueden administrar los productos.'],
+  ['Amazon Clone', Amazon, 'https://challenge-1c21a.web.app/','El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas.'],
+  ['Barbershop', Barbershop, 'https://luichix.github.io/barbershop/','Aquí estuve practicando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento.'],
+  ['Portafolio', Portafolio, 'https://luichix.github.io/portafolio/','Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.'],
   ['Nomina Vba', App1, 'https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing','Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo.'],
 ]
 
