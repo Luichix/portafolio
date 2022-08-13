@@ -1,11 +1,8 @@
-@import '../App.css';
-
 .portfolio {
   display: flex;
   flex-direction: column;
   padding: 4em;
 }
-
 
 .title {
   font-size: 2em;
@@ -44,7 +41,7 @@
   width: 100%;
 }
 
-.item h4{
+.item h4 {
   position: relative;
   text-align: center;
   line-height: 0;
@@ -54,22 +51,22 @@
   z-index: 20;
 }
 
-.item:hover .links{
+.item:hover .links {
   opacity: 1;
   bottom: 0;
   z-index: 30;
 }
-.image{
+.image {
   position: relative;
   width: 100%;
   height: auto;
   object-fit: cover;
   z-index: 20;
 }
-.item:hover .image, .item:hover h4{
+.item:hover .image,
+.item:hover h4 {
   opacity: 0.5;
 }
-
 
 .links {
   position: absolute;
@@ -93,6 +90,6 @@
   cursor: pointer;
   border-left: 1px solid var(--color-water);
 }
-.links a:hover{
+.links a:hover {
   background: var(--color-water);
 }

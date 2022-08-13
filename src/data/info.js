@@ -69,7 +69,7 @@ function getEdad(dateString) {
   return edad
 }
 
-export const about = {
+export const aboutMe = {
   me: 'Sobre mi',
   paragraph: [
     `Hola, mi nombre es Luis Reynaldo Pérez, soy nicaragüense, tengo actualmente ${getEdad(

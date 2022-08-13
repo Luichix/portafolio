@@ -1,0 +1,17 @@
+{
+  "es": {
+    "story": {
+      "salutation": "Hola, mi nombre es",
+      "name": "Luis Reynaldo",
+      "job": "Full Stack Developer",
+      "contact": "Contactame"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "subtitle": "Información sobre mi",
+      "job": "Soy Desarrollador Full Stack",
+      "comment": "En formación, licenciado en Administración de Empresas",
+      "me": "Soy un desarrollador Full Stack, con experiencia en desarrollo de aplicaciones web y móviles. Me gusta aprender nuevas tecnologías y frameworks para el desarrollo de aplicaciones. Me encanta trabajar en equipo y estar en constante aprendizaje."
+    }
+  }
+}

@@ -1,10 +1,12 @@
-@import 'App.css';
+@import 'colors.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body {
   margin: 0;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #272829;
@@ -24,16 +26,36 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
 }
 
-.html, .css, .js, .react, .node, .mongo, .mysql, .git, .github, .heroku, .firebase {
+.html,
+.css,
+.js,
+.react,
+.node,
+.mongo,
+.mysql,
+.git,
+.github,
+.heroku,
+.firebase {
   font-size: 1.5em;
   padding-right: 5px;
 }
 
-.excel, .access, .vba, .powerbi, .tableau, .jamovi{
+.excel,
+.access,
+.vba,
+.powerbi,
+.tableau,
+.jamovi {
   width: 1.5em;
   height: 1.5em;
   padding-right: 5px;
@@ -63,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #10aa50;
 }
 
-.mysql{
+.mysql {
   color: #007699;
 }
 
@@ -71,14 +93,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #f05133;
 }
 
-.github{
+.github {
   color: #000000;
 }
 
-.heroku{
+.heroku {
   color: #430098;
 }
 
-.firebase{
+.firebase {
   color: #ffcc2b;
 }
