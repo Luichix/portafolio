@@ -1,45 +1,37 @@
 import React from 'react'
 import { social, elements, icons } from '../../../data/info'
 import style from './header.module.css'
+import perfil from '../../../assets/img/perfil.png'
 
-import {
-  FaGithub,
-  FaLinkedin,
-  FaMailBulk,
-  FaTwitter,
-  FaWhatsapp,
-} from 'react-icons/fa'
-import { HiMenu, HiCode } from 'react-icons/hi'
-import { Link, animateScroll as scroll } from 'react-scroll'
-import { HiArrowCircleUp } from 'react-icons/hi'
+import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa'
+import { Link } from 'react-scroll' //animateScroll as scroll
+// import { HiMenu, HiCode } from 'react-icons/hi'
+// import { HiArrowCircleUp } from 'react-icons/hi'
 
-function Header({ toggle, setToggle }) {
-  const scrollToTop = () => {
-    scroll.scrollToTop()
-  }
+function Header() {
+  //{ toggle }, setToggle
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop()
+  // }
 
-  const handleToggle = () => {
-    if (toggle) setToggle(false)
-    else setToggle(true)
-  }
+  // const handleToggle = () => {
+  //   if (toggle) setToggle(false)
+  //   else setToggle(true)
+  // }
 
   return (
-    <>
-      <header id="header" className={toggle ? style.header : style.mobile}>
-        <div className={style.container}>
-          <div className={style.profile}>
+    <header id="header" className={style.sidenav}>
+      <div className={style.container}>
+        <div className={style.profile}>
+          <img src={perfil} alt="Imagen de perfil" className={style.image} />
+          <div className={style.group}>
             <h1 className={style.title}>
-              <a href="index.html">Luis Reynaldo</a>
+              <a href="index.html">Luichix</a>
             </h1>
             <div className={style.social}>
               <a href={social.github} target="_blank" rel="noreferrer">
                 <i>
                   <FaGithub />
-                </i>
-              </a>
-              <a href={social.twitter} target="_blank" rel="noreferrer">
-                <i>
-                  <FaTwitter />
                 </i>
               </a>
               <a href={social.whatsapp} target="_blank" rel="noreferrer">
@@ -80,7 +72,14 @@ function Header({ toggle, setToggle }) {
             </ul>
           </nav>
         </div>
-      </header>
+      </div>
+    </header>
+  )
+}
+export default Header
+
+/*
+
       <button onClick={handleToggle} type="button" className={style.toggle}>
         <i>{toggle ? <HiMenu /> : <HiCode />}</i>
       </button>
@@ -89,7 +88,4 @@ function Header({ toggle, setToggle }) {
           <HiArrowCircleUp />
         </i>
       </a>
-    </>
-  )
-}
-export default Header
+*/

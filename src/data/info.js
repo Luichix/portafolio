@@ -11,12 +11,6 @@ import {
 import { SiJavascript, SiMongodb, SiFirebase } from 'react-icons/si'
 import { GrMysql, GrHeroku } from 'react-icons/gr'
 import { BiMap, BiMailSend, BiPhoneCall } from 'react-icons/bi'
-import access from '../assets/ico/access.ico'
-import excel from '../assets/ico/excel.ico'
-import vba from '../assets/ico/vba.ico'
-import powerbi from '../assets/ico/powerbi.ico'
-import tableau from '../assets/ico/tableau.ico'
-import jamovi from '../assets/ico/jamovi.ico'
 import pdfCv from '../assets/pdf/cvoficial.pdf'
 import App1 from '../assets/img/app1.png'
 import Quesos from '../assets/img/quesos.png'
@@ -90,79 +84,17 @@ export const skill = [
   [
     'Desarrollo Web',
     [
-      <>
-        <FaHtml5 key="html" className="html" />
-        HTML &nbsp;
-      </>,
-      <>
-        <FaCss3 key="css" className="css" />
-        CSS &nbsp;
-      </>,
-      <>
-        <SiJavascript key="js" className="js" />
-        JavaScript &nbsp;
-      </>,
-      <>
-        <FaReact key="react" className="react" />
-        ReactJS &nbsp;
-      </>,
-      <>
-        <FaNodeJs key="node" className="node" />
-        NodeJS &nbsp;
-      </>,
-      <>
-        <SiMongodb key="mongo" className="mongo" />
-        MongoDB &nbsp;
-      </>,
-      <>
-        <GrMysql key="mysql" className="mysql" />
-        MySQL &nbsp;
-      </>,
-      <>
-        <FaGitAlt key="git" className="git" />
-        Git &nbsp;
-      </>,
-      <>
-        <FaGithub key="github" className="github" />
-        Github &nbsp;
-      </>,
-      <>
-        <GrHeroku key="heroku" className="heroku" />
-        Heroku &nbsp;
-      </>,
-      <>
-        <SiFirebase key="firebase" className="firebase" />
-        Firebase &nbsp;
-      </>,
-    ],
-  ],
-  [
-    'Analisis de datos',
-    [
-      <>
-        <img className="excel" src={excel} alt="icono excel" />
-        Excel &nbsp;
-      </>,
-      <>
-        <img className="access" src={access} alt="icono access" />
-        Access &nbsp;
-      </>,
-      <>
-        <img className="vba" src={vba} alt="icono vba" />
-        Vba &nbsp;
-      </>,
-      <>
-        <img className="powerbi" src={powerbi} alt="icono powerbi" />
-        PowerBi &nbsp;
-      </>,
-      <>
-        <img className="tableau" src={tableau} alt="icono powerbi" />
-        Tableau &nbsp;
-      </>,
-      <>
-        <img className="jamovi" src={jamovi} alt="icono powerbi" />
-        Jamovi &nbsp;
-      </>,
+      <FaHtml5 key="html" className="html" />,
+      <FaCss3 key="css" className="css" />,
+      <SiJavascript key="js" className="js" />,
+      <FaReact key="react" className="react" />,
+      <FaNodeJs key="node" className="node" />,
+      <SiMongodb key="mongo" className="mongo" />,
+      <GrMysql key="mysql" className="mysql" />,
+      <FaGitAlt key="git" className="git" />,
+      <FaGithub key="github" className="github" />,
+      <GrHeroku key="heroku" className="heroku" />,
+      <SiFirebase key="firebase" className="firebase" />,
     ],
   ],
 ]

@@ -1,27 +1,20 @@
-import React from 'react'
-import style from './modal.module.css'
+import React, { forwardRef } from 'react'
+import ReactDOM from 'react-dom'
+import styles from './modal.module.css'
 
-function Modal({ active, setActive, children }) {
-  const closeModal = () => {
-    if (active) setActive(false)
-    else setActive(true)
-  }
-  const handleModalContent = (e) => e.stopPropagation()
-
-  return (
-    <article
-      id="myModal"
-      className={active ? style.modal : style.offModal}
-      onClick={closeModal}
-    >
-      <div className={style.content} onClick={handleModalContent}>
-        <button className={style.close} onClick={closeModal}>
+const Modal = forwardRef(function ModalRef({ children, onClose }, ref) {
+  const handleModalContent = (event) => event.stopPropagation()
+  const PortalDiv = document.getElementById('portal')
+  return ReactDOM.createPortal(
+    <article className={styles.modal} onClick={onClose} ref={ref}>
+      <div className={styles.content} onClick={handleModalContent}>
+        <button className={styles.close} onClick={onClose}>
           &times;
         </button>
         {children}
       </div>
-    </article>
+    </article>,
+    PortalDiv
   )
-}
-
+})
 export default Modal

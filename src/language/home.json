@@ -1,0 +1,15 @@
+{
+  "es": {
+    "hi": "Hola,",
+    "name": "Soy Luis Reynaldo",
+    "job": "Desarollador Javascript",
+    "contact": "Contactame"
+  },
+
+  "en": {
+    "hi": "Hello,",
+    "name": "I´m Luis Reynaldo",
+    "job": "Javascript Developer",
+    "contact": "Send Message"
+  }
+}
