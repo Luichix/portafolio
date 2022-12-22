@@ -5,16 +5,17 @@
   overflow-y: auto;
   transition: all ease 1s;
   transition: all 1s;
-  width: 100%;
   position: relative;
+  height: 100%;
+  min-height: 100vh;
 }
 
-.sidenav::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   background-color: var(--color-black);
   width: 0.5em;
 }
 
-.sidenav::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
   background-color: var(--color-blue);
   border-radius: 0.5em;
 }
@@ -26,8 +27,10 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  padding: 6rem 4rem 0 4rem;
+  padding: 0rem 4rem 0 4rem;
+  overflow: auto;
 }
 
 .image {
@@ -146,7 +149,7 @@
   text-align: right;
   transition: all 0.4s;
   top: 0.5em;
-  right: 0.5em;
+  right: 0.25em;
   font-size: 2em;
   line-height: 0;
   z-index: 9999;
@@ -162,7 +165,7 @@
   text-align: right;
   transition: all 0.4s;
   bottom: 0.5em;
-  right: 0.5em;
+  right: 0.25em;
   font-size: 2em;
   line-height: 0;
   z-index: 1;
@@ -188,21 +191,24 @@
   }
 }
 
-/* 
-.mobile {
-  background: var(--color-ebony);
-  position: fixed;
-  overflow-y: auto;
-  transition: all ease 1.5s;
-  transition: all 1.5s;
-  transition-delay: 0.4s;
-  width: 220px;
-  top: 0;
-  left: -500px;
-  bottom: 0;
-  padding: 0 50px;
-  z-index: 9000;
+@media screen and (max-height: 700px) {
+  .container {
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  .link {
+    padding: 0.5rem;
+  }
+
+  .toggle {
+    font-size: 1.75rem;
+  }
+
+  .back {
+    font-size: 1.75rem;
+  }
+
+  .group {
+    padding: 0;
+  }
 }
-
-
- */

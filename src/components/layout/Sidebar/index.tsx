@@ -169,6 +169,7 @@ export function Sidebar() {
                     smooth="easeInOutQuint"
                     offset={0}
                     duration={1500}
+                    onClick={() => setToggle(false)}
                   >
                     <i>{icons[index]}</i>
                     <span>{text[item]}</span>

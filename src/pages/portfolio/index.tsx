@@ -13,7 +13,9 @@ import Portafolio from '@Assets/img/portafolio.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Nomina from '@Assets/img/nomina.png'
 import Modal from '@Components/common/Modal'
-
+import Sforza from '@Assets/img/sforza.png'
+import Storybook from '@Assets/img/storybook.png'
+import Chat from '@Assets/img/chat.jpg'
 const images = {
   App1,
   Quesos,
@@ -23,6 +25,9 @@ const images = {
   Portafolio,
   GoDigit,
   Nomina,
+  Sforza,
+  Storybook,
+  Chat,
 } as any
 
 export function Portfolio() {
