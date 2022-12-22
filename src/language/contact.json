@@ -1,0 +1,16 @@
+{
+  "en": {
+    "contact": "Nombre",
+    "email": "Correo",
+    "issue": "Asunto",
+    "message": "Mensaje",
+    "submit": "Enviar"
+  },
+  "es": {
+    "contact": "Name",
+    "email": "email",
+    "issue": "Issue",
+    "message": "Message",
+    "submit": "Send"
+  }
+}
