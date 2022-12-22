@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import LanguageContext from '../../context/language'
-import text from './../../language/home.json'
+import { useContext } from 'react'
+import { LanguageContext } from '@Contexts/language'
+import text from '@Language/home.json'
 import styles from './styles.module.css'
 
-function Home() {
+export function Home() {
   const { language } = useContext(LanguageContext)
-  const content = text[language]
+  const content = text['en']
   return (
-    <section id="Inicio" className={styles.hero}>
+    <section id="home" className={styles.home}>
       <div className={styles.container}>
         <h1>
           {content.hi} <br />

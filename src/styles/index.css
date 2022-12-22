@@ -1,5 +1,5 @@
-@import 'colors.css';
-
+@import './colors.css';
+/* @import './minireset.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body {

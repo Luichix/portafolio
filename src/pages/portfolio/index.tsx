@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react'
 import { FcInfo, FcLink } from 'react-icons/fc'
 import { Fade } from 'react-awesome-reveal'
-import style from './portfolio.module.css'
+import style from './styles.module.css'
 import { task } from '../../data/info'
 // import Modal from '../common/Modal'
 
-function Portfolio() {
+export function Portfolio() {
   const modalRef = useRef(null)
   const [onModal, setOnModal] = useState(false)
   const [data, setData] = useState(null)

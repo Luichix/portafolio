@@ -32,21 +32,6 @@ export const social = {
   email: 'mailto:luichix.rex@gmail.com',
 }
 
-export const elements = [
-  'Inicio',
-  'Sobre mi',
-  'Estudios',
-  'Portafolio',
-  'Contacto',
-]
-export const icons = [
-  <GoHome key="home" />,
-  <GoPerson key="person" />,
-  <GoFile key="file" />,
-  <GoProject key="project" />,
-  <GoMail key="mail" />,
-]
-
 // Info About
 
 function getEdad(dateString) {
