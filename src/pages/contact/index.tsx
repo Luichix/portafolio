@@ -1,10 +1,21 @@
-import React, { useState } from 'react'
-import { personal, form } from '../../data/info'
+import React, { useState, useContext } from 'react'
 import style from './styles.module.css'
 import emailjs from '@emailjs/browser'
 import { Fade } from 'react-awesome-reveal'
+import { BiMap, BiMailSend, BiPhoneCall } from 'react-icons/bi'
+import { LanguageContext } from '@Contexts/language'
+import content from '@Language/contact.json'
+
+const personal = [
+  [<BiMap key="map" />, 'Ciudad: ', 'Chinandega, Nicaragua'],
+  [<BiPhoneCall key="phone" />, 'Teléfono: ', '+ 505 8458-4479'],
+  [<BiMailSend key="email" />, 'Email: ', 'luisreynaldo.pch@gmail.com'],
+]
 
 export function Contact() {
+  const { language } = useContext(LanguageContext)
+  const text = content[language]
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [issue, setIssue] = useState('')
@@ -20,7 +31,6 @@ export function Contact() {
       message,
     }
 
-    console.log('prueba')
     emailjs
       .send(
         'service_portfolio',
@@ -74,7 +84,7 @@ export function Contact() {
                 autoComplete="off"
               >
                 <fieldset className={style.data}>
-                  <label htmlFor="name">{form.contact}</label>
+                  <label htmlFor="name">{text.contact}</label>
                   <input
                     id="name"
                     type="text"
@@ -82,7 +92,7 @@ export function Contact() {
                     value={name}
                     onChange={({ target }) => setName(target.value)}
                   />
-                  <label htmlFor="email">{form.email}</label>
+                  <label htmlFor="email">{text.email}</label>
                   <input
                     id="email"
                     type="text"
@@ -90,7 +100,7 @@ export function Contact() {
                     value={email}
                     onChange={({ target }) => setEmail(target.value)}
                   />
-                  <label htmlFor="issue">{form.issue}</label>
+                  <label htmlFor="issue">{text.issue}</label>
                   <input
                     id="issue"
                     type="text"
@@ -100,14 +110,14 @@ export function Contact() {
                   />
                 </fieldset>
                 <fieldset className={style.data}>
-                  <label htmlFor="message">{form.message}</label>
+                  <label htmlFor="message">{text.message}</label>
                   <textarea
                     id="message"
                     required
                     value={message}
                     onChange={({ target }) => setMessage(target.value)}
                   />
-                  <button>{form.submit}</button>
+                  <button>{text.submit}</button>
                 </fieldset>
               </form>
             </div>

@@ -26,7 +26,7 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--text--color-turqui);
   font-family: 'Alata', sans-serif;
 }
 
@@ -62,4 +62,8 @@
   margin: 0;
   padding: 0;
   box-shadow: 6px 6px 6px #0008;
+}
+
+.section p {
+  font-size: 1.25rem;
 }

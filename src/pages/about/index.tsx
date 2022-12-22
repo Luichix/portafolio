@@ -29,7 +29,6 @@ export function About() {
             <h2>{text.title}</h2>
           </Fade>
           <Fade triggerOnce>
-            <p>{text.me}</p>
             <p>
               {text.salute} {getAge(text.age)} {text.resume}
             </p>

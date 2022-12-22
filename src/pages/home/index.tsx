@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 export function Home() {
   const { language } = useContext(LanguageContext)
-  const content = text['en']
+  const content = text[language]
   return (
     <section id="home" className={styles.home}>
       <div className={styles.container}>

@@ -10,9 +10,9 @@ import lang from '@Language/sidebar.json'
 import { HiMenu, HiCode } from 'react-icons/hi'
 import { HiArrowCircleUp } from 'react-icons/hi'
 
-type links = 'home' | 'about' | 'skills' | 'portfolio' | 'contact'
+type Links = 'home' | 'about' | 'skills' | 'portfolio' | 'contact'
 
-const elements = ['home', 'about', 'skills', 'portfolio', 'contact'] as links[]
+const elements = ['home', 'about', 'skills', 'portfolio', 'contact'] as Links[]
 
 const icons = [
   <GoHome key="home" />,
@@ -25,7 +25,7 @@ const icons = [
 export function Sidebar() {
   const [toggle, setToggle] = useState(false)
   const { language } = useContext(LanguageContext)
-  const text = lang[language] as any
+  const text = lang[language]
 
   const scrollToTop = () => {
     scroll.scrollToTop()
@@ -86,7 +86,7 @@ export function Sidebar() {
           </div>
           <nav className={style.menu}>
             <ul>
-              {elements.map((item: string, index) => (
+              {elements.map((item: Links, index) => (
                 <li key={index}>
                   <Link
                     className={style.link}

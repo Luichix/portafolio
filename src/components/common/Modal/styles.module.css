@@ -1,5 +1,5 @@
 .modal {
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 1100;
   left: 0;
@@ -19,10 +19,10 @@
   position: relative;
   display: grid;
   justify-content: space-evenly;
-  background-color: var(--color-white);
+  background-color: var(--bg--color-white);
   margin: auto;
   padding: 2em;
-  border: 1px solid var(--color-gray);
+  border: 1px solid var(-border--color-gray);
   overflow-y: auto;
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: auto;
@@ -31,7 +31,7 @@
 
 .close {
   position: absolute;
-  color: var(--color-sky);
+  color: var(--text--color-sky);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -43,14 +43,14 @@
 
 .close:hover,
 .close:focus {
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   text-decoration: none;
   cursor: pointer;
 }
 
 .title {
   font-weight: 700;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   font-size: 1.2em;
   text-align: center;
   margin: 0;
@@ -62,21 +62,22 @@
   line-height: 2em;
   text-align: center;
   text-indent: 2em;
+  color: var(--color-white);
 }
 
 .link {
   justify-self: center;
   border: none;
-  background-color: var(--color-sky);
-  color: var(--color-turqui);
+  background-color: var(--bg--color-sky);
+  color: var(--text--color-turqui);
   padding: 0.75em;
   margin-top: 0.3em;
-  color: var(--color-white);
+  color: var(--text--color-white);
   font-size: 1em;
   align-self: center;
   text-decoration: none;
 }
 .link:hover {
-  color: var(--color-white);
-  background-color: var(--color-turqui);
+  color: var(--text--color-white);
+  background-color: var(--bg--color-turqui);
 }

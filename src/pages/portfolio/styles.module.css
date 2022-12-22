@@ -18,7 +18,7 @@
   margin-bottom: 1em;
   padding-bottom: 1em;
   position: relative;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   line-height: 0;
 }
 
@@ -53,7 +53,7 @@
   text-align: center;
   line-height: 0;
   font-size: 1em;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   text-transform: uppercase;
   z-index: 20;
 }
@@ -91,12 +91,20 @@
 .links a {
   font-size: 28px;
   text-align: center;
-  background-color: var(--color-lightblue);
+  background-color: var(--bg--color-lightblue);
   transition: 0.3s;
   width: 50%;
   cursor: pointer;
-  border-left: 1px solid var(--color-water);
+  border-left: 1px solid var(--border--color-water);
 }
 .links a:hover {
-  background: var(--color-water);
+  background: var(--bg--color-water);
+}
+
+.text {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+  line-height: 2em;
+  text-align: center;
+  color: var(--color-white);
 }

@@ -19,7 +19,7 @@
 }
 
 .home h1 {
-  color: var(--color-graphite);
+  color: var(--text--color-graphite);
   font-size: 5em;
   font-weight: 600;
   font-family: 'Alata', sans-serif;
@@ -28,7 +28,7 @@
 
 .home h3 {
   font-size: 2em;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #149ddd;

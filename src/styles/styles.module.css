@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  background-color: #131516;
 }
 
 .section {
@@ -13,6 +14,7 @@
 .main {
   width: 100%;
   position: relative;
+  color: var(--text--color-white);
 }
 
 /**!SECTION

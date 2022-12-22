@@ -7,7 +7,7 @@
     "me": "Soy un desarrollador Full Stack, con experiencia en desarrollo de aplicaciones web y móviles. Me gusta aprender nuevas tecnologías y frameworks para el desarrollo de aplicaciones. Me encanta trabajar en equipo y estar en constante aprendizaje.",
     "salute": "Hola, mi nombre es Luis Reynaldo Pérez, soy nicaragüense, tengo actualmente ",
     "age": "1995/09/24",
-    "resume": "años, inicie en el mundo de la programacion con VBA de Microsoft Excel en el 2017, diseñando diversas plantillas para los    registros y controles financieros en una empresa familiar, en el 2018 viaje a panama donde desarolle un proyecto de nomina, encual se importaban los registros horarios desde el sistema de huella digital, se realizaban todas las validaciones y calculos necesarios para generar los reportes de planilla y comprobantes de pago de colaboradores, cumpliendo con las normas y politicas de la empresa y la legilación de panamá.",
+    "resume": "años. Soy desarrollador FullStack Javascript, con enfasis en el desarrollo Front End mediante React.",
     "goals": "En el 2020 estuve cursando una maestria en el INCAE, pero por motivos ajenos a mi voluntad, me vi obligado a supender los estudios, asi que me dedique a laborar en areas administrativas e ir mejorando mis conocimientos sobre analisis de datos y reanudando tambien mis estudios en desarrollo web."
   },
   "en": {
@@ -15,10 +15,10 @@
     "subtitle": "Información sobre mi",
     "job": "Soy Desarrollador Full Stack",
     "comment": "En formación, licenciado en Administración de Empresas",
-    "me": "Soy un desarrollador Full Stack, con experiencia en desarrollo de aplicaciones web y móviles. Me gusta aprender nuevas tecnologías y frameworks para el desarrollo de aplicaciones. Me encanta trabajar en equipo y estar en constante aprendizaje.",
-    "salute": "Hola, mi nombre es Luis Reynaldo Pérez, soy nicaragüense, tengo actualmente ",
+    "salute": "Hola, mi nombre es Luis Reynaldo Pérez, nicaragüense, tengo actualmente ",
     "age": "1995/09/24",
-    "resume": "años, inicie en el mundo de la programacion con VBA de Microsoft Excel en el 2017, diseñando diversas plantillas para los    registros y controles financieros en una empresa familiar, en el 2018 viaje a panama donde desarolle un proyecto de nomina, encual se importaban los registros horarios desde el sistema de huella digital, se realizaban todas las validaciones y calculos necesarios para generar los reportes de planilla y comprobantes de pago de colaboradores, cumpliendo con las normas y politicas de la empresa y la legilación de panamá.",
-    "goals": "En el 2020 estuve cursando una maestria en el INCAE, pero por motivos ajenos a mi voluntad, me vi obligado a supender los estudios, asi que me dedique a laborar en areas administrativas e ir mejorando mis conocimientos sobre analisis de datos y reanudando tambien mis estudios en desarrollo web."
+    "resume": "años. Soy desarrollador FullStack Javascript, con enfasis en el desarrollo front end de aplicaciones web y mobiles mediante React, me considero una persona con muchas capacidades para el desarrollo, aprendo rapidamente, siempre me enfoco en el cumplimiento de metas y me gusta trabajar en equipos.",
+    "goals": "Desde el 2017 inicie programando aplicaciones utilizando VBA de Excel, con el cual logre diseñar diversos sistemas de venta e inventario, nomina y contabilidad para algunas pequeñas y medianas empresas, mi perfil es multidisciplinario debido a que he cursado diversos programas de estudio en areas Administrativas.",
+    "me": "Actualmente me dedico al desarrollo de aplicaciones utilizando diversos lenguajes, frameworks y librerias como Typescript, Expo, Next, React, Graphql y más..."
   }
 }

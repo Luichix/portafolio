@@ -21,7 +21,7 @@
   margin-bottom: 1em;
   padding-bottom: 1em;
   line-height: 0;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
 }
 
 .title::after {
@@ -46,7 +46,7 @@
 .section h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--color-turqui);
+  color: var(--text--color-white);
 }
 
 .container {
@@ -58,8 +58,8 @@
 
 .info {
   display: flex;
-  padding: 4rem 2rem;
-  box-shadow: 0px 0px 2px var(--opacity-black);
+  padding: 4rem 2rem 4rem 0;
+  /* box-shadow: 0px 0px 2px var(--opacity-black); */
   flex-direction: column;
   gap: 4rem;
   justify-content: center;
@@ -74,7 +74,7 @@
 .info h3 {
   font-weight: 700;
   font-size: 1.2em;
-  color: var(--color-turqui);
+  color: var(--text--color-white);
   align-self: center;
   margin: 0;
 }
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #dff3fc;
+  background: #062f42;
   font-size: 20px;
   width: 44px;
   height: 44px;
@@ -109,13 +109,13 @@
   font-weight: 600;
   margin: 0;
   line-height: 1.5;
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
 }
 
 .tag p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--color-turqui);
+  color: var(--text--color-white);
 }
 
 .form {
@@ -133,7 +133,7 @@
 }
 
 .data label {
-  color: var(--color-turqui);
+  color: var(--text--color-turqui);
   font-weight: 500;
 }
 
@@ -143,13 +143,14 @@ textarea {
   padding: 1rem;
   margin: 0 0 1rem 0;
   border: 0.5px solid transparent;
-  border-right: 3px solid var(--color-turqui);
-  border-bottom: 1px solid var(--color-sky);
+  border-right: 3px solid var(--border--color-turqui);
+  border-bottom: 1px solid var(--border--color-sky);
   outline: none;
   text-indent: 0.5rem;
-  color: var(--color-turqui);
+  color: var(--text--color-white);
   resize: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #202426;
 }
 
 .data textarea {
@@ -158,19 +159,19 @@ textarea {
 
 .data input:hover,
 textarea:hover {
-  border-color: var(--color-sky);
-  background-color: #dff3fc;
-  border-color: var(--color-sky);
+  border-color: var(--border--color-sky);
+  background-color: #062f42;
+  border-color: var(--border--color-sky);
 }
 
 .data input:focus,
 textarea:focus {
-  background-color: #dff3fc;
+  background-color: #062f42;
 }
 
 .data button {
-  background-color: var(--color-water);
-  border: 1px solid var(--color-white);
+  background-color: var(--bg--color-water);
+  border: 1px solid var(--border--color-white);
   color: var(--color-white);
   padding: 1rem;
   font-size: 1rem;
@@ -178,8 +179,8 @@ textarea:focus {
 }
 
 .data button:hover {
-  background-color: var(--color-sky);
+  background-color: var(--bg--color-sky);
   color: var(--color-white);
   cursor: pointer;
-  border: 1px solid var(--color-sky);
+  border: 1px solid var(--bg--color-sky);
 }
