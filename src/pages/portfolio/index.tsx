@@ -41,7 +41,7 @@ export function Portfolio() {
   }
 
   return (
-    <section id="Portafolio" className={style.portfolio}>
+    <section id="portfolio" className={style.portfolio}>
       <Modal onClose={closeModal} ref={modalRef}>
         <h4 className={style.title}>{data[0]}</h4>
         <p className={style.text}>{data[3]}</p>

@@ -5,9 +5,8 @@
   overflow-y: auto;
   transition: all ease 1s;
   transition: all 1s;
-  width: 355px;
+  width: 100%;
   position: relative;
-  height: 100%;
 }
 
 .sidenav::-webkit-scrollbar {
@@ -139,24 +138,8 @@
   color: var(--color-sky);
 }
 
-/* 
-.mobile {
-  background: var(--color-ebony);
-  position: fixed;
-  overflow-y: auto;
-  transition: all ease 1.5s;
-  transition: all 1.5s;
-  transition-delay: 0.4s;
-  width: 220px;
-  top: 0;
-  left: -500px;
-  bottom: 0;
-  padding: 0 50px;
-  z-index: 9000;
-}
-
-
 .toggle {
+  display: none;
   position: fixed;
   background: none;
   cursor: pointer;
@@ -186,4 +169,40 @@
   padding: 0;
   border: 0;
   color: var(--color-sky);
-} */
+  opacity: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .sidenav {
+    position: absolute;
+    left: -500px;
+    z-index: 1000;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .show {
+    left: 0;
+  }
+}
+
+/* 
+.mobile {
+  background: var(--color-ebony);
+  position: fixed;
+  overflow-y: auto;
+  transition: all ease 1.5s;
+  transition: all 1.5s;
+  transition-delay: 0.4s;
+  width: 220px;
+  top: 0;
+  left: -500px;
+  bottom: 0;
+  padding: 0 50px;
+  z-index: 9000;
+}
+
+
+ */

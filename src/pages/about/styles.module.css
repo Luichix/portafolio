@@ -46,6 +46,7 @@
   line-height: 2.5;
   text-align: justify;
   text-indent: 3em;
+  font-size: 1.25rem;
 }
 
 .figure {
@@ -64,6 +65,13 @@
   box-shadow: 6px 6px 6px #0008;
 }
 
-.section p {
-  font-size: 1.25rem;
+@media screen and (max-width: 450px) {
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .section p {
+    line-height: 2;
+    font-size: 1rem;
+  }
 }

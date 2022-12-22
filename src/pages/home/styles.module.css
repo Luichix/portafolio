@@ -45,3 +45,22 @@
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+
+@media screen and (max-width: 450px) {
+  .home h1 {
+    font-size: 3em;
+  }
+
+  .home h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+  .home h3 {
+    font-size: 1rem;
+  }
+}

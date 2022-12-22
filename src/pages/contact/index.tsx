@@ -53,7 +53,7 @@ export function Contact() {
   }
 
   return (
-    <section id="Contacto" className={style.contact}>
+    <section id="contact" className={style.contact}>
       <div className={style.content}>
         <Fade>
           <h2 className={style.title}>Contacto</h2>

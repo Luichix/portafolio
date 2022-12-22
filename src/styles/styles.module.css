@@ -7,14 +7,21 @@
 }
 
 .section {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 300px 1fr;
 }
 
 .main {
   width: 100%;
   position: relative;
   color: var(--text--color-white);
+}
+
+@media screen and (max-width: 780px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /**!SECTION

@@ -22,7 +22,7 @@ export function About() {
   const { language } = useContext(LanguageContext)
   const text = data[language]
   return (
-    <section id="Sobre mi" className={style.about}>
+    <section id="about" className={style.about}>
       <div className={style.container}>
         <div className={style.section}>
           <Fade triggerOnce>

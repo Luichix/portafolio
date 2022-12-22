@@ -140,13 +140,13 @@
 .data input,
 textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 0 0 1rem 0;
   border: 0.5px solid transparent;
   border-right: 3px solid var(--border--color-turqui);
   border-bottom: 1px solid var(--border--color-sky);
   outline: none;
-  text-indent: 0.5rem;
+  text-indent: 1rem;
   color: var(--text--color-white);
   resize: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -183,4 +183,34 @@ textarea:focus {
   color: var(--color-white);
   cursor: pointer;
   border: 1px solid var(--bg--color-sky);
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    flex-direction: column;
+  }
+  .section {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .tag h4 {
+    font: 1rem;
+  }
+
+  .info h3 {
+    font-size: 1rem;
+  }
+  .section h3 {
+    font-size: 1rem;
+  }
+
+  .element h4 {
+    font-size: 1rem;
+  }
 }
