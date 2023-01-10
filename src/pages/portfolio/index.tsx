@@ -15,6 +15,7 @@ import Nomina from '@Assets/img/nomina.png'
 import Modal from '@Components/common/Modal'
 import Sforza from '@Assets/img/sforza.png'
 import Storybook from '@Assets/img/storybook.png'
+import Calendar from '@Assets/img/calendar.png'
 import Chat from '@Assets/img/chat.jpg'
 const images = {
   App1,
@@ -27,6 +28,7 @@ const images = {
   Nomina,
   Sforza,
   Storybook,
+  Calendar,
   Chat,
 } as any
 

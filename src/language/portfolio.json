@@ -1,6 +1,12 @@
 {
   "es": [
     [
+      "React Calendar",
+      "Calendar",
+      "https://react-calendar-luichix.vercel.app/",
+      "Proyecto de calendario semanal y mensual que permita manejar recordatorios..."
+    ],
+    [
       "Quesos El Rey",
       "Quesos",
       "https://quesoselrey.com/",
@@ -68,6 +74,12 @@
     ]
   ],
   "en": [
+    [
+      "React Calendar",
+      "Calendar",
+      "https://react-calendar-luichix.vercel.app/",
+      "Proyecto de calendario semanal y mensual que permita manejar recordatorios..."
+    ],
     [
       "Quesos El Rey",
       "Quesos",
