@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '@Contexts/language'
 import text from '@Language/home.json'
 import styles from './styles.module.css'
+import { Link } from 'react-scroll'
 
 export function Home() {
   const { language } = useContext(LanguageContext)
@@ -14,6 +15,16 @@ export function Home() {
           {content.name}
         </h1>
         <h3>{content.job}</h3>
+        <Link
+          className={styles.button}
+          to={'contact'}
+          spy={true}
+          smooth="easeInOutQuint"
+          offset={100}
+          duration={1500}
+        >
+          {content.contact}
+        </Link>
       </div>
     </section>
   )

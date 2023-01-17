@@ -1,150 +1,174 @@
 {
   "es": [
-    [
-      "React Calendar",
-      "Calendar",
-      "https://react-calendar-luichix.vercel.app/",
-      "Proyecto de calendario semanal y mensual que permita manejar recordatorios..."
-    ],
-    [
-      "Quesos El Rey",
-      "Quesos",
-      "https://quesoselrey.com/",
-      "Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades."
-    ],
-    [
-      "Elina Closet",
-      "Elina",
-      "https://hidden-reaches-57430.herokuapp.com/",
-      "Esta ya tiene material para ser una tienda online, pero no tiene su carrito de compra. Aunque si se pueden administrar los productos."
-    ],
-    [
-      "Amazon Clone",
-      "Amazon",
-      "https://challenge-1c21a.web.app/",
-      "El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas."
-    ],
-    [
-      "Barbershop",
-      "Barbershop",
-      "https://luichix.github.io/barbershop/",
-      "Aquí estuve practicando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento."
-    ],
-    [
-      "Portafolio",
-      "Portafolio",
-      "https://luichix.github.io/portafolio/",
-      "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje."
-    ],
-    [
-      "Nomina Vba",
-      "App1",
-      "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
-      "Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo."
-    ],
-    [
-      "Go-Digit",
-      "GoDigit",
-      "https://godigit-app.firebaseapp.com/",
-      "Aun estamos trabajando en esto"
-    ],
-    [
-      "Nomina",
-      "Nomina",
-      "https://nomina-80522.web.app/",
-      "Posiblemente me tomara bastante tiempo"
-    ],
-    [
-      "Storybook",
-      "Storybook",
-      "https://luichix.github.io/portafolio/",
-      "Dejo esto por aca"
-    ],
-    [
-      "Sforza",
-      "Sforza",
-      "https://sforza-web-luichix.vercel.app/",
-      "Una pequeña pagina para colegios."
-    ],
-    [
-      "Chat",
-      "Chat",
-      "https://luichix.github.io/portafolio/",
-      "Aplicación de chat creada con React Native"
-    ]
+    {
+      "title": "Calendar",
+      "ref": "Calendar",
+      "link": "https://react-calendar-luichix.vercel.app/",
+      "description": "Proyecto de calendario semanal y mensual que permita manejar recordatorios...",
+      "repository": "https://github.com/Luichix/react-calendar"
+    },
+    {
+      "title": "Quesos El Rey",
+      "ref": "Quesos",
+      "link": "https://quesoselrey.com/",
+      "description": "Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades.",
+      "repository": ""
+    },
+    {
+      "title": "Elina Closet",
+      "ref": "Elina",
+      "link": "https://hidden-reaches-57430.herokuapp.com/",
+      "description": "Esta ya tiene material para ser una tienda online, pero no tiene su carrito de compra. Aunque si se pueden administrar los productos.",
+      "repository": ""
+    },
+    {
+      "title": "Amazon Clone",
+      "ref": "Amazon",
+      "link": "https://challenge-1c21a.web.app/",
+      "description": "El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas.",
+      "repository": ""
+    },
+    {
+      "title": "Barbershop",
+      "ref": "Barbershop",
+      "link": "https://luichix.github.io/barbershop/",
+      "description": "Aquí estuve practicando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento.",
+      "repository": ""
+    },
+    {
+      "title": "Portafolio",
+      "ref": "Portafolio",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
+      "repository": ""
+    },
+    {
+      "title": "Nomina Vba",
+      "ref": "App1",
+      "link": "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
+      "description": "Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo.",
+      "repository": ""
+    },
+    {
+      "title": "Go-Digit",
+      "ref": "GoDigit",
+      "link": "https://godigit-app.firebaseapp.com/",
+      "description": "Aun estamos trabajando en esto",
+      "repository": ""
+    },
+    {
+      "title": "Nomina",
+      "ref": "Nomina",
+      "link": "https://nomina-80522.web.app/",
+      "description": "Posiblemente me tomara bastante tiempo",
+      "repository": ""
+    },
+    {
+      "title": "Storybook",
+      "ref": "Storybook",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Dejo esto por aca",
+      "repository": ""
+    },
+    {
+      "title": "Sforza",
+      "ref": "Sforza",
+      "link": "https://sforza-web-luichix.vercel.app/",
+      "description": "Una pequeña pagina para colegios.",
+      "repository": ""
+    },
+    {
+      "title": "Chat",
+      "ref": "Chat",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Aplicación de chat creada con React Native",
+      "repository": ""
+    }
   ],
   "en": [
-    [
-      "React Calendar",
-      "Calendar",
-      "https://react-calendar-luichix.vercel.app/",
-      "Proyecto de calendario semanal y mensual que permita manejar recordatorios..."
-    ],
-    [
-      "Quesos El Rey",
-      "Quesos",
-      "https://quesoselrey.com/",
-      "Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades."
-    ],
-    [
-      "Elina Closet",
-      "Elina",
-      "https://hidden-reaches-57430.herokuapp.com/",
-      "Esta ya tiene material para ser una tienda online, pero no tiene su carrito de compra. Aunque si se pueden administrar los productos."
-    ],
-    [
-      "Amazon Clone",
-      "Amazon",
-      "https://challenge-1c21a.web.app/",
-      "El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas."
-    ],
-    [
-      "Barbershop",
-      "Barbershop",
-      "https://luichix.github.io/barbershop/",
-      "Aquí estuve practicando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento."
-    ],
-    [
-      "Portafolio",
-      "Portafolio",
-      "https://luichix.github.io/portafolio/",
-      "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje."
-    ],
-    [
-      "Nomina Vba",
-      "App1",
-      "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
-      "Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo."
-    ],
-    [
-      "Go-Digit",
-      "GoDigit",
-      "https://godigit-app.firebaseapp.com/",
-      "Aun estamos trabajando en esto"
-    ],
-    [
-      "Nomina",
-      "Nomina",
-      "https://nomina-80522.web.app/",
-      "Posiblemente me tomara bastante tiempo"
-    ],
-    [
-      "Storybook",
-      "Storybook",
-      "https://luichix.github.io/portafolio/",
-      "Dejo esto por aca"
-    ],
-    [
-      "Sforza",
-      "Sforza",
-      "https://sforza-web-luichix.vercel.app/",
-      "Una pequeña pagina para colegios."
-    ],
-    [
-      "Chat",
-      "Chat",
-      "https://luichix.github.io/portafolio/",
-      "Aplicación de chat creada con React Native"
-    ]
+    {
+      "title": "Calendar",
+      "ref": "Calendar",
+      "link": "https://react-calendar-luichix.vercel.app/",
+      "description": "Proyecto de calendario semanal y mensual que permita manejar recordatorios.",
+      "repository": "https://github.com/Luichix/react-calendar"
+    },
+    {
+      "title": "Quesos El Rey",
+      "ref": "Quesos",
+      "link": "https://quesoselrey.com/",
+      "description": "Bueno, esta es una página simple, con una aspiración de convertirse en una valiosa tienda en línea. Espero más adelante seguir ampliando esas funcionalidades.",
+      "repository": ""
+    },
+    {
+      "title": "Elina Closet",
+      "ref": "Elina",
+      "link": "https://hidden-reaches-57430.herokuapp.com/",
+      "description": "Esta ya tiene material para ser una tienda online, pero no tiene su carrito de compra. Aunque si se pueden administrar los productos.",
+      "repository": ""
+    },
+    {
+      "title": "Amazon Clone",
+      "ref": "Amazon",
+      "link": "https://challenge-1c21a.web.app/",
+      "description": "El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas.",
+      "repository": ""
+    },
+    {
+      "title": "Barbershop",
+      "ref": "Barbershop",
+      "link": "https://luichix.github.io/barbershop/",
+      "description": "Aquí estuve practicando diseño y estructura, no tendrá nada programado pero sí cumplió su papel de práctica en su momento.",
+      "repository": ""
+    },
+    {
+      "title": "Portafolio",
+      "ref": "Portafolio",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
+      "repository": ""
+    },
+    {
+      "title": "Nomina Vba",
+      "ref": "App1",
+      "link": "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
+      "description": "Esto de aquí, lo agregué porque sí, también es algo genial. Si lo deseas, envíame un mensaje en el siguiente formulario y te lo enviaré a tu correo.",
+      "repository": ""
+    },
+    {
+      "title": "Go-Digit",
+      "ref": "GoDigit",
+      "link": "https://godigit-app.firebaseapp.com/",
+      "description": "Aun estamos trabajando en esto",
+      "repository": ""
+    },
+    {
+      "title": "Nomina",
+      "ref": "Nomina",
+      "link": "https://nomina-80522.web.app/",
+      "description": "Posiblemente me tomara bastante tiempo",
+      "repository": ""
+    },
+    {
+      "title": "Storybook",
+      "ref": "Storybook",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Dejo esto por aca",
+      "repository": ""
+    },
+    {
+      "title": "Sforza",
+      "ref": "Sforza",
+      "link": "https://sforza-web-luichix.vercel.app/",
+      "description": "Una pequeña pagina para colegios.",
+      "repository": ""
+    },
+    {
+      "title": "Chat",
+      "ref": "Chat",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Aplicación de chat creada con React Native",
+      "repository": ""
+    }
   ]
 }

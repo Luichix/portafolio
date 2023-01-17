@@ -40,4 +40,6 @@
   --bg--opacity-black: rgba(4, 10, 19, 0.3);
   --text--color-red: #e86969;
   --text--color-green: #8ce6aa;
+
+  --font-family-poppins: 'Poppins', sans-serif;
 }

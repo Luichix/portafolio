@@ -1,4 +1,89 @@
 .skills {
-  width: 100%;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  padding: 4rem 0;
+}
+
+.title {
+  align-self: flex-start;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  color: var(--text--color-turqui);
+  line-height: 0;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-sky);
+  bottom: 0;
+  left: 0;
+  text-indent: 3em;
+}
+
+.carousel {
+  background-color: #202426;
+  border-radius: 20px;
+  position: relative;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.head h4 {
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 18px;
+  color: var(--text--color-turqui);
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  margin: 0;
+}
+
+.button:hover {
+  color: var(--color-sky);
+}
+
+.tech {
+  padding: 20px;
+  height: 400px;
+}
+
+.tech h4 {
+  text-align: center;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .tech {
+    padding: 0;
+  }
 }

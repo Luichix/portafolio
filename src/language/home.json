@@ -2,14 +2,14 @@
   "es": {
     "hi": "Hola,",
     "name": "Soy Luis Reynaldo",
-    "job": "Desarollador Javascript",
-    "contact": "Contactame"
+    "job": "Desarollador React Front-End",
+    "contact": "Contáctame"
   },
 
   "en": {
-    "hi": "Hello,",
-    "name": "I´m Luis Reynaldo",
-    "job": "Javascript Developer",
-    "contact": "Send Message"
+    "hi": "Hola,",
+    "name": "Soy Luis Reynaldo",
+    "job": "Desarrollador Javascript",
+    "contact": "Contáctame"
   }
 }

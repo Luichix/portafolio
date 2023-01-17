@@ -1,5 +1,6 @@
 import { Sidebar, Footer } from '@Components/layout/index'
 import { Home, About, Portfolio, Contact } from '@Pages/index'
+import Skills from '@Pages/skills'
 import styles from '@Styles/styles.module.css'
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
           <Home />
           <About />
           <Portfolio />
+          <Skills />
           <Contact />
           <Footer />
         </main>
