@@ -20,18 +20,18 @@ import Chat from '@Assets/img/chat.jpg'
 import Card from '@Components/custom/Card'
 import Detail from '@Components/custom/Detail'
 const images = {
-  App1,
+  // App1,
   Quesos,
-  Elina,
-  Amazon,
-  Barbershop,
+  // Elina,
+  // Amazon,
+  // Barbershop,
   Portafolio,
-  GoDigit,
-  Nomina,
+  // GoDigit,
+  // Nomina,
   Sforza,
-  Storybook,
-  Calendar,
-  Chat,
+  // Storybook,
+  // Calendar,
+  // Chat,
 } as any
 
 interface Project {
@@ -71,16 +71,19 @@ export function Portfolio() {
         <h2 className={style.title}>Portafolio</h2>
         <div className={style.container}>
           <Fade>
-            {text.map((element, index) => (
-              <Card
-                key={index}
-                name={element.title}
-                image={images[element.ref]}
-                alt={element.title}
-                repository={element.repository}
-                link={element.link}
-              />
-            ))}
+            {text.map(
+              (element, index) =>
+                images[element.ref] && (
+                  <Card
+                    key={index}
+                    name={element.title}
+                    image={images[element.ref]}
+                    alt={element.title}
+                    repository={element.repository}
+                    link={element.link}
+                  />
+                )
+            )}
           </Fade>
         </div>
       </div>

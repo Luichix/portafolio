@@ -36,13 +36,6 @@
       "repository": ""
     },
     {
-      "title": "Portafolio",
-      "ref": "Portafolio",
-      "link": "https://luichix.github.io/portafolio/",
-      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
-      "repository": ""
-    },
-    {
       "title": "Nomina Vba",
       "ref": "App1",
       "link": "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
@@ -82,6 +75,13 @@
       "ref": "Chat",
       "link": "https://luichix.github.io/portafolio/",
       "description": "Aplicación de chat creada con React Native",
+      "repository": ""
+    },
+    {
+      "title": "Portafolio",
+      "ref": "Portafolio",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
       "repository": ""
     }
   ],
@@ -122,13 +122,6 @@
       "repository": ""
     },
     {
-      "title": "Portafolio",
-      "ref": "Portafolio",
-      "link": "https://luichix.github.io/portafolio/",
-      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
-      "repository": ""
-    },
-    {
       "title": "Nomina Vba",
       "ref": "App1",
       "link": "https://drive.google.com/file/d/1n9U5PGCsZQkikT7oYOOcLjcVKs2Sk1Ok/view?usp=sharing",
@@ -168,6 +161,13 @@
       "ref": "Chat",
       "link": "https://luichix.github.io/portafolio/",
       "description": "Aplicación de chat creada con React Native",
+      "repository": ""
+    },
+    {
+      "title": "Portafolio",
+      "ref": "Portafolio",
+      "link": "https://luichix.github.io/portafolio/",
+      "description": "Creo que las nuevas configuraciones que hice son geniales, tiene un diseño muy limpio y mantenible. Me tomé mi tiempo poniendo el color a algunos íconos jeje.",
       "repository": ""
     }
   ]
