@@ -19,9 +19,12 @@
 }
 
 .figure {
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   position: relative;
+  border-radius: 12px;
+  padding: 8px;
+  background-color: var(--color-lobezno);
 }
 
 .image {
@@ -91,5 +94,10 @@
 
   .text {
     font-size: 1rem;
+  }
+
+  .figure {
+    width: 250px;
+    height: 150px;
   }
 }

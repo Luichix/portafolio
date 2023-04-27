@@ -20,7 +20,7 @@ import Barbershop from '../assets/img/barbershop.png'
 import Portafolio from '../assets/img/portafolio.png'
 import GoDigit from '../assets/img/godigit.png'
 import Nomina from '../assets/img/nomina.png'
-
+import Medical from '../assets/img/medical.png'
 // Info Header
 
 export const social = {
@@ -129,6 +129,18 @@ export const resume = [
 
 export const task = [
   [
+    'Medical',
+    Medical,
+    'https://nomina-80522.web.app/',
+    'Posiblemente me tomara bastante tiempo',
+  ],
+  [
+    'Nomina',
+    Nomina,
+    'https://nomina-80522.web.app/',
+    'Posiblemente me tomara bastante tiempo',
+  ],
+  [
     'Quesos El Rey',
     Quesos,
     'https://quesoselrey.com/',
@@ -170,12 +182,7 @@ export const task = [
     'https://godigit-app.firebaseapp.com/',
     'Aun estamos trabajando en esto',
   ],
-  [
-    'Nomina',
-    Nomina,
-    'https://nomina-80522.web.app/',
-    'Posiblemente me tomara bastante tiempo',
-  ],
+
 ]
 
 // Info Contact

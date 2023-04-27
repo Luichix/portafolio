@@ -1,37 +1,28 @@
 import { useState, useRef, useContext } from 'react'
 import { FcInfo, FcLink } from 'react-icons/fc'
 import { Fade } from 'react-awesome-reveal'
+import { LanguageContext } from '@Contexts/language'
 import style from './styles.module.css'
 import content from '@Language/portfolio.json'
-import { LanguageContext } from '@Contexts/language'
-import App1 from '@Assets/img/app1.png'
+import Modal from '@Components/common/Modal'
+import Card from '@Components/custom/Card'
+import Detail from '@Components/custom/Detail'
 import Quesos from '@Assets/img/quesos.png'
 import Elina from '@Assets/img/elina.png'
 import Amazon from '@Assets/img/amazon.png'
 import Barbershop from '@Assets/img/barbershop.png'
-import Portafolio from '@Assets/img/portafolio.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Nomina from '@Assets/img/nomina.png'
-import Modal from '@Components/common/Modal'
-import Sforza from '@Assets/img/sforza.png'
-import Storybook from '@Assets/img/storybook.png'
-import Calendar from '@Assets/img/calendar.png'
-import Chat from '@Assets/img/chat.jpg'
-import Card from '@Components/custom/Card'
-import Detail from '@Components/custom/Detail'
+import Medical from '@Assets/img/medical.png'
+
 const images = {
-  // App1,
+  Medical,
   Quesos,
-  // Elina,
+  Elina,
   Amazon,
   Barbershop,
-  Portafolio,
   GoDigit,
   Nomina,
-  // Sforza,
-  // Storybook,
-  // Calendar,
-  // Chat,
 } as any
 
 interface Project {

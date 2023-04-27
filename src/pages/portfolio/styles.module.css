@@ -36,15 +36,20 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2em;
-  justify-content: center;
   align-content: center;
+  justify-items: center;
 }
 
 @media screen and (max-width: 450px) {
   .title {
     font-size: 1.25rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   }
 }

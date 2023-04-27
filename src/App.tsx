@@ -12,7 +12,7 @@ function Main() {
           <Home />
           <About />
           <Portfolio />
-          <Skills />
+          {/* <Skills /> */}
           <Contact />
           <Footer />
         </main>
