@@ -9,7 +9,7 @@ import Card from '@Components/custom/Card'
 import Detail from '@Components/custom/Detail'
 import Quesos from '@Assets/img/quesos.png'
 import Elina from '@Assets/img/elina.png'
-import Amazon from '@Assets/img/amazon.png'
+// import Amazon from '@Assets/img/amazon.png'
 import Barbershop from '@Assets/img/barbershop.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Nomina from '@Assets/img/nomina.png'
@@ -19,7 +19,7 @@ const images = {
   Medical,
   Quesos,
   Elina,
-  Amazon,
+  // Amazon,
   Barbershop,
   GoDigit,
   Nomina,

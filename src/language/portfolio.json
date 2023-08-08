@@ -22,11 +22,11 @@
       "repository": "https://github.com/Luichix/chat-web"
     },
     {
-      "title": "Elina Closet",
+      "title": "Clothes Store",
       "ref": "Elina",
-      "link": "https://clothes-server-production.up.railway.app/",
+      "link": "https://store-monorepo-web.vercel.app/",
       "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
-      "repository": "https://github.com/Luichix/clothes-server"
+      "repository": "https://github.com/Luichix/store-monorepo"
     },
     {
       "title": "Fake Amazon Clone",
@@ -73,11 +73,11 @@
       "repository": "https://github.com/Luichix/chat-web"
     },
     {
-      "title": "Elina Closet",
+      "title": "Clothes Store",
       "ref": "Elina",
-      "link": "https://clothes-server-production.up.railway.app/",
+      "link": "https://store-monorepo-web.vercel.app/",
       "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
-      "repository": "https://github.com/Luichix/clothes-server"
+      "repository": "https://github.com/Luichix/store-monorepo"
     },
     {
       "title": "Fake Amazon Clone",
