@@ -21,6 +21,7 @@ import Portafolio from '../assets/img/portafolio.png'
 import GoDigit from '../assets/img/godigit.png'
 import Nomina from '../assets/img/nomina.png'
 import Medical from '../assets/img/medical.png'
+import Nicafest from '../assets/img/nicafest.png'
 // Info Header
 
 export const social = {
@@ -159,6 +160,12 @@ export const task = [
     'El primer proyecto de práctica, tiene muchos errores y no está completo. Todavía prodria mejorar algunas cosas.',
   ],
   [
+    'Nicaragua Festivo',
+    Nicafest,
+    'https://nicafest-web.vercel.app/',
+    'Pagina web diseñada para mostrar las festividades de nicaragua',
+  ],
+  [
     'Barbershop',
     Barbershop,
     'https://luichix.github.io/barbershop/',
@@ -182,7 +189,6 @@ export const task = [
     'https://godigit-app.firebaseapp.com/',
     'Aun estamos trabajando en esto',
   ],
-
 ]
 
 // Info Contact

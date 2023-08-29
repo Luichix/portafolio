@@ -36,6 +36,13 @@
       "repository": "https://github.com/Luichix/fake-amazone-clone"
     },
     {
+      "title": "Nicaragua Festivo",
+      "ref": "Nicafest",
+      "link": "https://nicafest-web.vercel.app/",
+      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
+      "repository": "https://github.com/Luichix/nicafest-web"
+    },
+    {
       "title": "Quesos El Rey",
       "ref": "Quesos",
       "link": "https://king-web-five.vercel.app/",
@@ -85,6 +92,13 @@
       "link": "https://fake-amazone-clone-luichix.vercel.app/",
       "description": "Fake Amazon Clone es un proyecto que desarrollé para practicar mis habilidades en desarrollo web. Se trata de una página web que simula la funcionalidad y diseño de Amazon, pero con productos ficticios y sin la capacidad de hacer transacciones reales. ",
       "repository": "https://github.com/Luichix/fake-amazone-clone"
+    },
+    {
+      "title": "Nicaragua Festivo",
+      "ref": "Nicafest",
+      "link": "https://nicafest-web.vercel.app/",
+      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
+      "repository": "https://github.com/Luichix/nicafest-web"
     },
     {
       "title": "Quesos El Rey",

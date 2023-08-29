@@ -10,6 +10,7 @@ import Detail from '@Components/custom/Detail'
 import Quesos from '@Assets/img/quesos.png'
 import Elina from '@Assets/img/elina.png'
 // import Amazon from '@Assets/img/amazon.png'
+import Nicafest from '@Assets/img/nicafest.png'
 import Barbershop from '@Assets/img/barbershop.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Nomina from '@Assets/img/nomina.png'
@@ -20,6 +21,7 @@ const images = {
   Quesos,
   Elina,
   // Amazon,
+  Nicafest,
   Barbershop,
   GoDigit,
   Nomina,
