@@ -33,6 +33,7 @@ interface Project {
   details: Record<string, string>[]
   link: string
   ref: string
+  tecnologies: string[]
 }
 
 export function Portfolio() {
@@ -71,6 +72,7 @@ export function Portfolio() {
                     key={index}
                     name={element.title}
                     image={images[element.ref]}
+                    tech={element.tecnologies}
                     alt={element.title}
                     repository={element.repository}
                     link={element.link}

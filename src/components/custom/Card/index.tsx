@@ -9,25 +9,32 @@ interface CardProps {
   repository: string
   image: string
   alt: string
+  tech: string[]
 }
 
-const Card = ({ name, link, image, alt, repository }: CardProps) => {
+const Card = ({ name, link, image, tech, alt, repository }: CardProps) => {
   return (
     <div className={styles.item}>
+      <h4 className={styles.name}>{name}</h4>
+      <div className={styles.tech}>
+        {tech.map((element, index) => (
+          <span key={index}>{element}</span>
+        ))}
+      </div>
       <figure className={styles.figure}>
-        <img src={image} className={styles.image} alt={alt}></img>
-        <div className={styles.info}>
-          <h4 className={styles.name}>{name}</h4>
-          <div className={styles.links}>
-            <a href={repository} target="_blank" rel="noreferrer">
-              <BsGithub />
-            </a>
-            <a href={link} target="_blank" rel="noreferrer">
-              <FaLink />
-            </a>
-          </div>
-        </div>
+        <img src={image} className={styles.image} alt={alt} />
       </figure>
+      <div className={styles.info}>
+        <div className={styles.links}>
+          <a href={repository} target="_blank" rel="noreferrer">
+            <BsGithub /> &nbsp; Ir al codigo
+          </a>
+          <a href={link} target="_blank" rel="noreferrer">
+            <FaLink />
+            &nbsp; Ir al proyecto
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

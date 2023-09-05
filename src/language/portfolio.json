@@ -5,56 +5,85 @@
       "ref": "Medical",
       "link": "https://medical-web-app.vercel.app/",
       "description": "Applicación médica como una herramienta útil y práctica para la gestion de citas y la administración de datos del paciente e historiales clinicos.",
-      "repository": "https://github.com/Luichix/medical-web"
+      "repository": "https://github.com/Luichix/medical-web",
+      "tecnologies": [
+        "Next JS",
+        "React",
+        "Redux",
+        "Storybook",
+        "Turborepo",
+        "Typescript"
+      ]
     },
     {
       "title": "Nomina",
       "ref": "Nomina",
       "link": "https://nomina-web.vercel.app/",
       "description": "Una herramienta que permita a las empresas calcular y gestionar la nomina de pago de sus empleados, que permita el procesamiento de datos precisos y oportunos, considerando todos los requerimientos legales y politicas de la empresa.",
-      "repository": "https://github.com/Luichix/nomina-web"
+      "repository": "https://github.com/Luichix/nomina-monorepo",
+      "tecnologies": [
+        "Next JS",
+        "React",
+        "Javascript",
+        "Express",
+        "Jest",
+        "PostgreSQL",
+        "Typescript"
+      ]
     },
     {
       "title": "Go-Digit",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
       "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/chat-web"
+      "repository": "https://github.com/Luichix/chat-web",
+      "tecnologies": [
+        "CSS Modules",
+        "Javascript",
+        "Firebase",
+        "GraphQL",
+        "React",
+        "Vite"
+      ]
     },
     {
       "title": "Clothes Store",
       "ref": "Elina",
       "link": "https://store-monorepo-web.vercel.app/",
       "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
-      "repository": "https://github.com/Luichix/store-monorepo"
-    },
-    {
-      "title": "Fake Amazon Clone",
-      "ref": "Amazon",
-      "link": "https://fake-amazone-clone-luichix.vercel.app/",
-      "description": "Fake Amazon Clone es un proyecto que desarrollé para practicar mis habilidades en desarrollo web. Se trata de una página web que simula la funcionalidad y diseño de Amazon, pero con productos ficticios y sin la capacidad de hacer transacciones reales. ",
-      "repository": "https://github.com/Luichix/fake-amazone-clone"
+      "repository": "https://github.com/Luichix/store-monorepo",
+      "tecnologies": [
+        "Next JS",
+        "Next Auth",
+        "Prisma",
+        "React",
+        "Tailwind",
+        "Typescript"
+      ]
     },
     {
       "title": "Nicaragua Festivo",
       "ref": "Nicafest",
       "link": "https://nicafest-web.vercel.app/",
       "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/nicafest-web"
+      "repository": "https://github.com/Luichix/nicafest-web",
+      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
     },
     {
       "title": "Quesos El Rey",
       "ref": "Quesos",
       "link": "https://king-web-five.vercel.app/",
       "description": "Pagina web sencilla, diseñada para una empresa familiar dedicada al procesamiento y comercialización de productos lácteos.",
-      "repository": "https://github.com/Luichix/king-web"
+      "repository": "https://github.com/Luichix/king-web",
+      "tecnologies": ["CSS Modules", "CRA", "Javascript", "Firebase"]
     },
     {
       "title": "Barbershop",
       "ref": "Barbershop",
       "link": "https://barber-web.vercel.app/",
       "description": "Mi proyecto de práctica de barbería es una landing page diseñada para promocionar los servicios de una barbería ficticia.",
-      "repository": "https://github.com/Luichix/barber-web"
+      "repository": "https://github.com/Luichix/barber-web",
+      "tecnologies": ["CSS", "Svelte", "Vite"]
     }
   ],
   "es": [
@@ -63,56 +92,85 @@
       "ref": "Medical",
       "link": "https://medical-web-app.vercel.app/",
       "description": "Applicación médica como una herramienta útil y práctica para la gestion de citas y la administración de datos del paciente e historiales clinicos.",
-      "repository": "https://github.com/Luichix/medical-web"
+      "repository": "https://github.com/Luichix/medical-web",
+      "tecnologies": [
+        "Next JS",
+        "React",
+        "Redux",
+        "Storybook",
+        "Turborepo",
+        "Typescript"
+      ]
     },
     {
       "title": "Nomina",
       "ref": "Nomina",
       "link": "https://nomina-web.vercel.app/",
       "description": "Una herramienta que permita a las empresas calcular y gestionar la nomina de pago de sus empleados, que permita el procesamiento de datos precisos y oportunos, considerando todos los requerimientos legales y politicas de la empresa.",
-      "repository": "https://github.com/Luichix/nomina-web"
+      "repository": "https://github.com/Luichix/nomina-monorepo",
+      "tecnologies": [
+        "Next JS",
+        "React",
+        "Javascript",
+        "Express",
+        "Jest",
+        "PostgreSQL",
+        "Typescript"
+      ]
     },
     {
       "title": "Go-Digit",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
       "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/chat-web"
+      "repository": "https://github.com/Luichix/chat-web",
+      "tecnologies": [
+        "CSS Modules",
+        "Javascript",
+        "Firebase",
+        "GraphQL",
+        "React",
+        "Vite"
+      ]
     },
     {
       "title": "Clothes Store",
       "ref": "Elina",
       "link": "https://store-monorepo-web.vercel.app/",
       "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
-      "repository": "https://github.com/Luichix/store-monorepo"
-    },
-    {
-      "title": "Fake Amazon Clone",
-      "ref": "Amazon",
-      "link": "https://fake-amazone-clone-luichix.vercel.app/",
-      "description": "Fake Amazon Clone es un proyecto que desarrollé para practicar mis habilidades en desarrollo web. Se trata de una página web que simula la funcionalidad y diseño de Amazon, pero con productos ficticios y sin la capacidad de hacer transacciones reales. ",
-      "repository": "https://github.com/Luichix/fake-amazone-clone"
+      "repository": "https://github.com/Luichix/store-monorepo",
+      "tecnologies": [
+        "Next JS",
+        "Next Auth",
+        "Prisma",
+        "React",
+        "Tailwind",
+        "Typescript"
+      ]
     },
     {
       "title": "Nicaragua Festivo",
       "ref": "Nicafest",
       "link": "https://nicafest-web.vercel.app/",
       "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/nicafest-web"
+      "repository": "https://github.com/Luichix/nicafest-web",
+      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
     },
     {
       "title": "Quesos El Rey",
       "ref": "Quesos",
       "link": "https://king-web-five.vercel.app/",
       "description": "Pagina web sencilla, diseñada para una empresa familiar dedicada al procesamiento y comercialización de productos lácteos.",
-      "repository": "https://github.com/Luichix/king-web"
+      "repository": "https://github.com/Luichix/king-web",
+      "tecnologies": ["CSS Modules", "CRA", "Javascript", "Firebase"]
     },
     {
       "title": "Barbershop",
       "ref": "Barbershop",
       "link": "https://barber-web.vercel.app/",
       "description": "Mi proyecto de práctica de barbería es una landing page diseñada para promocionar los servicios de una barbería ficticia.",
-      "repository": "https://github.com/Luichix/barber-web"
+      "repository": "https://github.com/Luichix/barber-web",
+      "tecnologies": ["CSS", "Svelte", "Vite"]
     }
   ]
 }

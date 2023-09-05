@@ -33,6 +33,7 @@ export function About() {
               {text.salute} {getAge(text.age)} {text.resume}
             </p>
             <p>{text.goals}</p>
+            <p>{text.me}</p>
           </Fade>
         </div>
       </div>

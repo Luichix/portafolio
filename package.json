@@ -10,6 +10,7 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "classnames": "^2.3.2",

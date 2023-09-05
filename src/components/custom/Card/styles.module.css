@@ -1,15 +1,16 @@
 .item {
   position: relative;
   width: 100%;
+  padding: 20px;
 }
 
 .name {
   position: relative;
-  text-align: center;
-  font-size: 1em;
-  color: var(--text--color-turqui);
+  font-size: 1.5rem;
+  color: var(--text--color-white);
   margin: 0;
   font-family: var(--font-family-poppins);
+  padding: 10px 0;
 }
 
 .item:hover .info {
@@ -19,15 +20,19 @@
 }
 
 .figure {
-  width: 350px;
-  height: 200px;
+  margin: 0;
+  width: 600px;
+  height: 350px;
   position: relative;
+  display: flex;
   border-radius: 12px;
-  padding: 8px;
-  background-color: var(--color-lobezno);
+  padding: 4px;
+  background-color: var(--color-pearl);
 }
 
 .image {
+  border-radius: 12px;
+
   position: relative;
   width: 100%;
   height: 100%;
@@ -38,20 +43,33 @@
 }
 
 .info {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   z-index: 3;
   right: 0;
   left: 0;
   bottom: 0px;
-  opacity: 0;
+  /* opacity: 0; */
   transition: all ease-in-out 0.3s;
   justify-content: center;
   z-index: 0;
-  background-color: var(--bg--color-lightblue);
+  /* background-color: var(--bg--color-lightblue); */
   padding: 10px 0 0 0;
   gap: 6px;
+}
+
+.tech {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+.tech span {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--color-lobezno);
+  padding: 8px;
+  color: var(--text--color-white);
 }
 
 .links {
@@ -62,18 +80,20 @@
 }
 
 .links a {
-  width: 50%;
+  /* width: 50%; */
   font-family: var(--font-family-poppins);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  font-size: 20px;
+  padding: 16px;
+  font-size: 18px;
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
   border-radius: 20px;
   color: var(--text--color-turqui);
+  text-decoration: none;
+  background-color: var(--color-lobezno);
 }
 .links a:hover {
   background-color: var(--bg--color-water);

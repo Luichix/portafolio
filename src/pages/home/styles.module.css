@@ -27,12 +27,13 @@
 }
 
 .home h3 {
-  font-size: 2em;
+  font-size: 2rem;
   color: var(--text--color-turqui);
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.5rem;
   text-decoration-color: #149ddd;
   font-family: 'Alata', sans-serif;
+  line-height: 48px;
 }
 
 .home p {
