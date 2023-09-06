@@ -56,7 +56,7 @@ const Scroll = forwardRef<PropsWithRef<HTMLAnchorElement>, ScrollProps>(
 
 type Links = 'home' | 'about' | 'skills' | 'portfolio' | 'contact'
 
-const elements = ['home', 'about', 'skills', 'portfolio', 'contact'] as Links[]
+const elements = ['home', 'about', 'portfolio', 'contact'] as Links[] // 'skills',
 
 const icons = [
   <GoHome key="home" />,

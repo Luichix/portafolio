@@ -65,7 +65,14 @@
   box-shadow: 6px 6px 6px #0008;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1120px) {
+  .section p {
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .section h2 {
     font-size: 1.25rem;
   }
