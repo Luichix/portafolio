@@ -1,24 +1,18 @@
 {
   "es": {
     "title": "Sobre mí",
-    "subtitle": "Información sobre mi",
-    "job": "Soy Desarrollador Full Stack",
-    "comment": "En formación, licenciado en Administración de Empresas",
-    "salute": "Soy Luis Reynaldo Pérez, un apasionado desarrollador FullStack Javascript con ",
+    "salute": "Soy Desarrollador Web Full Stack y Administrador de Empresas, con más de 5 años de experiencia en el desarrollo de sistemas y 2 años en el mundo del desarrollo web.",
+    "resume": "Al tener un perfil multidisciplinario, he adquirido una variedad de habilidades que me han permitido adaptarme rápidamente a diversos campos de trabajo.",
     "age": "1995/09/24",
-    "resume": "años. Mi enfoque principal se centra en el desarrollo frontend de aplicaciones utilizando tecnologías de vanguardia como React.",
-    "goals": "Mi viaje en el mundo de la programación comenzó en 2017 cuando descubrí el potencial de VBA en Excel. Utilizando esta herramienta, diseñé sistemas integrales de venta, inventario, nómina y contabilidad que mejoraron significativamente las operaciones de diversas pequeñas y medianas empresas.",
-    "me": "Lo que me distingue es mi enfoque multifacético. Además de mi experiencia en desarrollo, he explorado campos administrativos a lo largo de mi formación. Esta combinación me permite abordar proyectos desde una perspectiva completa y estratégica, siempre buscando soluciones creativas y eficientes a los desafíos que se presentan. Estoy convencido de que mi experiencia y habilidades pueden agregar un valor significativo a cualquier equipo o proyecto en el que me involucre."
+    "access": "Puedes descargar mi curriculum aca:",
+    "download": "Descargar Curriculum"
   },
   "en": {
-    "title": "Sobre mí",
-    "subtitle": "Información sobre mi",
-    "job": "Soy Desarrollador Full Stack",
-    "comment": "En formación, licenciado en Administración de Empresas",
-    "salute": "Soy Luis Reynaldo Pérez, un apasionado desarrollador FullStack Javascript con ",
+    "title": "About me",
+    "salute": "I am a Full Stack Developer with a background in Business Administration. I have been involved in system development for over 5 years and have spent the last 2 years in the web development world.",
+    "resume": "Having a multidisciplinary profile, I have acquired a variety of skills that have allowed me to adapt quickly to various fields of work.",
     "age": "1995/09/24",
-    "resume": "años. Mi enfoque principal se centra en el desarrollo frontend de aplicaciones utilizando tecnologías de vanguardia como React.",
-    "goals": "Mi viaje en el mundo de la programación comenzó en 2017 cuando descubrí el potencial de VBA en Excel. Utilizando esta herramienta, diseñé sistemas integrales de venta, inventario, nómina y contabilidad que mejoraron significativamente las operaciones de diversas pequeñas y medianas empresas.",
-    "me": "Lo que me distingue es mi enfoque multifacético. Además de mi experiencia en desarrollo, he explorado campos administrativos a lo largo de mi formación. Esta combinación me permite abordar proyectos desde una perspectiva completa y estratégica, siempre buscando soluciones creativas y eficientes a los desafíos que se presentan. Estoy convencido de que mi experiencia y habilidades pueden agregar un valor significativo a cualquier equipo o proyecto en el que me involucre."
+    "access": "You can download my resume here:",
+    "download": "Download resume"
   }
 }

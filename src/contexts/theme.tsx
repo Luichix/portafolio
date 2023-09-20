@@ -1,20 +1,27 @@
-import { createContext, PropsWithChildren, useEffect, useState } from 'react'
+import {
+  createContext,
+  Dispatch,
+  PropsWithChildren,
+  SetStateAction,
+  useEffect,
+  useState,
+} from 'react'
 import { saveToStorage, loadFromStorage } from '@Services/helpers'
 
 export type Theme = 'light' | 'dark'
 
 export interface IThemeContext {
-  theme: Theme
-  changeTheme: () => void
+  theme: boolean
+  setTheme: Dispatch<SetStateAction<boolean>>
 }
 
 export const ThemeContext = createContext<IThemeContext>({
-  theme: 'light',
-  changeTheme() {},
+  theme: false,
+  setTheme() {},
 })
 
 export const ThemeProvider = ({ children }: PropsWithChildren) => {
-  const [theme, setTheme] = useState<Theme>('light')
+  const [theme, setTheme] = useState<boolean>(false)
 
   useEffect(() => {
     initialTheme()
@@ -23,25 +30,27 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
   const initialTheme = async () => {
     const value = loadFromStorage('@themeNomina') as Promise<Theme>
     if ((await value) === 'dark') {
-      setTheme('dark')
+      setTheme(true)
     } else {
       saveToStorage('@themeNomina', 'light')
-      setTheme('light')
+      setTheme(false)
     }
   }
 
-  const changeTheme = () => {
-    if (theme === 'dark') {
-      saveToStorage('@themeNomina', 'light')
-      setTheme('light')
-    } else {
+  useEffect(() => {
+    changeTheme(theme)
+  }, [theme])
+
+  const changeTheme = (value: boolean) => {
+    if (value) {
       saveToStorage('@themeNomina', 'dark')
-      setTheme('dark')
+    } else {
+      saveToStorage('@themeNomina', 'light')
     }
   }
 
   const value = {
-    changeTheme,
+    setTheme,
     theme,
   }
 

@@ -19,8 +19,7 @@
 }
 
 .home h1 {
-  color: var(--text--color-graphite);
-  font-size: 5em;
+  font-size: 5rem;
   font-weight: 600;
   font-family: 'Alata', sans-serif;
   margin: 0;
@@ -28,46 +27,86 @@
 
 .home h3 {
   font-size: 2rem;
-  color: var(--text--color-turqui);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: #149ddd;
   font-family: 'Alata', sans-serif;
   line-height: 48px;
 }
 
 .home p {
-  font-size: 1.5em;
+  font-size: 1.35rem;
+  line-height: 2.25rem;
+  max-width: 700px;
+  letter-spacing: 0.5px;
   font-family: 'Poppins', sans-serif;
 }
 
 .home p span {
-  color: #fff;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid var(--border--color-turqui);
 }
 
 .button {
   margin-top: 120px;
   background-color: transparent;
-  border: 2px solid #149ddd;
+  border: 2px solid var(--border--color-turqui);
   border-radius: 10px;
-  padding: 12px;
+  padding: 12px 12px 12px 16px;
   width: max-content;
   position: relative;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text--color-turqui);
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.accesibility {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.toggles {
+  font-size: 32px;
+  top: 34px;
+  right: 34px;
+}
+
+.swithLanguage {
+  top: 28px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: scale 0.3s ease;
+}
+
+.swithLanguage:active {
+  transform: scale(0.8);
+}
+
+.language {
+  width: 30px;
+  stroke-width: 2.5;
 }
 
 @media screen and (max-width: 450px) {
   .home h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   .home h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .button {
     font-size: 14px;

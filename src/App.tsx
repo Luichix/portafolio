@@ -1,18 +1,35 @@
+import { useContext } from 'react'
 import { Sidebar, Footer } from '@Components/layout/index'
 import { Home, About, Portfolio, Contact } from '@Pages/index'
 import Skills from '@Pages/skills'
 import styles from '@Styles/styles.module.css'
+import { ThemeContext } from './contexts'
+import classNames from 'classnames'
 
 function Main() {
+  const { theme } = useContext(ThemeContext)
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(styles.container, {
+        bg_light: !theme,
+        bg_dark: theme,
+        text_light: !theme,
+        text_dark: theme,
+      })}
+    >
       <div className={styles.section}>
         <Sidebar />
-        <main id="main" className={styles.main}>
+        <main
+          id="main"
+          className={classNames(styles.main, {
+            [styles.backgroundDark]: theme,
+            [styles.backgroundLight]: !theme,
+          })}
+        >
           <Home />
           <About />
           <Portfolio />
-          {/* <Skills /> */}
+          <Skills />
           <Contact />
           <Footer />
         </main>

@@ -2,6 +2,7 @@
 /* @import './minireset.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+@import '@theme-toggles/react/css/Expand.css';
 
 body {
   margin: 0;
@@ -104,4 +105,40 @@ h6 {
 
 .firebase {
   color: #ffcc2b;
+}
+
+/* theme colors */
+
+.bg_light {
+  background-color: var(--color-light);
+}
+
+.bg_dark {
+  background-color: var(--color-dark);
+}
+
+.title_light {
+  color: var(--bg--color-water);
+  text-decoration-color: var(--bg--color-water);
+}
+
+.title_dark {
+  color: var(--text--color-turqui);
+  text-decoration-color: var(--text--color-turqui);
+}
+
+.text_light {
+  color: var(--text--color-dark-secondary);
+}
+
+.text_dark {
+  color: var(--text--color-light);
+}
+
+.light {
+  color: var(--text--color-dark);
+}
+
+.dark {
+  color: var(--text--color-light);
 }
