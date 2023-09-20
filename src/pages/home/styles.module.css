@@ -63,43 +63,6 @@
   align-items: center;
 }
 
-.accesibility {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-}
-
-.toggles {
-  font-size: 32px;
-  top: 34px;
-  right: 34px;
-}
-
-.swithLanguage {
-  top: 28px;
-  right: 100px;
-  display: flex;
-  flex-direction: row;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  font-weight: 600;
-  transition: scale 0.3s ease;
-}
-
-.swithLanguage:active {
-  transform: scale(0.8);
-}
-
-.language {
-  width: 30px;
-  stroke-width: 2.5;
-}
-
 @media screen and (max-width: 450px) {
   .home h1 {
     font-size: 3rem;

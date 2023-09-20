@@ -12,12 +12,12 @@ export type Theme = 'light' | 'dark'
 
 export interface IThemeContext {
   theme: boolean
-  setTheme: Dispatch<SetStateAction<boolean>>
+  changeTheme: (value: boolean) => void
 }
 
 export const ThemeContext = createContext<IThemeContext>({
   theme: false,
-  setTheme() {},
+  changeTheme(boolean) {},
 })
 
 export const ThemeProvider = ({ children }: PropsWithChildren) => {
@@ -37,20 +37,18 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     }
   }
 
-  useEffect(() => {
-    changeTheme(theme)
-  }, [theme])
-
   const changeTheme = (value: boolean) => {
     if (value) {
       saveToStorage('@themeNomina', 'dark')
+      setTheme(true)
     } else {
       saveToStorage('@themeNomina', 'light')
+      setTheme(false)
     }
   }
 
   const value = {
-    setTheme,
+    changeTheme,
     theme,
   }
 

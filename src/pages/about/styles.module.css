@@ -37,7 +37,7 @@
 .section {
   display: grid;
   grid-template-columns: 1fr 350px;
-  gap: 20px;
+  gap: 30px;
   align-self: center;
   width: 100%;
 }

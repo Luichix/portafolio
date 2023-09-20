@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Lenguajes",
+    "list": [
+      {
+        "src": "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white",
+        "alt": "HTML5",
+        "domain": "avanzado",
+        "score": 7
+      },
+
+      {
+        "src": "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white",
+        "alt": "CSS3",
+        "domain": "intermedio",
+        "score": 6
+      },
+
+      {
+        "src": "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E",
+        "alt": "JavaScript",
+        "domain": "avanzado",
+        "score": 7
+      },
+      {
+        "src": "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white",
+        "alt": "TypeScript",
+        "domain": "intermedio",
+        "score": 6
+      },
+      {
+        "src": "https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54",
+        "alt": "Python",
+        "domain": "basico",
+        "score": 4
+      },
+      {
+        "src": "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white",
+        "alt": "GraphQL",
+        "domain": "intermedio",
+        "score": 6
+      }
+    ]
+  },
+  {
+    "title": "Frameworks y librerias",
+    "list": [
+      {
+        "src": "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB",
+        "alt": "React",
+        "domain": "avanzado",
+        "score": 7
+      },
+
+      {
+        "src": "https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB",
+        "alt": "React Native",
+        "domain": "avanzado",
+        "score": 6
+      },
+
+      {
+        "src": "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&amp;logo=redux&amp;logoColor=white",
+        "alt": "Redux",
+        "domain": "intermedio",
+        "score": 6
+      },
+
+      {
+        "src": "https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&amp;logo=apollo-graphql",
+        "alt": "Apollo-GraphQL",
+        "domain": "intermedio",
+        "score": 7
+      },
+
+      {
+        "src": "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&amp;logo=express&amp;logoColor=%2361DAFB",
+        "alt": "Express.js",
+        "domain": "basico",
+        "score": 4
+      },
+      {
+        "src": "https://img.shields.io/badge/Next-black?style=for-the-badge&amp;logo=next.js&amp;logoColor=white",
+        "alt": "Next JS",
+        "domain": "intermedio",
+        "score": 6
+      },
+
+      {
+        "src": "https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&amp;logo=expo&amp;logoColor=#D04A37",
+        "alt": "Expo",
+        "domain": "intermedio",
+        "score": 6
+      },
+      {
+        "src": "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&amp;logo=django&amp;logoColor=white",
+        "alt": "Django",
+        "domain": "basico",
+        "score": 3
+      }
+    ]
+  },
+  {
+    "title": "Tecnologías",
+    "list": [
+      {
+        "src": "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&amp;logo=firebase",
+        "alt": "Firebase",
+        "domain": "intermedio",
+        "score": 6
+      },
+      {
+        "src": "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white",
+        "alt": "NodeJS",
+        "domain": "basico",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "title": "Bases de datos",
+    "list": [
+      {
+        "src": "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white",
+        "alt": "MongoDB",
+        "domain": "basico",
+        "score": 3
+      },
+
+      {
+        "src": "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white",
+        "alt": "MySQL",
+        "domain": "intermedio",
+        "score": 5
+      },
+
+      {
+        "src": "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white",
+        "alt": "Postgres",
+        "domain": "basico",
+        "score": 3
+      },
+
+      {
+        "src": "https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white",
+        "alt": "SQLite",
+        "domain": "intermedio",
+        "score": 6
+      }
+    ]
+  },
+  {
+    "title": "Herramientas",
+    "list": [
+      {
+        "src": "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white",
+        "alt": "Figma",
+        "domain": "intermedio",
+        "score": 5
+      },
+      {
+        "src": "https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&amp;logo=confluence&amp;logoColor=white",
+        "alt": "Confluence",
+        "domain": "intermedio",
+        "score": 4
+      },
+
+      {
+        "src": "https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&amp;logo=jira&amp;logoColor=white",
+        "alt": "Jira",
+        "domain": "intermedio",
+        "score": 5
+      },
+      {
+        "src": "https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&amp;logo=eslint&amp;logoColor=white",
+        "alt": "ESLint",
+        "domain": "intermedio",
+        "score": 7
+      },
+      {
+        "src": "https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&amp;logo=yarn&amp;logoColor=white",
+        "alt": "Yarn",
+        "domain": "intermedio",
+        "score": 6
+      }
+    ]
+  }
+]

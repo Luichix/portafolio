@@ -1,0 +1,70 @@
+{
+  "using": [
+    { "element": "html5", "domain": "Frontend" },
+    { "element": "css3", "domain": "Frontend" },
+    { "element": "javascript", "domain": "Frontend" },
+    { "element": "typescript", "domain": "Frontend" },
+    { "element": "react", "domain": "Frontend" },
+    { "element": "react native", "domain": "Frontend" },
+    { "element": "redux", "domain": "Frontend" },
+    { "element": "nextjs", "domain": "Frontend" },
+    { "element": "tailwind", "domain": "Frontend" },
+    { "element": "storybook", "domain": "Frontend" },
+    { "element": "nodejs", "domain": "Backend" },
+    { "element": "expressjs", "domain": "Backend" },
+    { "element": "graphql", "domain": "Backend" },
+    { "element": "apollo", "domain": "Backend" },
+    { "element": "firebase", "domain": "Backend" },
+    { "element": "jest", "domain": "Backend" },
+    { "element": "mongodb", "domain": "Bases de Datos" },
+    { "element": "mysql", "domain": "Bases de Datos" },
+    { "element": "postgresql", "domain": "Bases de Datos" },
+    { "element": "sqlite", "domain": "Bases de Datos" },
+    { "element": "expo", "domain": "Tecnologías adicionales" }
+  ],
+  "learning": [
+    { "element": "python", "domain": "Tecnologías adicionales" },
+    { "element": "fastapi", "domain": "Tecnologías adicionales" },
+    { "element": "django", "domain": "Tecnologías adicionales" },
+    { "element": "astro", "domain": "Tecnologías adicionales" },
+    { "element": "svelte", "domain": "Tecnologías adicionales" }
+  ],
+  "other": [
+    {
+      "element": "git",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "linux",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "eslint",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "vba",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "excel",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "powerbi",
+      "domain": "Tecnologías de desarrollo y sistemas operativos"
+    },
+    {
+      "element": "figma",
+      "domain": "Herramientas de diseño y gestión de proyectos"
+    },
+    {
+      "element": "confluence",
+      "domain": "Herramientas de diseño y gestión de proyectos"
+    },
+    {
+      "element": "jira",
+      "domain": "Herramientas de diseño y gestión de proyectos"
+    }
+  ]
+}

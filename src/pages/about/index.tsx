@@ -6,20 +6,8 @@ import data from '@Language/about.json'
 import classNames from 'classnames'
 import profile from '../../assets/img/profile.jpg'
 import pdfCv from '../../assets/pdf/cvoficial.pdf'
-import { FcNext, FcDocument } from 'react-icons/fc'
-function getAge(dateString: string) {
-  let hoy = new Date()
-  let fechaNacimiento = new Date(dateString)
-  let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
-  let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
-  if (
-    diferenciaMeses < 0 ||
-    (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
-  ) {
-    edad--
-  }
-  return edad
-}
+import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
+import { FcDownload } from 'react-icons/fc'
 
 export function About() {
   const { language } = useContext(LanguageContext)
@@ -62,8 +50,10 @@ export function About() {
               />
             </figure>
           </div>
-          <div>
-            <span className={style.access}>{text.access}</span>
+        </div>
+        <div>
+          <span className={style.access}>{text.access}</span>
+          <div style={{ display: 'flex', gap: '30px' }}>
             <a
               href={pdfCv}
               target="_blank"
@@ -74,9 +64,24 @@ export function About() {
               })}
             >
               <i>
-                <FcDocument style={{ display: 'block' }} />
+                <FcDownload style={{ display: 'block' }} />
               </i>
-              <span>{text.download}</span>
+              <span>{text.cv}</span>
+            </a>
+            <a
+              href={pdfRIntegral}
+              target="_blank"
+              rel="noreferrer"
+              className={classNames(style.button, {
+                title_light: !theme,
+                title_dark: theme,
+              })}
+            >
+              <i>
+                <FcDownload style={{ display: 'block' }} />
+              </i>
+
+              <span>{text.report}</span>
             </a>
           </div>
         </div>

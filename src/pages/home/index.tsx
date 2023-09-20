@@ -1,41 +1,19 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { LanguageContext } from '@Contexts/language'
 import text from '@Language/home.json'
 import styles from './styles.module.css'
 import { Link } from 'react-scroll'
-import { Expand } from '@theme-toggles/react'
 import { ThemeContext } from '@Contexts/theme'
-import Language from '@Components/svg/Language'
+
 import { FaArrowDown } from 'react-icons/fa'
 import classNames from 'classnames'
 
 export function Home() {
-  const { language, changeLanguage } = useContext(LanguageContext)
+  const { language } = useContext(LanguageContext)
   const content = text[language]
-  const { theme, setTheme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
   return (
     <section id="home" className={styles.home}>
-      <div className={styles.accesibility}>
-        <Expand
-          toggled={theme}
-          toggle={setTheme}
-          className={classNames(styles.toggles, {
-            text_light: !theme,
-            text_dark: theme,
-          })}
-        />
-        <button
-          type="button"
-          onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}
-          className={classNames(styles.swithLanguage, {
-            text_light: !theme,
-            text_dark: theme,
-          })}
-        >
-          <i>{language}</i>
-          <Language className={styles.language} />
-        </button>
-      </div>
       <div
         className={classNames(styles.container, {
           light: !theme,

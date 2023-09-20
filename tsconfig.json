@@ -28,7 +28,7 @@
       "@Services/*": ["src/services/*"],
       "@Styles/*": ["src/styles/*"],
       "@Utils/*": ["src/utils/*"],
-      "@Assets/*": ["assets/*"]
+      "@Assets/*": ["src/assets/*"]
     }
   },
   "include": ["src"],

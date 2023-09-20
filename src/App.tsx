@@ -17,6 +17,28 @@ function Main() {
         text_dark: theme,
       })}
     >
+      <div
+        style={{
+          position: 'fixed',
+          margin: 'auto',
+          top: 0,
+          right: 0,
+          width: '300px',
+          backgroundColor: '#fea',
+          padding: '10px',
+          borderRadius: ' 0 0 10px 10px  ',
+          color: '#333',
+          textAlign: 'center',
+          zIndex: 10,
+          display: 'flex',
+          flexDirection: 'column',
+          opacity: 0.7,
+          fontWeight: 'bold',
+        }}
+      >
+        <span>En Proceso de Actualizacion</span>
+        <span>20 Septiembre 2023</span>
+      </div>
       <div className={styles.section}>
         <Sidebar />
         <main
@@ -28,8 +50,8 @@ function Main() {
         >
           <Home />
           <About />
-          <Portfolio />
           <Skills />
+          <Portfolio />
           <Contact />
           <Footer />
         </main>

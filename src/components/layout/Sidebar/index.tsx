@@ -6,10 +6,11 @@ import {
   useRef,
   useState,
   PropsWithChildren,
+  SetStateAction,
+  Dispatch,
 } from 'react'
 import ReactDOM from 'react-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
-import { LanguageContext } from '@Contexts/language'
 import lang from '@Language/sidebar.json'
 import perfil from '@Assets/img/perfil.png'
 import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
@@ -17,6 +18,9 @@ import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa'
 import { HiMenu, HiCode, HiArrowCircleUp } from 'react-icons/hi'
 import style from './styles.module.css'
 import classNames from 'classnames'
+import { Expand } from '@theme-toggles/react'
+import Language from '@Components/svg/Language'
+import { ThemeContext, LanguageContext } from '@Contexts/index'
 
 /* ------------------------------- interfaces ------------------------------- */
 
@@ -71,8 +75,10 @@ const icons = [
 export function Sidebar() {
   /* ------------------------------ text content ------------------------------ */
 
-  const { language } = useContext(LanguageContext)
+  const { language, changeLanguage } = useContext(LanguageContext)
   const text = lang[language]
+
+  const { theme, changeTheme } = useContext(ThemeContext)
 
   /* ----------------------------- toggle sidebar ----------------------------- */
 
@@ -115,6 +121,21 @@ export function Sidebar() {
         [style.show]: toggle,
       })}
     >
+      <div className={style.accesibility}>
+        <Expand
+          toggled={theme}
+          toggle={changeTheme as any}
+          className={classNames(style.toggles)}
+        />
+        <button
+          type="button"
+          onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}
+          className={classNames(style.swithLanguage)}
+        >
+          <i>{language}</i>
+          <Language className={style.language} />
+        </button>
+      </div>
       <Menu onToggle={handleToggle}>
         <i>{toggle ? <HiMenu /> : <HiCode />}</i>
       </Menu>
