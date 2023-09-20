@@ -1,4 +1,4 @@
-function getAge(dateString: string) {
+export function getAge(dateString: string) {
   let hoy = new Date()
   let fechaNacimiento = new Date(dateString)
   let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
