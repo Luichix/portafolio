@@ -5,6 +5,7 @@ import { ThemeContext, LanguageContext } from '@Contexts/index'
 import data from '@Language/skills.json'
 import { USING_STACK, OTHER_STACK, LEARNING_STACK } from '@Services/stack'
 import tecnologies from '@Language/stack.json'
+import Paragraph from '@Components/common/Paragraph'
 const Skills = () => {
   const { language } = useContext(LanguageContext)
 
@@ -28,12 +29,14 @@ const Skills = () => {
             text_dark: theme,
           })}
         >
-          <p className={styles.category}>{text.description}</p>
-          <span className={styles.category}>{text.using}</span>
+          <Paragraph theme={theme} indent>
+            {text.description}
+          </Paragraph>
+          <Paragraph theme={theme}>{text.using}</Paragraph>
           <Stack list={tecnologies.using} stack={USING_STACK} />
-          <span className={styles.category}>{text.learning}</span>
+          <Paragraph theme={theme}>{text.learning}</Paragraph>
           <Stack list={tecnologies.learning} stack={LEARNING_STACK} />
-          <span className={styles.category}>{text.other}</span>
+          <Paragraph theme={theme}>{text.other}</Paragraph>
           <Stack list={tecnologies.other} stack={OTHER_STACK} />
         </div>
       </div>

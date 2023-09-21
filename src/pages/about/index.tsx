@@ -8,6 +8,7 @@ import profile from '../../assets/img/profile.jpg'
 import pdfCv from '../../assets/pdf/cvoficial.pdf'
 import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
 import { FcDownload } from 'react-icons/fc'
+import Paragraph from '@Components/common/Paragraph'
 
 export function About() {
   const { language } = useContext(LanguageContext)
@@ -31,13 +32,17 @@ export function About() {
           <Fade
             triggerOnce
             className={classNames({
-              light: !theme,
-              dark: theme,
+              text_light: !theme,
+              text_dark: theme,
             })}
           >
             <div>
-              <p>{text.salute}</p>
-              <p>{text.resume}</p>
+              <Paragraph theme={theme} indent>
+                {text.salute}
+              </Paragraph>
+              <Paragraph theme={theme} indent>
+                {text.resume}
+              </Paragraph>
             </div>
           </Fade>
           <div>

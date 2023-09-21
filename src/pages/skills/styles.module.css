@@ -39,18 +39,6 @@
   gap: 30px;
 }
 
-.stack p {
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
-}
-
-.category {
-  padding: 0;
-  margin: 0;
-  font-size: 1.25rem;
-}
-
 .group {
   display: grid;
   grid-template-columns: repeat(10, 1fr);

@@ -34,11 +34,7 @@
 }
 
 .home p {
-  font-size: 1.35rem;
-  line-height: 2.25rem;
   max-width: 700px;
-  letter-spacing: 0.5px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .home p span {

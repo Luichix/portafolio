@@ -42,12 +42,6 @@
   width: 100%;
 }
 
-.section p {
-  line-height: 2.5;
-  text-indent: 3rem;
-  font-size: 1.25rem;
-}
-
 .figure {
   border: 4px solid var(--text--color-graphite);
   box-sizing: border-box;

@@ -16,7 +16,8 @@
 }
 
 .backgroundDark {
-  background-image: url(../assets/svg/background-dark.svg);
+  background-color: var(--color-dark);
+  /* background-image: url(../assets/svg/background-dark.svg); */
 }
 
 .backgroundLight {

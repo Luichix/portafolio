@@ -58,7 +58,7 @@ h6 {
 }
 
 .text_light {
-  color: var(--text--color-dark-secondary);
+  color: var(--text--color-dark);
 }
 
 .text_dark {
@@ -66,9 +66,9 @@ h6 {
 }
 
 .light {
-  color: var(--text--color-dark);
+  color: var(--color-black);
 }
 
 .dark {
-  color: var(--text--color-light);
+  color: var(--color-white);
 }

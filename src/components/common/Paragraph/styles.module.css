@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.5px;
+}
+
+.indent {
+  text-indent: 3rem;
+}

@@ -7,6 +7,7 @@ import { ThemeContext } from '@Contexts/theme'
 
 import { FaArrowDown } from 'react-icons/fa'
 import classNames from 'classnames'
+import Paragraph from '@Components/common/Paragraph'
 
 export function Home() {
   const { language } = useContext(LanguageContext)
@@ -17,7 +18,7 @@ export function Home() {
       <div
         className={classNames(styles.container, {
           light: !theme,
-          dark: theme,
+          text_dark: theme,
         })}
       >
         <h1>
@@ -32,14 +33,7 @@ export function Home() {
         >
           {content.job}
         </h3>
-        <p
-          className={classNames({
-            text_light: !theme,
-            text_dark: theme,
-          })}
-        >
-          {content.about}
-        </p>
+        <Paragraph theme={theme}>{content.about}</Paragraph>
         <Link
           className={classNames(styles.button, {
             title_light: !theme,
