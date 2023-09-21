@@ -1,16 +1,39 @@
 {
-  "en": {
-    "contact": "Nombre",
-    "email": "Correo",
-    "issue": "Asunto",
-    "message": "Mensaje",
-    "submit": "Enviar"
-  },
   "es": {
+    "title": "Contacto",
+    "info": "Información de Contacto",
+    "send": "¡Enviame un mensaje!",
     "contact": "Name",
-    "email": "email",
-    "issue": "Issue",
-    "message": "Message",
-    "submit": "Send"
+    "email": {
+      "label": "Escribe tu correo electrónico:",
+      "placeholder": "ejemplo@correo.com"
+    },
+    "issue": {
+      "label": "Añade un asunto:",
+      "placeholder": "Indique su asunto aqui..."
+    },
+    "message": {
+      "label": "Escribe tu mensaje:",
+      "placeholder": "Por favor, escriba su mensaje aqui..."
+    },
+    "submit": "Enviar el mensaje"
+  },
+  "en": {
+    "title": "Contact",
+    "info": "Información de Contacto",
+    "send": "Envia un mensaje",
+    "email": {
+      "label": "Escribe tu correo electrónico:",
+      "placeholder": "Escribe tu correo electrónico:"
+    },
+    "issue": {
+      "label": "Escribe un asunto:",
+      "placeholder": "Escribe tu correo electrónico:"
+    },
+    "message": {
+      "label": "Añade un asunto:",
+      "placeholder": "Por favor, indica el asunto aqui"
+    },
+    "submit": "Enviar"
   }
 }

@@ -17,7 +17,7 @@ function Main() {
         text_dark: theme,
       })}
     >
-      <div
+      {/* <div
         style={{
           position: 'fixed',
           margin: 'auto',
@@ -38,7 +38,7 @@ function Main() {
       >
         <span>En Proceso de Actualizacion</span>
         <span>20 Septiembre 2023</span>
-      </div>
+      </div> */}
       <div className={styles.section}>
         <Sidebar />
         <main

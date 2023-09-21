@@ -72,3 +72,29 @@ h6 {
 .dark {
   color: var(--color-white);
 }
+
+.bga_light {
+  background-color: #efefef;
+}
+
+.bga_dark {
+  background-color: var(--bg--color-lightblue);
+}
+
+.span_dark {
+  color: var(--text--color-white);
+}
+
+.span_light {
+  color: var(--color-black);
+}
+
+.bgs_light {
+  background-color: var(--bg--color-water);
+  color: var(--color-white);
+}
+
+.bgs_dark {
+  background-color: var(--border--color-water);
+  color: var(--text--color-white);
+}
