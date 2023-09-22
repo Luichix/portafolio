@@ -1,0 +1,27 @@
+.title {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-sky);
+  bottom: 0;
+  left: 0;
+}
+
+@media (width >= 1280px) {
+  .title {
+    font-size: 32px;
+  }
+}

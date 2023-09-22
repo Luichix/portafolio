@@ -6,37 +6,17 @@
 }
 
 .container {
-  padding: 60px 0;
-  overflow: hidden;
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  position: relative;
-  font-family: 'Alata', sans-serif;
-}
-
-.container h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
+  padding: 60px 20px;
+  overflow: hidden;
 }
 
 .section {
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 350px;
   gap: 30px;
   align-self: center;
   width: 100%;
@@ -45,10 +25,8 @@
 .figure {
   border: 4px solid var(--text--color-graphite);
   box-sizing: border-box;
-  outline: auto;
-  width: 100%;
-  height: 350px;
-  max-width: 350px;
+  width: 300px;
+  height: 300px;
   align-self: flex-start;
   overflow: hidden;
   display: block;
@@ -67,6 +45,13 @@
   font-size: 1rem;
   line-height: 1.5;
 }
+
+.download {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   padding: 10px 0;
   background-color: transparent;
@@ -80,20 +65,18 @@
   font-size: 1rem;
 }
 
-/* @media screen and (max-width: 1120px) {
-  .section p {
-    line-height: 2;
-    font-size: 1.2rem;
+@media (width >= 1280) {
+  .container {
+    padding: 60px;
+    width: 80%;
+  }
+
+  .section {
+    grid-template-columns: 1fr 350px;
+  }
+
+  .download {
+    flex-direction: row;
+    gap: 30px;
   }
 }
-
-@media screen and (max-width: 760px) {
-  .section h2 {
-    font-size: 1.25rem;
-  }
-
-  .section p {
-    line-height: 2;
-    font-size: 1rem;
-  }
-} */

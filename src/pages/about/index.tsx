@@ -9,6 +9,7 @@ import pdfCv from '../../assets/pdf/cvoficial.pdf'
 import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
 import { FcDownload } from 'react-icons/fc'
 import Paragraph from '@Components/common/Paragraph'
+import Title from '@Components/common/Title'
 
 export function About() {
   const { language } = useContext(LanguageContext)
@@ -19,14 +20,7 @@ export function About() {
     <section id="about" className={style.about}>
       <div className={style.container}>
         <Fade triggerOnce>
-          <h2
-            className={classNames({
-              title_light: !theme,
-              title_dark: theme,
-            })}
-          >
-            {text.title}
-          </h2>
+          <Title theme={theme}>{text.title}</Title>
         </Fade>
         <div className={style.section}>
           <Fade
@@ -58,7 +52,7 @@ export function About() {
         </div>
         <div>
           <span className={style.access}>{text.access}</span>
-          <div style={{ display: 'flex', gap: '30px' }}>
+          <div className={style.download}>
             <a
               href={pdfCv}
               target="_blank"

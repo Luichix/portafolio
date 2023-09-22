@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
@@ -12,9 +13,8 @@
   flex-wrap: wrap;
   position: relative;
   align-self: center;
-  padding: 8em 0 0 0;
+  padding: 4rem 0 0 0;
   z-index: 20;
-  width: 80%;
   min-height: 100vh;
 }
 

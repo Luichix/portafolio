@@ -6,6 +6,7 @@ import data from '@Language/skills.json'
 import { USING_STACK, OTHER_STACK, LEARNING_STACK } from '@Services/stack'
 import tecnologies from '@Language/stack.json'
 import Paragraph from '@Components/common/Paragraph'
+import Title from '@Components/common/Title'
 const Skills = () => {
   const { language } = useContext(LanguageContext)
 
@@ -15,16 +16,9 @@ const Skills = () => {
   return (
     <section id="skills" className={styles.skills}>
       <div className={styles.container}>
-        <h3
-          className={classNames(styles.title, {
-            title_light: !theme,
-            title_dark: theme,
-          })}
-        >
-          {text.title}
-        </h3>
+        <Title theme={theme}>{text.title}</Title>
         <div
-          className={classNames(styles.stack, {
+          className={classNames({
             text_light: !theme,
             text_dark: theme,
           })}
@@ -32,12 +26,14 @@ const Skills = () => {
           <Paragraph theme={theme} indent>
             {text.description}
           </Paragraph>
-          <Paragraph theme={theme}>{text.using}</Paragraph>
-          <Stack list={tecnologies.using} stack={USING_STACK} />
-          <Paragraph theme={theme}>{text.learning}</Paragraph>
-          <Stack list={tecnologies.learning} stack={LEARNING_STACK} />
-          <Paragraph theme={theme}>{text.other}</Paragraph>
-          <Stack list={tecnologies.other} stack={OTHER_STACK} />
+          <div className={styles.category}>
+            <Paragraph theme={theme}>{text.using}</Paragraph>
+            <Stack list={tecnologies.using} stack={USING_STACK} />
+            <Paragraph theme={theme}>{text.learning}</Paragraph>
+            <Stack list={tecnologies.learning} stack={LEARNING_STACK} />
+            <Paragraph theme={theme}>{text.other}</Paragraph>
+            <Stack list={tecnologies.other} stack={OTHER_STACK} />
+          </div>
         </div>
       </div>
     </section>

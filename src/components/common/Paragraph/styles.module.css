@@ -1,9 +1,21 @@
 .paragraph {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
   letter-spacing: 0.5px;
 }
 
 .indent {
-  text-indent: 3rem;
+  text-indent: 0;
+}
+
+@media (width >= 1280) {
+  .paragraph {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.5px;
+  }
+
+  .indent {
+    text-indent: 3rem;
+  }
 }

@@ -17,6 +17,7 @@ import Medical from '@Assets/img/medical.png'
 import classNames from 'classnames'
 import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
+import Title from '@Components/common/Title'
 
 const images = {
   Medical,
@@ -78,18 +79,11 @@ export function Portfolio() {
         />
       </Modal>
       <div className={style.section}>
-        <h2
-          className={classNames(style.title, {
-            title_light: !theme,
-            title_dark: theme,
-          })}
-        >
-          {words.title}
-        </h2>
+        <Title theme={theme}>{words.title}</Title>
         <Paragraph theme={theme} indent>
           {words.description}
         </Paragraph>
-        <ul
+        {/* <ul
           className={classNames(style.list, {
             dark: !theme,
             [style.listLight]: !theme,
@@ -107,26 +101,26 @@ export function Portfolio() {
           <li onClick={() => setCurrentIndex(PROJECTS_CATEGORY.other)}>
             {words.other}
           </li>
-        </ul>
-        <div className={style.container}>
-          <Fade>
-            {text[currentIndex].map(
-              (element, index) =>
-                images[element.ref] && (
-                  <Card
-                    key={index}
-                    name={element.title}
-                    image={images[element.ref]}
-                    tech={element.tecnologies}
-                    alt={element.title}
-                    repository={element.repository}
-                    link={element.link}
-                    theme={theme}
-                  />
-                )
-            )}
-          </Fade>
-        </div>
+        </ul> */}
+      </div>
+      <div className={style.container}>
+        <Fade className={style.fade}>
+          {text[currentIndex].map(
+            (element, index) =>
+              images[element.ref] && (
+                <Card
+                  key={index}
+                  name={element.title}
+                  image={images[element.ref]}
+                  tech={element.tecnologies}
+                  alt={element.title}
+                  repository={element.repository}
+                  link={element.link}
+                  theme={theme}
+                />
+              )
+          )}
+        </Fade>
       </div>
     </section>
   )

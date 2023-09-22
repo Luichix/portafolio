@@ -29,7 +29,7 @@ const Card = ({
         {tech.map((element, index) => (
           <span key={index}>{element}</span>
           ))}
-        </div> */}
+        </div>  */}
       <figure className={styles.figure}>
         <img src={image} className={styles.image} alt={alt} />
       </figure>
@@ -41,16 +41,14 @@ const Card = ({
       >
         {name}
       </h4>
-      <div className={styles.info}>
-        <div className={styles.links}>
-          <a href={repository} target="_blank" rel="noreferrer">
-            <BsGithub /> &nbsp; Ir al codigo
-          </a>
-          <a href={link} target="_blank" rel="noreferrer">
-            <FaLink />
-            &nbsp; Ir al proyecto
-          </a>
-        </div>
+      <div className={styles.links}>
+        <a href={repository} target="_blank" rel="noreferrer">
+          <BsGithub /> &nbsp; Ir al codigo
+        </a>
+        <a href={link} target="_blank" rel="noreferrer">
+          <FaLink />
+          &nbsp; Ir al proyecto
+        </a>
       </div>
     </div>
   )
