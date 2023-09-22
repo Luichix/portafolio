@@ -19,6 +19,7 @@ import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
+import Slide, { Category, SlidesRecord } from '@Components/common/Slide'
 
 const images = {
   Medical,
@@ -38,7 +39,6 @@ interface Project {
   ref: string
   tecnologies: string[]
 }
-type Category = 'spa' | 'landing' | 'service' | 'other'
 
 enum PROJECTS_CATEGORY {
   spa = 'spa',
@@ -69,6 +69,17 @@ export function Portfolio() {
     PROJECTS_CATEGORY.spa
   )
 
+  const slides: SlidesRecord[] = [
+    { slide: 'spa', label: words.spa },
+    { slide: 'landing', label: words.landing },
+    { slide: 'service', label: words.service },
+    { slide: 'other', label: words.other },
+  ]
+
+  const onSelectSlide = (slide: Category) => {
+    setCurrentIndex(slide)
+  }
+
   return (
     <Container id="portfolio">
       <Modal onClose={closeModal} ref={modalRef}>
@@ -84,25 +95,7 @@ export function Portfolio() {
         <Paragraph theme={theme} indent>
           {words.description}
         </Paragraph>
-        {/* <ul
-          className={classNames(style.list, {
-            dark: !theme,
-            [style.listLight]: !theme,
-          })}
-        >
-          <li onClick={() => setCurrentIndex(PROJECTS_CATEGORY.spa)}>
-            {words.spa}
-          </li>
-          <li onClick={() => setCurrentIndex(PROJECTS_CATEGORY.landing)}>
-            {words.landing}
-          </li>
-          <li onClick={() => setCurrentIndex(PROJECTS_CATEGORY.service)}>
-            {words.service}
-          </li>
-          <li onClick={() => setCurrentIndex(PROJECTS_CATEGORY.other)}>
-            {words.other}
-          </li>
-        </ul> */}
+        <Slide slides={slides} handleSlide={onSelectSlide} theme={theme} />
       </div>
       <div className={style.container}>
         <Fade className={style.fade}>
@@ -118,6 +111,8 @@ export function Portfolio() {
                   repository={element.repository}
                   link={element.link}
                   theme={theme}
+                  textCode={words.goCode}
+                  textProject={words.goProject}
                 />
               )
           )}

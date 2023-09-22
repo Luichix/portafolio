@@ -12,6 +12,8 @@ interface CardProps {
   alt: string
   tech: string[]
   theme: boolean
+  textCode: string
+  textProject: string
 }
 
 const Card = ({
@@ -22,6 +24,8 @@ const Card = ({
   alt,
   repository,
   theme,
+  textCode,
+  textProject,
 }: CardProps) => {
   return (
     <div className={styles.item}>
@@ -43,11 +47,11 @@ const Card = ({
       </h4>
       <div className={styles.links}>
         <a href={repository} target="_blank" rel="noreferrer">
-          <BsGithub /> &nbsp; Ir al codigo
+          <BsGithub /> &nbsp; {textCode}
         </a>
         <a href={link} target="_blank" rel="noreferrer">
           <FaLink />
-          &nbsp; Ir al proyecto
+          &nbsp; {textProject}
         </a>
       </div>
     </div>

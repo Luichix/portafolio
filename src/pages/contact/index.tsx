@@ -14,16 +14,20 @@ import useAlert from '@Components/common/Alert/useAlert'
 import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
 
-const personal = [
-  [<BiMap key="map" />, 'Ciudad: ', 'Chinandega, Nicaragua'],
-  [<BiPhoneCall key="phone" />, 'Teléfono: ', '+ 505 8458-4479'],
-  [<BiMailSend key="email" />, 'Email: ', 'luisreynaldo.pch@gmail.com'],
-]
-
 export function Contact() {
   const { theme } = useContext(ThemeContext)
   const { language } = useContext(LanguageContext)
   const text = content[language]
+
+  const personal = [
+    [<BiMap key="map" />, text.personal.city, 'Chinandega, Nicaragua'],
+    [<BiPhoneCall key="phone" />, text.personal.phone, '+ 505 8458-4479'],
+    [
+      <BiMailSend key="email" />,
+      text.personal.email,
+      'luisreynaldo.pch@gmail.com',
+    ],
+  ]
 
   const [show, info, alert, showAlert] = useAlert()
 
@@ -138,68 +142,74 @@ export function Contact() {
               {text.send}
             </h3>
             <form
+              className={style.group}
               onSubmit={handleSendEmail}
-              className={classNames(style.form, {
-                light: !theme,
-                dark: theme,
-              })}
               autoComplete="off"
             >
-              <fieldset className={style.data}>
-                <label htmlFor="email">{text.email.label}</label>
-                <input
-                  id="email"
-                  type="text"
-                  required
-                  value={email}
-                  onChange={({ target }) => setEmail(target.value)}
-                  placeholder={text.email.placeholder}
-                  className={classNames({
-                    text_ligth: !theme,
-                    text_dark: theme,
-                    bg_light: !theme,
-                    bg_dark: theme,
-                  })}
-                />
-                <label htmlFor="issue">{text.issue.label}</label>
-                <input
-                  id="issue"
-                  type="text"
-                  required
-                  value={issue}
-                  onChange={({ target }) => setIssue(target.value)}
-                  placeholder={text.issue.placeholder}
-                  className={classNames({
-                    text_ligth: !theme,
-                    text_dark: theme,
-                    bg_light: !theme,
-                    bg_dark: theme,
-                  })}
-                />
-              </fieldset>
-              <fieldset className={style.data}>
-                <span className={style.textareaCounter}>
-                  <label htmlFor="message">{text.message.label}</label>
-                  <span>
-                    {message.length}/{maxLength}
+              <div
+                className={classNames(style.form, {
+                  light: !theme,
+                  dark: theme,
+                })}
+              >
+                <fieldset className={style.data}>
+                  <label htmlFor="email">{text.email.label}</label>
+                  <input
+                    id="email"
+                    type="text"
+                    required
+                    value={email}
+                    onChange={({ target }) => setEmail(target.value)}
+                    placeholder={text.email.placeholder}
+                    className={classNames({
+                      text_ligth: !theme,
+                      text_dark: theme,
+                      bg_light: !theme,
+                      bg_dark: theme,
+                    })}
+                  />
+                  <label htmlFor="issue">{text.issue.label}</label>
+                  <input
+                    id="issue"
+                    type="text"
+                    required
+                    value={issue}
+                    onChange={({ target }) => setIssue(target.value)}
+                    placeholder={text.issue.placeholder}
+                    className={classNames({
+                      text_ligth: !theme,
+                      text_dark: theme,
+                      bg_light: !theme,
+                      bg_dark: theme,
+                    })}
+                  />
+                </fieldset>
+                <fieldset className={style.data}>
+                  <span className={style.textareaCounter}>
+                    <label htmlFor="message">{text.message.label}</label>
+                    <span>
+                      {message.length}/{maxLength}
+                    </span>
                   </span>
-                </span>
-                <textarea
-                  id="message"
-                  required
-                  value={message}
-                  onChange={({ target }) => handleTextAreaChange(target.value)}
-                  placeholder={text.message.placeholder}
-                  className={classNames({
-                    text_ligth: !theme,
-                    text_dark: theme,
-                    bg_light: !theme,
-                    bg_dark: theme,
-                  })}
-                  rows={10} // Ajusta el número de filas según tus necesidades
-                  cols={50} //
-                />
-              </fieldset>
+                  <textarea
+                    id="message"
+                    required
+                    value={message}
+                    onChange={({ target }) =>
+                      handleTextAreaChange(target.value)
+                    }
+                    placeholder={text.message.placeholder}
+                    className={classNames({
+                      text_ligth: !theme,
+                      text_dark: theme,
+                      bg_light: !theme,
+                      bg_dark: theme,
+                    })}
+                    rows={10} // Ajusta el número de filas según tus necesidades
+                    cols={50} //
+                  />
+                </fieldset>
+              </div>
               <button
                 className={classNames(style.submit, {
                   bga_ligth: !theme,

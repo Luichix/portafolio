@@ -1,39 +1,48 @@
 {
   "es": {
     "title": "Contacto",
-    "info": "Información de Contacto",
-    "send": "¡Enviame un mensaje!",
-    "contact": "Name",
+    "info": "Información de contacto",
+    "personal": {
+      "city": "Ciudad:",
+      "phone": "Teléfono:",
+      "email": "Correo electrónico:"
+    },
+    "send": "¡Envíame un mensaje!",
     "email": {
       "label": "Escribe tu correo electrónico:",
       "placeholder": "ejemplo@correo.com"
     },
     "issue": {
-      "label": "Añade un asunto:",
-      "placeholder": "Indique su asunto aqui..."
+      "label": "Añadir un asunto:",
+      "placeholder": "Indique su asunto aquí..."
     },
     "message": {
       "label": "Escribe tu mensaje:",
-      "placeholder": "Por favor, escriba su mensaje aqui..."
+      "placeholder": "Por favor, escriba su mensaje aquí..."
     },
     "submit": "Enviar el mensaje"
   },
   "en": {
     "title": "Contact",
-    "info": "Información de Contacto",
-    "send": "Envia un mensaje",
+    "info": "Contact Information",
+    "personal": {
+      "city": "City:",
+      "phone": "Phone number:",
+      "email": "Email Address:"
+    },
+    "send": "Send me a message!",
     "email": {
-      "label": "Escribe tu correo electrónico:",
-      "placeholder": "Escribe tu correo electrónico:"
+      "label": "Write your email address:",
+      "placeholder": "example@email.com"
     },
     "issue": {
-      "label": "Escribe un asunto:",
-      "placeholder": "Escribe tu correo electrónico:"
+      "label": "Add an issue:",
+      "placeholder": "Indicate your issue here..."
     },
     "message": {
-      "label": "Añade un asunto:",
-      "placeholder": "Por favor, indica el asunto aqui"
+      "label": "Write your message:",
+      "placeholder": "Please, write your message here..."
     },
-    "submit": "Enviar"
+    "submit": "Send Message"
   }
 }

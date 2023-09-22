@@ -5,14 +5,18 @@
     "landing": "Portadas",
     "spa": "Aplicaciones",
     "service": "Servicios",
-    "other": "Otros"
+    "other": "Otros",
+    "goCode": "Ir al codigo",
+    "goProject": "Ir al projecto"
   },
   "en": {
     "title": "Portfolio",
     "description": "I share with you a selection of projects in which I have invested time and effort, each one representing a challenge or a stage that has helped me grow and continue learning.",
-    "landing": "Landing Page",
-    "spa": "Application",
+    "landing": "Landing Pages",
+    "spa": "Applications",
     "service": "Services",
-    "other": "Other"
+    "other": "Others",
+    "goCode": "Go to code",
+    "goProject": "Go to project"
   }
 }

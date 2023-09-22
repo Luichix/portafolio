@@ -34,6 +34,12 @@
 }
 
 @media (width >= 1280px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .stack {
     gap: 30px;
   }

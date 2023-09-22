@@ -8,3 +8,29 @@
   min-height: 100vh;
   padding: 30px;
 }
+
+.center {
+  justify-content: center;
+}
+
+.separated {
+  justify-content: space-between;
+}
+
+@media (width >= 1280px) {
+  .container {
+    padding: 120px;
+  }
+}
+
+@media (width >= 640px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    padding: 68px;
+  }
+}

@@ -40,7 +40,7 @@ export function Home() {
   }, [offset])
 
   return (
-    <Container id="home">
+    <Container id="home" type="separated">
       <div
         className={classNames(styles.accesibility, {
           [styles.hidden]: !visibility,

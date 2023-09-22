@@ -31,7 +31,7 @@ export function About() {
               text_dark: theme,
             })}
           >
-            <div>
+            <div className={style.content}>
               <Paragraph theme={theme} indent>
                 {text.salute}
               </Paragraph>
