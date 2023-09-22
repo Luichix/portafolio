@@ -7,6 +7,7 @@ import { USING_STACK, OTHER_STACK, LEARNING_STACK } from '@Services/stack'
 import tecnologies from '@Language/stack.json'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
+import Container from '@Components/layout/Container'
 const Skills = () => {
   const { language } = useContext(LanguageContext)
 
@@ -14,7 +15,7 @@ const Skills = () => {
   const text = data[language]
 
   return (
-    <section id="skills" className={styles.skills}>
+    <Container id="skills">
       <div className={styles.container}>
         <Title theme={theme}>{text.title}</Title>
         <div
@@ -36,7 +37,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }
 

@@ -6,21 +6,18 @@ import {
   useRef,
   useState,
   PropsWithChildren,
-  SetStateAction,
-  Dispatch,
 } from 'react'
 import ReactDOM from 'react-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import lang from '@Language/sidebar.json'
 import perfil from '@Assets/img/perfil.png'
-import { GoFile, GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
+import { GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
+import { GiSkills } from 'react-icons/gi'
 import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa'
 import { HiMenu, HiCode, HiArrowCircleUp } from 'react-icons/hi'
 import style from './styles.module.css'
 import classNames from 'classnames'
-import { Expand } from '@theme-toggles/react'
-import Language from '@Components/svg/Language'
-import { ThemeContext, LanguageContext } from '@Contexts/index'
+import { LanguageContext } from '@Contexts/index'
 
 /* ------------------------------- interfaces ------------------------------- */
 
@@ -60,12 +57,12 @@ const Scroll = forwardRef<PropsWithRef<HTMLAnchorElement>, ScrollProps>(
 
 type Links = 'home' | 'about' | 'skills' | 'portfolio' | 'contact'
 
-const elements = ['home', 'about', 'portfolio', 'contact'] as Links[] // 'skills',
+const elements = ['home', 'about', 'skills', 'portfolio', 'contact'] as Links[] // 'skills',
 
 const icons = [
   <GoHome key="home" />,
   <GoPerson key="person" />,
-  <GoFile key="file" />,
+  <GiSkills key="file" />,
   <GoProject key="project" />,
   <GoMail key="mail" />,
 ]
@@ -75,10 +72,8 @@ const icons = [
 export function Sidebar() {
   /* ------------------------------ text content ------------------------------ */
 
-  const { language, changeLanguage } = useContext(LanguageContext)
+  const { language } = useContext(LanguageContext)
   const text = lang[language]
-
-  const { theme, changeTheme } = useContext(ThemeContext)
 
   /* ----------------------------- toggle sidebar ----------------------------- */
 
@@ -99,7 +94,7 @@ export function Sidebar() {
   }
 
   useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset)
+    const onScroll = () => setOffset(window.scrollY)
     // clean up code
     window.removeEventListener('scroll', onScroll)
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -121,21 +116,6 @@ export function Sidebar() {
         [style.show]: toggle,
       })}
     >
-      <div className={style.accesibility}>
-        <Expand
-          toggled={theme}
-          toggle={changeTheme as any}
-          className={classNames(style.toggles)}
-        />
-        <button
-          type="button"
-          onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}
-          className={classNames(style.swithLanguage)}
-        >
-          <i>{language}</i>
-          <Language className={style.language} />
-        </button>
-      </div>
       <Menu onToggle={handleToggle}>
         <i>{toggle ? <HiMenu /> : <HiCode />}</i>
       </Menu>

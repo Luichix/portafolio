@@ -1,15 +1,7 @@
-.about {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 20px;
   overflow: hidden;
 }
 
@@ -65,12 +57,7 @@
   font-size: 1rem;
 }
 
-@media (width >= 1280) {
-  .container {
-    padding: 60px;
-    width: 80%;
-  }
-
+@media (width >= 1280px) {
   .section {
     grid-template-columns: 1fr 350px;
   }

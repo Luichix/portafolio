@@ -10,6 +10,7 @@ import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
 import { FcDownload } from 'react-icons/fc'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
+import Container from '@Components/layout/Container'
 
 export function About() {
   const { language } = useContext(LanguageContext)
@@ -17,7 +18,7 @@ export function About() {
 
   const text = data[language]
   return (
-    <section id="about" className={style.about}>
+    <Container id="about">
       <div className={style.container}>
         <Fade triggerOnce>
           <Title theme={theme}>{text.title}</Title>
@@ -85,7 +86,7 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }
 

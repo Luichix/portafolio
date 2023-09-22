@@ -7,10 +7,10 @@
     "contact": "Contacto"
   },
   "en": {
-    "home": "Inicio",
-    "about": "Sobre mi",
-    "skills": "Habilidades",
-    "portfolio": "Portafolio",
-    "contact": "Contacto"
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
   }
 }

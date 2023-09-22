@@ -12,6 +12,7 @@ import { sendEmail } from '@Services/emailjs'
 import { Alert } from '@Components/common/Alert'
 import useAlert from '@Components/common/Alert/useAlert'
 import Title from '@Components/common/Title'
+import Container from '@Components/layout/Container'
 
 const personal = [
   [<BiMap key="map" />, 'Ciudad: ', 'Chinandega, Nicaragua'],
@@ -26,7 +27,7 @@ export function Contact() {
 
   const [show, info, alert, showAlert] = useAlert()
 
-  const maxLength = 300 // Cambia esto al número máximo de caracteres permitidos
+  const maxLength = 350 // Cambia esto al número máximo de caracteres permitidos
   const [email, setEmail] = useState('')
   const [issue, setIssue] = useState('')
   const [message, setMessage] = useState('')
@@ -71,13 +72,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className={style.contact}>
+    <Container id="contact">
       <Alert show={show} alert={alert} message={info} />
-      <div className={style.header}>
-        <Fade>
-          <Title theme={theme}>{text.title}</Title>
-        </Fade>
-      </div>
+      <Fade>
+        <Title theme={theme}>{text.title}</Title>
+      </Fade>
       <div className={style.container}>
         <Fade>
           <div
@@ -197,7 +196,7 @@ export function Contact() {
                     bg_light: !theme,
                     bg_dark: theme,
                   })}
-                  rows={4} // Ajusta el número de filas según tus necesidades
+                  rows={10} // Ajusta el número de filas según tus necesidades
                   cols={50} //
                 />
               </fieldset>
@@ -218,7 +217,7 @@ export function Contact() {
           </div>
         </Fade>
       </div>
-    </section>
+    </Container>
   )
 }
 

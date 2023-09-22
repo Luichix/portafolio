@@ -18,6 +18,7 @@ import classNames from 'classnames'
 import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
+import Container from '@Components/layout/Container'
 
 const images = {
   Medical,
@@ -69,7 +70,7 @@ export function Portfolio() {
   )
 
   return (
-    <section id="portfolio" className={style.portfolio}>
+    <Container id="portfolio">
       <Modal onClose={closeModal} ref={modalRef}>
         <Detail
           title={data?.title}
@@ -122,7 +123,7 @@ export function Portfolio() {
           )}
         </Fade>
       </div>
-    </section>
+    </Container>
   )
 }
 

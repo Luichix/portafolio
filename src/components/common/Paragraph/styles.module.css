@@ -8,7 +8,7 @@
   text-indent: 0;
 }
 
-@media (width >= 1280) {
+@media (width >= 1280px) {
   .paragraph {
     font-size: 1.25rem;
     line-height: 2.25rem;

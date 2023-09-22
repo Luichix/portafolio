@@ -83,6 +83,5 @@ export const OTHER_STACK = [
   powerbi,
   //  Herramientas de diseño y gestión de proyectos
   figma,
-  confluence,
   jira,
 ]
