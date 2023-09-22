@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import { useState, useContext } from 'react'
 import style from './styles.module.css'
 import emailjs from '@emailjs/browser'
 import { Fade } from 'react-awesome-reveal'
@@ -9,6 +9,8 @@ import classNames from 'classnames'
 import { ThemeContext } from '@Contexts/theme'
 import { MdSend } from 'react-icons/md'
 import { sendEmail } from '@Services/emailjs'
+import { Alert } from '@Components/common/Alert'
+import useAlert from '@Components/common/Alert/useAlert'
 
 const personal = [
   [<BiMap key="map" />, 'Ciudad: ', 'Chinandega, Nicaragua'],
@@ -21,8 +23,9 @@ export function Contact() {
   const { language } = useContext(LanguageContext)
   const text = content[language]
 
-  const maxLength = 300 // Cambia esto al número máximo de caracteres permitidos
+  const [show, info, alert, showAlert] = useAlert()
 
+  const maxLength = 300 // Cambia esto al número máximo de caracteres permitidos
   const [email, setEmail] = useState('')
   const [issue, setIssue] = useState('')
   const [message, setMessage] = useState('')
@@ -53,21 +56,22 @@ export function Contact() {
       )
       .then(
         (response) => {
+          showAlert('Mensaje enviado con exito!', 'success')
           console.log('SUCCESS!', response.status, response.text)
-          alert(`SUCESS! ${(response.status, response.text)}`)
+          setEmail('')
+          setIssue('')
+          setMessage('')
         },
         (err) => {
+          showAlert('Ha ocurrido un error al enviar el mensaje!', 'error')
           console.log('FAILED...', err)
-          alert('ERROR')
         }
       )
-    // setEmail('')
-    // setIssue('')
-    // setMessage('')
   }
 
   return (
     <section id="contact" className={style.contact}>
+      <Alert show={show} alert={alert} message={info} />
       <div className={style.content}>
         <Fade>
           <h2

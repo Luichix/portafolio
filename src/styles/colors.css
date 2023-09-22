@@ -59,6 +59,13 @@
   --color-pearl: #a8a9b4;
   --color-gray: #6f7180;
   --opacity-black: #050d184d;
+
   --color-red: #971717;
-  --color-green: #176933;
+
+  --color-error: #971717;
+  --color-success: #176933;
+  --color-info: #173b6c;
+  --color-warning: #d4810d;
+
+  --color-base-white: #ffffff;
 }
