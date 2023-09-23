@@ -56,13 +56,3 @@
   color: var(--text--color-turqui);
   cursor: pointer;
 }
-
-@media screen and (max-width: 450px) {
-  .title {
-    font-size: 1.25rem;
-  }
-
-  .text {
-    font-size: 1rem;
-  }
-}

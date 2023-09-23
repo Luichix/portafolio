@@ -20,13 +20,26 @@ export function Contact() {
   const text = content[language]
 
   const personal = [
-    [<BiMap key="map" />, text.personal.city, 'Chinandega, Nicaragua'],
-    [<BiPhoneCall key="phone" />, text.personal.phone, '+ 505 8458-4479'],
-    [
-      <BiMailSend key="email" />,
-      text.personal.email,
-      'luisreynaldo.pch@gmail.com',
-    ],
+    {
+      icon: 'map',
+      label: text.personal.city,
+      text: 'Chinandega, Nicaragua',
+      isLink: false,
+    },
+    {
+      icon: 'phone',
+      label: text.personal.phone,
+      text: '+ 505 8458-4479',
+      isLink: true,
+      link: 'https://wa.me/50584584479?text=Hola,%20te%20contacto%20desde%20tu%20pagina%20web',
+    },
+    {
+      icon: 'email',
+      label: text.personal.email,
+      text: 'luisreynaldo.pch@gmail.com',
+      isLink: true,
+      link: 'mailto:luichix.rex@gmail.com',
+    },
   ]
 
   const [show, info, alert, showAlert] = useAlert()
@@ -98,35 +111,16 @@ export function Contact() {
               {text.info}
             </h3>
             <div className={style.group}>
-              {personal.map((e, i) => (
-                <div key={i} className={style.tag}>
-                  <i
-                    className={classNames({
-                      bgs_light: !theme,
-                      bgs_dark: theme,
-                    })}
-                  >
-                    {e[0]}
-                  </i>
-                  <div className={style.element}>
-                    <h4
-                      className={classNames({
-                        title_light: !theme,
-                        title_dark: theme,
-                      })}
-                    >
-                      {e[1]}
-                    </h4>
-                    <p
-                      className={classNames({
-                        span_light: !theme,
-                        span_dark: theme,
-                      })}
-                    >
-                      {e[2]}
-                    </p>
-                  </div>
-                </div>
+              {personal.map(({ icon, label, text, isLink, link }, index) => (
+                <Info
+                  key={index}
+                  icon={icon}
+                  label={label}
+                  text={text}
+                  isLink={isLink}
+                  link={link}
+                  theme={theme}
+                />
               ))}
             </div>
           </div>
@@ -232,3 +226,67 @@ export function Contact() {
 }
 
 export default Contact
+
+const Info = ({
+  icon,
+  label,
+  text,
+  isLink,
+  link,
+  theme,
+}: {
+  icon: string
+  label: string
+  text: string
+  isLink: boolean
+  link?: string
+  theme: boolean
+}) => {
+  return (
+    <div className={style.tag}>
+      <i
+        className={classNames({
+          bgs_light: !theme,
+          bgs_dark: theme,
+        })}
+      >
+        {icon === 'map' && <BiMap />}
+        {icon === 'phone' && <BiPhoneCall />}
+        {icon === 'email' && <BiMailSend />}
+      </i>
+      <div className={style.element}>
+        <h4
+          className={classNames({
+            title_light: !theme,
+            title_dark: theme,
+          })}
+        >
+          {label}
+        </h4>
+
+        {isLink ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className={classNames({
+              span_light: !theme,
+              span_dark: theme,
+            })}
+          >
+            {text}
+          </a>
+        ) : (
+          <p
+            className={classNames({
+              span_light: !theme,
+              span_dark: theme,
+            })}
+          >
+            {text}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}

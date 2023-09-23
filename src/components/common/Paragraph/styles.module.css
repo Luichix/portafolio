@@ -8,6 +8,8 @@
   text-indent: 0;
 }
 
+/* medias queries */
+
 @media (width >= 1280px) {
   .paragraph {
     font-size: 1.25rem;

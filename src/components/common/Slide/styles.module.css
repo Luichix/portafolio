@@ -18,12 +18,11 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 10px;
-  width: 200px;
+  padding: 8px;
+  width: 140px;
   text-align: center;
-  background-color: var(--color-black);
   list-style: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -38,10 +37,31 @@
 
 .listLight li {
   background-color: var(--bg--color-water);
+  color: var(--color-white);
 }
 
 .listLight li:hover {
   background-color: var(--bg--color-turqui);
+}
+.listDark li {
+  background-color: var(--bg--color-water);
+  color: var(--color-white);
+}
+
+.listDark li:hover {
+  background-color: var(--bg--color-turqui);
+}
+
+/* Button Arrows */
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 /* Transition */
@@ -58,8 +78,8 @@
    */
 @-webkit-keyframes slideInRight {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {
@@ -70,8 +90,8 @@
 }
 @keyframes slideInRight {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {
@@ -93,8 +113,8 @@
    */
 @-webkit-keyframes slideInLeft {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
     opacity: 0;
   }
   100% {
@@ -105,8 +125,8 @@
 }
 @keyframes slideInLeft {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
     opacity: 0;
   }
   100% {
@@ -116,16 +136,7 @@
   }
 }
 
-@media (width >= 1500px) {
-  .banner {
-    height: 50px;
-    padding: 0 8rem;
-  }
-
-  .banner ul {
-    justify-content: space-between;
-  }
-}
+/* medias queries */
 
 @media (width >= 1280px) {
   .arrow {
@@ -133,8 +144,13 @@
   }
 }
 
-@media (width >= 640px) {
-  .banner {
-    padding: 10px 4rem;
+@media (width >= 1500px) {
+  .banner ul {
+    justify-content: space-evenly;
+    padding: 40px 40px;
+  }
+
+  .content {
+    width: 200px;
   }
 }

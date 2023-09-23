@@ -20,6 +20,8 @@
   left: 0;
 }
 
+/* medias queries */
+
 @media (width >= 1280px) {
   .title {
     font-size: 32px;

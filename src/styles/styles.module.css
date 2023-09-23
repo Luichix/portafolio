@@ -6,8 +6,8 @@
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -25,9 +25,9 @@
   background-image: url(../assets/svg/background-light.svg);
 }
 
-@media screen and (max-width: 780px) {
+@media (width >= 780px) {
   .section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 300px 1fr;
   }
 }

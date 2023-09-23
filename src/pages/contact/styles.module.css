@@ -57,9 +57,11 @@
   line-height: 1.5;
 }
 
+.tag a,
 .tag p {
   margin: 0;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 /* Form Contact */
@@ -178,6 +180,17 @@ textarea:hover {
   color: var(--color-white);
 }
 
+/* medias queries */
+
+@media (width >= 480px) {
+  .data input,
+  .data textarea {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+  }
+}
+
 @media (width >= 1280px) {
   .container {
     padding: 40px 0;
@@ -199,14 +212,5 @@ textarea:hover {
 
   .submit {
     justify-self: flex-end;
-  }
-}
-
-@media (width >= 480px) {
-  .data input,
-  .data textarea {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
   }
 }

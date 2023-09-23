@@ -150,8 +150,8 @@
   text-align: right;
   transition: all 0.4s;
   top: 15px;
-  right: 25px;
-  font-size: 2em;
+  right: 2px;
+  font-size: 32px;
   line-height: 0;
   z-index: 9999;
   padding: 0;
@@ -175,6 +175,8 @@
   color: var(--color-sky);
   opacity: 0;
 }
+
+/* medias queries */
 
 @media screen and (max-width: 780px) {
   .sidenav {

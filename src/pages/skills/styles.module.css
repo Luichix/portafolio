@@ -33,6 +33,8 @@
   text-overflow: ellipsis;
 }
 
+/* medias queries */
+
 @media (width >= 1280px) {
   .container {
     display: flex;

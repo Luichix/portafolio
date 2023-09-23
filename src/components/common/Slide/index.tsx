@@ -80,7 +80,7 @@ const Slide = ({
       return 4
     } else if (width >= 1024) {
       return 3
-    } else if (width >= 768) {
+    } else if (width >= 860) {
       return 2
     } else {
       return 1
@@ -116,13 +116,19 @@ const Slide = ({
 
   return (
     <div className={styles.banner}>
-      <button onClick={handlePreviousSlide} className={styles.arrow}>
+      <button
+        onClick={handlePreviousSlide}
+        className={classNames(styles.arrow, {
+          light: !theme,
+          dark: theme,
+        })}
+      >
         <FaArrowLeft />
       </button>
       <ul
         className={classNames(styles.list, {
-          dark: !theme,
           [styles.listLight]: !theme,
+          [styles.listDark]: theme,
         })}
       >
         {visibleSlides.map(({ label, slide }, index) => (
@@ -130,8 +136,8 @@ const Slide = ({
             key={index}
             onClick={() => handleSlide(slide)}
             className={classNames(styles.content, {
-              [styles.slideInRight]: animationDirection === 'right',
-              [styles.slideInLeft]: animationDirection === 'left',
+              [styles.slideInLeft]: animationDirection === 'right',
+              [styles.slideInRight]: animationDirection === 'left',
             })}
           >
             {slide === 'spa' && <MdApps />}
@@ -142,7 +148,13 @@ const Slide = ({
           </li>
         ))}
       </ul>
-      <button onClick={handleNextSlide} className={styles.arrow}>
+      <button
+        onClick={handleNextSlide}
+        className={classNames(styles.arrow, {
+          light: !theme,
+          dark: theme,
+        })}
+      >
         <FaArrowRight className={styles.icon} />
       </button>
     </div>

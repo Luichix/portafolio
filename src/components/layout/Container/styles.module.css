@@ -17,11 +17,7 @@
   justify-content: space-between;
 }
 
-@media (width >= 1280px) {
-  .container {
-    padding: 120px;
-  }
-}
+/* medias queries */
 
 @media (width >= 640px) {
   .container {
@@ -32,5 +28,10 @@
 @media (width >= 768px) {
   .container {
     padding: 68px;
+  }
+}
+@media (width >= 1280px) {
+  .container {
+    padding: 120px;
   }
 }
