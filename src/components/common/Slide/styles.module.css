@@ -35,21 +35,29 @@
   background-color: var(--color-turqui);
 }
 
-.listLight li {
+.itemLight {
   background-color: var(--bg--color-water);
   color: var(--color-white);
 }
 
-.listLight li:hover {
+.itemLight:hover {
   background-color: var(--bg--color-turqui);
 }
-.listDark li {
-  background-color: var(--bg--color-water);
+.itemDark {
+  background-color: var(--bg--color-turqui);
   color: var(--color-white);
 }
 
-.listDark li:hover {
+.itemDark:hover {
+  background-color: var(--bg--color-water);
+}
+
+.itemLight.active {
   background-color: var(--bg--color-turqui);
+}
+
+.itemDark.active {
+  background-color: var(--bg--color-water);
 }
 
 /* Button Arrows */
@@ -66,17 +74,17 @@
 
 /* Transition */
 
-.slideInRight {
+/* .slideInRight {
   -webkit-animation: slideInRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slideInRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
+} */
 
 /**
    * ----------------------------------------
    * animation slideInRight
    * ----------------------------------------
    */
-@-webkit-keyframes slideInRight {
+/* @-webkit-keyframes slideInRight {
   0% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
@@ -104,14 +112,14 @@
 .slideInLeft {
   -webkit-animation: slideInLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slideInLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
+} */
 
 /**
    * ----------------------------------------
    * animation slideInLeft
    * ----------------------------------------
    */
-@-webkit-keyframes slideInLeft {
+/* @-webkit-keyframes slideInLeft {
   0% {
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
@@ -134,7 +142,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 /* medias queries */
 

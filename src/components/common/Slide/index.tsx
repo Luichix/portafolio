@@ -18,10 +18,12 @@ const Slide = ({
   slides,
   handleSlide,
   theme,
+  active,
 }: {
   slides: SlidesRecord[]
   handleSlide: (slide: Category) => void
   theme: boolean
+  active: string
 }) => {
   const [windowSize, setWindowSize] = useState({
     width: typeof window !== 'undefined' ? window.innerWidth : 0,
@@ -125,19 +127,19 @@ const Slide = ({
       >
         <FaArrowLeft />
       </button>
-      <ul
-        className={classNames(styles.list, {
-          [styles.listLight]: !theme,
-          [styles.listDark]: theme,
-        })}
-      >
+      <ul className={classNames(styles.list)}>
         {visibleSlides.map(({ label, slide }, index) => (
           <li
             key={index}
             onClick={() => handleSlide(slide)}
             className={classNames(styles.content, {
-              [styles.slideInLeft]: animationDirection === 'right',
-              [styles.slideInRight]: animationDirection === 'left',
+              // [styles.slideInLeft]: animationDirection === 'right',
+              // [styles.slideInRight]: animationDirection === 'left',
+
+              [styles.itemLight]: !theme,
+              [styles.itemDark]: theme,
+
+              [styles.active]: slide === active,
             })}
           >
             {slide === 'spa' && <MdApps />}

@@ -117,7 +117,14 @@ export function Sidebar() {
       })}
     >
       <Menu onToggle={handleToggle}>
-        <i>{toggle ? <HiMenu /> : <HiCode />}</i>
+        <i
+          className={classNames({
+            [style.rotateFront]: toggle,
+            [style.rotateBack]: !toggle,
+          })}
+        >
+          <HiMenu />
+        </i>
       </Menu>
       <Scroll scrollToTop={scrollToTop} ref={scrollRef} />
       <div className={style.container}>

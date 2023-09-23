@@ -2,8 +2,9 @@
   "es": {
     "title": "Portafolio",
     "description": "Os comparto una selección de proyectos en los que he invertido tiempo y esfuerzo, cada uno representando un desafío o una etapa que me ha ayudado a crecer y seguir aprendiendo.",
-    "landing": "Portadas",
+    "empty": "No se han agregado projectos en esta pestaña",
     "spa": "Aplicaciones",
+    "landing": "Portadas",
     "service": "Servicios",
     "other": "Otros",
     "goCode": "Ir al codigo",
@@ -12,8 +13,9 @@
   "en": {
     "title": "Portfolio",
     "description": "I share with you a selection of projects in which I have invested time and effort, each one representing a challenge or a stage that has helped me grow and continue learning.",
-    "landing": "Landing Pages",
+    "empty": "No projects have been added in this tab",
     "spa": "Applications",
+    "landing": "Landing Pages",
     "service": "Services",
     "other": "Others",
     "goCode": "Go to code",

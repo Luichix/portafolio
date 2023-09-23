@@ -81,7 +81,7 @@ export function Portfolio() {
   }
 
   return (
-    <Container id="portfolio">
+    <Container id="portfolio" type="separated">
       <Modal onClose={closeModal} ref={modalRef}>
         <Detail
           title={data?.title}
@@ -95,8 +95,25 @@ export function Portfolio() {
         <Paragraph theme={theme} indent>
           {words.description}
         </Paragraph>
-        <Slide slides={slides} handleSlide={onSelectSlide} theme={theme} />
+        <Slide
+          slides={slides}
+          handleSlide={onSelectSlide}
+          active={currentIndex}
+          theme={theme}
+        />
       </div>
+      {text[currentIndex].length === 0 && (
+        <Fade>
+          <div>
+            <Paragraph theme={theme} center>
+              {words.empty}
+            </Paragraph>
+            <Paragraph theme={theme} center>
+              {words[currentIndex]}
+            </Paragraph>
+          </div>
+        </Fade>
+      )}
       <div className={style.container}>
         <Fade className={style.fade}>
           {text[currentIndex].map(

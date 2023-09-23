@@ -136,7 +136,7 @@ export function Contact() {
               {text.send}
             </h3>
             <form
-              className={style.group}
+              className={style.formGroup}
               onSubmit={handleSendEmail}
               autoComplete="off"
             >
