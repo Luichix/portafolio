@@ -116,6 +116,12 @@ const Slide = ({
     visibleSlides.push(...slides.slice(0, endIndex))
   }
 
+  useEffect(() => {
+    if (visibleSlides.length === 1) {
+      handleSlide(visibleSlides[0].slide)
+    }
+  }, [visibleSlides])
+
   return (
     <div className={styles.banner}>
       <button

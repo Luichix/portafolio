@@ -10,7 +10,7 @@ import { TiWarning } from 'react-icons/ti'
 export type AlertType = 'error' | 'info' | 'success' | 'warning' | 'none'
 
 export interface AlertProps {
-  message: string
+  message: string[]
   alert: AlertType
   show: boolean
 }
@@ -34,7 +34,8 @@ export const Alert = forwardRef<PropsWithRef<HTMLDivElement>, AlertProps>(
           {alert === 'warning' && <TiWarning />}
         </div>
         <div className={classNames(styles.message, styles[`${alert}Message`])}>
-          {message}
+          <p>{message[0]}</p>
+          <p>{message[1]}</p>
         </div>
       </div>,
       PortalDiv

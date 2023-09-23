@@ -32,7 +32,7 @@ export function Home() {
 
   useEffect(() => {
     // Modificar el estilo basado en el valor de offset
-    if (offset > 20) {
+    if (offset > 100) {
       setVisibility(false)
     } else {
       setVisibility(true)

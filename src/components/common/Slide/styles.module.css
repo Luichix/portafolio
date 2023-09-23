@@ -53,10 +53,12 @@
 }
 
 .itemLight.active {
+  transition: background-color 1s ease;
   background-color: var(--bg--color-turqui);
 }
 
 .itemDark.active {
+  transition: background-color 1s ease;
   background-color: var(--bg--color-water);
 }
 

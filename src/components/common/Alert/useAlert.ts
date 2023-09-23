@@ -3,15 +3,15 @@ import { AlertType } from './index'
 
 export const useAlert = (): [
   boolean,
-  string,
+  string[],
   AlertType,
-  (message: string, alert: AlertType) => void
+  (message: string[], alert: AlertType) => void
 ] => {
   const [show, setShow] = useState(false)
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState<string[]>([])
   const [alert, setType] = useState<AlertType>('none')
 
-  const showAlert = (message: string, alert: AlertType) => {
+  const showAlert = (message: string[], alert: AlertType) => {
     setMessage(message)
     setType(alert)
     setShow(true)

@@ -20,7 +20,12 @@
       "label": "Escribe tu mensaje:",
       "placeholder": "Por favor, escriba su mensaje aquí..."
     },
-    "submit": "Enviar el mensaje"
+    "submit": "Enviar el mensaje",
+    "success": [
+      "¡Mensaje enviado con exito!",
+      "¡Muchas gracias por tu mensaje!"
+    ],
+    "error": ["¡El mensaje no ha sido enviado!", "¡Lamento los inconvenientes!"]
   },
   "en": {
     "title": "Contact",
@@ -43,6 +48,14 @@
       "label": "Write your message:",
       "placeholder": "Please, write your message here..."
     },
-    "submit": "Send Message"
+    "submit": "Send Message",
+    "success": [
+      "Message sent succesfully!",
+      "Thank you very much for your message!"
+    ],
+    "error": [
+      "The message has not been sent!",
+      "I'm sorry for the inconvenience!"
+    ]
   }
 }

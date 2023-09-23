@@ -75,15 +75,13 @@ export function Contact() {
       )
       .then(
         (response) => {
-          showAlert('Mensaje enviado con exito!', 'success')
-          console.log('SUCCESS!', response.status, response.text)
+          showAlert(text.success, 'success')
           setEmail('')
           setIssue('')
           setMessage('')
         },
         (err) => {
-          showAlert('Ha ocurrido un error al enviar el mensaje!', 'error')
-          console.log('FAILED...', err)
+          showAlert(text.error, 'error')
         }
       )
   }
@@ -206,7 +204,7 @@ export function Contact() {
               </div>
               <button
                 className={classNames(style.submit, {
-                  bga_ligth: !theme,
+                  bga_light: !theme,
                   bga_dark: theme,
                   light: !theme,
                   dark: theme,

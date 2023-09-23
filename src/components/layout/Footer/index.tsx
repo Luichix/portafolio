@@ -17,7 +17,7 @@ export function Footer() {
         <p>
           {text.desing} &nbsp;
           <a href="https://github.com/Luichix" target="_blank" rel="noreferrer">
-            Luichix
+            {text.name}
           </a>
         </p>
       </div>

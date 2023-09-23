@@ -38,7 +38,7 @@
 .button {
   font-size: 14px;
   background-color: transparent;
-  border: 2px solid var(--border--color-turqui);
+  border: 2px solid var(--bg--color-water);
   border-radius: 10px;
   padding: 12px 12px 12px 16px;
   width: max-content;
@@ -60,7 +60,7 @@
   flex-direction: row;
   flex-direction: column;
   z-index: 100;
-  bottom: 10px;
+  bottom: 70px;
   right: 10px;
   gap: 10px;
   transition: all ease 0.3s;
@@ -119,6 +119,13 @@
 @media (width >= 420px) {
   .comment p {
     max-width: 80%;
+  }
+}
+
+@media (width > 780px) {
+  .accesibility {
+    top: 10px;
+    bottom: auto;
   }
 }
 
