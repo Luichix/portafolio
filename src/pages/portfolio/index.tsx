@@ -14,7 +14,8 @@ import Barbershop from '@Assets/img/barbershop.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Nomina from '@Assets/img/nomina.png'
 import Medical from '@Assets/img/medical.png'
-import classNames from 'classnames'
+import FinancialWeb from '@Assets/img/financial_web.png'
+import FinancialServer from '@Assets/img/financial_server.png'
 import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
@@ -29,6 +30,8 @@ const images = {
   Barbershop,
   GoDigit,
   Nomina,
+  FinancialWeb,
+  FinancialServer,
 } as any
 
 interface Project {
@@ -90,50 +93,52 @@ export function Portfolio() {
           link={data?.link}
         />
       </Modal>
-      <div className={style.section}>
-        <Title theme={theme}>{words.title}</Title>
-        <Paragraph theme={theme} indent>
-          {words.description}
-        </Paragraph>
-        <Slide
-          slides={slides}
-          handleSlide={onSelectSlide}
-          active={currentIndex}
-          theme={theme}
-        />
-      </div>
-      {text[currentIndex].length === 0 && (
-        <Fade>
-          <div>
-            <Paragraph theme={theme} center>
-              {words.empty}
-            </Paragraph>
-            <Paragraph theme={theme} center>
-              {words[currentIndex]}
-            </Paragraph>
-          </div>
-        </Fade>
-      )}
-      <div className={style.container}>
-        <Fade className={style.fade}>
-          {text[currentIndex].map(
-            (element, index) =>
-              images[element.ref] && (
-                <Card
-                  key={index}
-                  name={element.title}
-                  image={images[element.ref]}
-                  tech={element.tecnologies}
-                  alt={element.title}
-                  repository={element.repository}
-                  link={element.link}
-                  theme={theme}
-                  textCode={words.goCode}
-                  textProject={words.goProject}
-                />
-              )
-          )}
-        </Fade>
+      <div>
+        <div className={style.section}>
+          <Title theme={theme}>{words.title}</Title>
+          <Paragraph theme={theme} indent>
+            {words.description}
+          </Paragraph>
+          <Slide
+            slides={slides}
+            handleSlide={onSelectSlide}
+            active={currentIndex}
+            theme={theme}
+          />
+        </div>
+        {text[currentIndex].length === 0 && (
+          <Fade>
+            <div>
+              <Paragraph theme={theme} center>
+                {words.empty}
+              </Paragraph>
+              <Paragraph theme={theme} center>
+                {words[currentIndex]}
+              </Paragraph>
+            </div>
+          </Fade>
+        )}
+        <div className={style.container}>
+          <Fade className={style.fade}>
+            {text[currentIndex].map(
+              (element, index) =>
+                images[element.ref] && (
+                  <Card
+                    key={index}
+                    name={element.title}
+                    image={images[element.ref]}
+                    tech={element.tecnologies}
+                    alt={element.title}
+                    repository={element.repository}
+                    link={element.link}
+                    theme={theme}
+                    textCode={words.goCode}
+                    textProject={words.goProject}
+                  />
+                )
+            )}
+          </Fade>
+        </div>
       </div>
     </Container>
   )

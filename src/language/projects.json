@@ -89,8 +89,26 @@
         ]
       }
     ],
-    "service": [],
-    "other": []
+    "service": [
+      {
+        "title": "Financial Server",
+        "ref": "FinancialServer",
+        "link": "https://financial-server-production.up.railway.app",
+        "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+        "repository": "https://github.com/Luichix/financial-server",
+        "tecnologies": ["Python", "Fastapi"]
+      }
+    ],
+    "other": [
+      {
+        "title": "Cálculo Financiero",
+        "ref": "FinancialWeb",
+        "link": "https://www.calculofinanciero.com",
+        "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
+        "repository": "https://github.com/Luichix/financial-web",
+        "tecnologies": ["Astro", "React", "Typescript", "Sass"]
+      }
+    ]
   },
   "es": {
     "landing": [
@@ -182,7 +200,25 @@
         ]
       }
     ],
-    "service": [],
-    "other": []
+    "service": [
+      {
+        "title": "Financial Server",
+        "ref": "FinancialServer",
+        "link": "https://financial-server-production.up.railway.app",
+        "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+        "repository": "https://github.com/Luichix/financial-server",
+        "tecnologies": ["Python", "Fastapi"]
+      }
+    ],
+    "other": [
+      {
+        "title": "Cálculo Financiero",
+        "ref": "FinancialWeb",
+        "link": "https://www.calculofinanciero.com",
+        "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
+        "repository": "https://github.com/Luichix/financial-web",
+        "tecnologies": ["Astro", "React", "Typescript", "Sass"]
+      }
+    ]
   }
 }
