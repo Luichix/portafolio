@@ -29,31 +29,19 @@ const Card = ({
 }: CardProps) => {
   return (
     <div className={styles.item}>
-      {/* <div className={styles.tech}>
-        {tech.map((element, index) => (
-          <span key={index}>{element}</span>
-          ))}
-        </div>  */}
+      <div className={styles.title}>
+        <h4
+          className={classNames(styles.name, {
+            textLight: !theme,
+            textDark: theme,
+          })}
+        >
+          {name}
+        </h4>
+      </div>
       <figure className={styles.figure}>
         <img src={image} className={styles.image} alt={alt} />
       </figure>
-      <h4
-        className={classNames(styles.name, {
-          light: !theme,
-          dark: theme,
-        })}
-      >
-        {name}
-      </h4>
-      <div className={styles.links}>
-        <a href={repository} target="_blank" rel="noreferrer">
-          <BsGithub /> &nbsp; {textCode}
-        </a>
-        <a href={link} target="_blank" rel="noreferrer">
-          <FaLink />
-          &nbsp; {textProject}
-        </a>
-      </div>
     </div>
   )
 }

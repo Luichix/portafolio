@@ -131,9 +131,9 @@ export function Sidebar() {
         <div className={style.profile}>
           <img src={perfil} alt="Imagen de perfil" className={style.image} />
           <div className={style.group}>
-            <h1 className={style.title}>
+            <h2 className={style.title}>
               <a href="index.html">Luichix</a>
-            </h1>
+            </h2>
             <div className={style.social}>
               <a
                 href="https://github.com/Luichix"

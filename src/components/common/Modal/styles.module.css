@@ -21,7 +21,7 @@
   justify-content: space-evenly;
   background-color: var(--bg--color-white);
   margin: auto;
-  padding: 2em;
+  padding: 2rem;
   border: 1px solid var(-border--color-gray);
   overflow-y: auto;
   grid-template-columns: repeat(auto-fill, 1fr);
@@ -52,17 +52,17 @@
 .title {
   font-weight: 700;
   color: var(--text--color-turqui);
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-align: center;
   margin: 0;
 }
 
 .text {
   padding: 0.5em 0;
-  font-size: 1.2em;
-  line-height: 2em;
+  font-size: 1.2rem;
+  line-height: 2rem;
   text-align: center;
-  text-indent: 2em;
+  text-indent: 2rem;
   color: var(--color-white);
 }
 
@@ -71,10 +71,10 @@
   border: none;
   background-color: var(--bg--color-sky);
   color: var(--text--color-turqui);
-  padding: 0.75em;
-  margin-top: 0.3em;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
   color: var(--text--color-white);
-  font-size: 1em;
+  font-size: 1rem;
   align-self: center;
   text-decoration: none;
 }

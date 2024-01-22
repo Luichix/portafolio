@@ -1,0 +1,150 @@
+/* Layouts */
+
+.container {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Mavbar Elements*/
+.name {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: var(--text--color-turqui);
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.elements a {
+  text-decoration: none;
+  color: var(--color-pearl);
+}
+
+.elements li a:hover {
+  color: var(--text--color-turqui);
+}
+
+/* Secondary elements */
+.section {
+  display: flex;
+  gap: 4rem;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  color: var(--color-pearl);
+}
+
+.links a span {
+  font-size: 12px;
+}
+
+.links a:hover {
+  color: var(--text--color-turqui);
+}
+
+/* Accesibility */
+.accesibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.swithTheme {
+  font-size: 20px;
+  color: var(--color-pearl);
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.swithLanguage {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: scale 0.3s ease;
+  color: var(--color-pearl);
+}
+
+.swithTheme:hover,
+.swithLanguage:hover {
+  color: var(--text--color-turqui);
+}
+
+.swithLanguage:active {
+  transform: scale(0.8);
+}
+
+.language {
+  width: 18px;
+  stroke-width: 2.5;
+}
+
+.toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 4px;
+  background-color: var(--color-lobezno);
+}
+
+@media (width > 780px) {
+  .container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-ebony);
+  }
+}
+
+/* medias queries */
+
+@media (width >= 640px) {
+  .container {
+    padding: 20px 48px;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    padding: 20px 68px;
+  }
+}
+@media (width >= 1280px) {
+  .container {
+    padding: 20px 120px;
+  }
+}

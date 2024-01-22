@@ -5,6 +5,7 @@ import Skills from '@Pages/skills'
 import styles from '@Styles/styles.module.css'
 import classNames from 'classnames'
 import { ThemeContext } from '@Contexts/index'
+import { Navbar } from '@Components/layout/Navbar'
 
 function Main() {
   const { theme } = useContext(ThemeContext)
@@ -18,6 +19,7 @@ function Main() {
       })}
     >
       <div className={styles.section}>
+        <Navbar />
         <Sidebar />
         <main
           id="main"

@@ -1,21 +1,23 @@
 /* --------------------------------- sidenav -------------------------------- */
 
 .sidenav {
-  position: relative;
+  position: absolute;
   background: var(--color-ebony);
   overflow-y: auto;
   transition: all ease 1s;
   transition: all 1s;
+  left: -500px;
+  z-index: 1000;
 }
 
 .container::-webkit-scrollbar {
   background-color: var(--color-black);
-  width: 0.5em;
+  width: 0.5rem;
 }
 
 .container::-webkit-scrollbar-thumb {
   background-color: var(--color-blue);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 /* -------------------------------- content ------------------------------- */
@@ -116,17 +118,17 @@
   align-items: center;
   color: var(--color-pearl);
   padding: 1em 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   transition: 0.3s;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .link i {
   color: var(--color-gray);
-  font-size: 1.8em;
+  font-size: 1.8rem;
   line-height: 0ex;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 .link:hover,
@@ -143,7 +145,7 @@
 }
 
 .toggle {
-  display: none;
+  display: flex;
   position: fixed;
   background: none;
   cursor: pointer;
@@ -157,6 +159,10 @@
   padding: 0;
   border: 0;
   color: var(--color-sky);
+}
+
+.show {
+  left: 0;
 }
 
 .back {
@@ -258,23 +264,18 @@
 
 /* medias queries */
 
-@media screen and (max-width: 780px) {
+@media (width > 780px) {
   .sidenav {
-    position: absolute;
-    left: -500px;
-    z-index: 1000;
+    position: relative;
+    display: none;
   }
 
   .toggle {
-    display: flex;
-  }
-
-  .show {
-    left: 0;
+    display: none;
   }
 }
 
-@media screen and (max-height: 700px) {
+@media (height < 700px) {
   .container {
     justify-content: flex-start;
     padding-top: 2rem;

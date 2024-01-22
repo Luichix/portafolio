@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 import { Link } from 'react-scroll'
 import { ThemeContext } from '@Contexts/theme'
 
-import { FaArrowDown } from 'react-icons/fa'
+import { BiMessageDetail, BiMessageSquareDetail } from 'react-icons/bi'
 import classNames from 'classnames'
 import Paragraph from '@Components/common/Paragraph'
 import Container from '@Components/layout/Container'
@@ -65,25 +65,20 @@ export function Home() {
         </div>
       </div>
       <div
-        className={classNames(styles.container, {
+        className={classNames(styles.section, {
           light: !theme,
           text_dark: theme,
         })}
       >
-        <h1>
-          {content.hi} <br />
-          {content.name}
-        </h1>
-        <h3
-          className={classNames({
-            title_light: !theme,
-            title_dark: theme,
-          })}
-        >
-          {content.job}
-        </h3>
+        <div className={styles.card}>
+          <span>{content.job1}</span>
+          <span>{content.job2}</span>
+        </div>
+        <div className={styles.call}>
+          <p>{content.introduce1}</p>
+          <p>{content.introduce2}</p>
+        </div>
       </div>
-
       <div className={styles.comment}>
         <Paragraph theme={theme}>{content.about}</Paragraph>
 
@@ -98,9 +93,14 @@ export function Home() {
           offset={100}
           duration={1500}
         >
-          {content.contact}
-          <FaArrowDown />
+          <span>{content.contact}</span>
+          <BiMessageDetail />
         </Link>
+      </div>
+      <div className={styles.group}>
+        <img src={'/src/assets/ico/react.svg'} />
+        <img src={'/src/assets/ico/python.svg'} />
+        <img src={'/src/assets/ico/nodejs.svg'} />
       </div>
     </Container>
   )

@@ -1,6 +1,6 @@
 {
   "es": {
-    "title": "Portafolio",
+    "title": "Proyectos",
     "description": "Os comparto una selección de proyectos en los que he invertido tiempo y esfuerzo, cada uno representando un desafío o una etapa que me ha ayudado a crecer y seguir aprendiendo.",
     "empty": "No se han agregado projectos en esta pestaña",
     "spa": "Aplicaciones",
@@ -11,7 +11,7 @@
     "goProject": "Ir al projecto"
   },
   "en": {
-    "title": "Portfolio",
+    "title": "Projects",
     "description": "I share with you a selection of projects in which I have invested time and effort, each one representing a challenge or a stage that has helped me grow and continue learning.",
     "empty": "No projects have been added in this tab",
     "spa": "Applications",

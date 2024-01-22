@@ -19,7 +19,7 @@ import mysql from '@Assets/ico/mysql.svg'
 import postgresql from '@Assets/ico/postgresql.svg'
 import sqlite from '@Assets/ico/sqlite.svg'
 import figma from '@Assets/ico/figma.svg'
-import confluence from '@Assets/ico/confluence.svg'
+// import confluence from '@Assets/ico/confluence.svg'
 import jira from '@Assets/ico/jira.svg'
 import eslint from '@Assets/ico/eslint.svg'
 import fastapi from '@Assets/ico/fastapi.svg'
@@ -33,6 +33,7 @@ import powerbi from '@Assets/ico/powerbi.svg'
 import git from '@Assets/ico/git.svg'
 import jest from '@Assets/ico/jest.svg'
 import storybook from '@Assets/ico/storybook.svg'
+import java from '@Assets/ico/java.svg'
 
 const list: Stack[] = []
 
@@ -70,9 +71,12 @@ export const USING_STACK = [
 
   // Tecnologías adicionales
   expo,
+  python,
+  fastapi,
+  astro,
 ]
 
-export const LEARNING_STACK = [python, fastapi, django, astro, svelte]
+export const LEARNING_STACK = [java, django, svelte]
 export const OTHER_STACK = [
   // Tecnologías de desarrollo y sistemas operativos
   git,

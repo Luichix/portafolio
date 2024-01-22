@@ -2,14 +2,14 @@
   "es": {
     "title": "Habilidades",
     "description": "Con el deseo de crecer como desarrollador, he ido adquiriendo experiencia en una amplia gama de habilidades técnicas, lo que considero me permite colaborar tanto en el backend como en el frontend.",
-    "using": "Utilizados recientemente:",
+    "using": "Tecnologias Utilizadas:",
     "learning": "Aprendiendo:",
     "other": "Otras habilidades:"
   },
   "en": {
     "title": "Skills",
     "description": "With the desire to grow as a developer, I have been gaining experience in a wide range of technical skills, which I believe allows me to collaborate in both the backend and frontend.",
-    "using": "Using recently:",
+    "using": "Technologies used:",
     "learning": "Learning:",
     "other": "Other skills:"
   }

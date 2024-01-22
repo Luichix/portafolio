@@ -3,14 +3,14 @@
     "home": "Inicio",
     "about": "Sobre mi",
     "skills": "Habilidades",
-    "portfolio": "Portafolio",
+    "portfolio": "Proyectos",
     "contact": "Contacto"
   },
   "en": {
     "home": "Home",
     "about": "About me",
     "skills": "Skills",
-    "portfolio": "Portfolio",
+    "portfolio": "Projects",
     "contact": "Contact"
   }
 }

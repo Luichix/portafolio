@@ -1,7 +1,8 @@
 {
   "es": {
     "title": "Sobre mí",
-    "salute": "Soy Desarrollador Web Full Stack y Administrador de Empresas, con más de 5 años de experiencia en el desarrollo de sistemas y 2 años en el mundo del desarrollo web.",
+    "introduce": "¡Hola! Soy Luis Reynaldo",
+    "salute": "Soy Desarrollador Web Full Stack y Administrador de Empresas, con más de 5 años de experiencia en el desarrollo de sistemas de información y 2 años en el mundo del desarrollo web.",
     "resume": "Al tener un perfil multidisciplinario, he adquirido una variedad de habilidades que me han permitido adaptarme rápidamente a diversos campos de trabajo.",
     "age": "1995/09/24",
     "access": "Puedes obtener más información aca abajo:",
@@ -10,7 +11,8 @@
   },
   "en": {
     "title": "About me",
-    "salute": "I am a Full Stack Developer with a background in Business Administration. I have been involved in system development for over 5 years and have spent the last 2 years in the web development world.",
+    "introduce": "Hello! I'm Luis Reynaldo",
+    "salute": "I'm a Full Stack Developer with a background in Business Administration. I have been involved in information systems development for over 5 years and have spent the last 2 years in the web development world.",
     "resume": "Having a multidisciplinary profile, I have acquired a variety of skills that have allowed me to adapt quickly to various fields of work.",
     "age": "1995/09/24",
     "access": "You can get more information below:",

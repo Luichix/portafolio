@@ -133,12 +133,12 @@ textarea::placeholder {
 
 .data textarea::-webkit-scrollbar {
   /* background-color: var(--color-black); */
-  width: 0.5em;
+  width: 0.5rem;
 }
 
 .data textarea::-webkit-scrollbar-thumb {
   background-color: var(--border--color-turqui);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 .data input:hover,

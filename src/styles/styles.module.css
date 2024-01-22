@@ -25,9 +25,8 @@
   background-image: url(../assets/svg/background-light.svg);
 }
 
-@media (width >= 780px) {
+@media (width > 780px) {
   .section {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    display: flex;
   }
 }

@@ -7,7 +7,7 @@ import classNames from 'classnames'
 import profile from '../../assets/img/profile.jpg'
 import pdfCv from '../../assets/pdf/cvoficial.pdf'
 import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
-import { FcDownload } from 'react-icons/fc'
+import { FaFilePdf } from 'react-icons/fa'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
@@ -32,12 +32,9 @@ export function About() {
             })}
           >
             <div className={style.content}>
-              <Paragraph theme={theme} indent>
-                {text.salute}
-              </Paragraph>
-              <Paragraph theme={theme} indent>
-                {text.resume}
-              </Paragraph>
+              <h1 className={style.introduce}>{text.introduce} </h1>
+              <Paragraph theme={theme}>{text.salute}</Paragraph>
+              <Paragraph theme={theme}>{text.resume}</Paragraph>
             </div>
           </Fade>
           <div>
@@ -64,7 +61,7 @@ export function About() {
               })}
             >
               <i>
-                <FcDownload style={{ display: 'block' }} />
+                <FaFilePdf style={{ display: 'block' }} />
               </i>
               <span>{text.cv}</span>
             </a>
@@ -78,7 +75,7 @@ export function About() {
               })}
             >
               <i>
-                <FcDownload style={{ display: 'block' }} />
+                <FaFilePdf style={{ display: 'block' }} />
               </i>
 
               <span>{text.report}</span>

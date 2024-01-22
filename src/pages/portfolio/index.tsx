@@ -12,6 +12,7 @@ import Elina from '@Assets/img/elina.png'
 import Nicafest from '@Assets/img/nicafest.png'
 import Barbershop from '@Assets/img/barbershop.png'
 import GoDigit from '@Assets/img/godigit.png'
+import Livechat from '@Assets/img/livechat.jpeg'
 import Nomina from '@Assets/img/nomina.png'
 import Medical from '@Assets/img/medical.png'
 import FinancialWeb from '@Assets/img/financial_web.png'
@@ -20,7 +21,6 @@ import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
-import Slide, { Category, SlidesRecord } from '@Components/common/Slide'
 
 const images = {
   Medical,
@@ -29,6 +29,7 @@ const images = {
   Nicafest,
   Barbershop,
   GoDigit,
+  Livechat,
   Nomina,
   FinancialWeb,
   FinancialServer,
@@ -41,13 +42,6 @@ interface Project {
   link: string
   ref: string
   tecnologies: string[]
-}
-
-enum PROJECTS_CATEGORY {
-  spa = 'spa',
-  landing = 'landing',
-  service = 'service',
-  other = 'other',
 }
 
 export function Portfolio() {
@@ -67,22 +61,6 @@ export function Portfolio() {
     if (modalRef?.current) modalRef.current.style.display = 'none'
   }
 
-  // Carousel
-  const [currentIndex, setCurrentIndex] = useState<Category>(
-    PROJECTS_CATEGORY.spa
-  )
-
-  const slides: SlidesRecord[] = [
-    { slide: 'spa', label: words.spa },
-    { slide: 'landing', label: words.landing },
-    { slide: 'service', label: words.service },
-    { slide: 'other', label: words.other },
-  ]
-
-  const onSelectSlide = (slide: Category) => {
-    setCurrentIndex(slide)
-  }
-
   return (
     <Container id="portfolio" type="separated">
       <Modal onClose={closeModal} ref={modalRef}>
@@ -99,28 +77,19 @@ export function Portfolio() {
           <Paragraph theme={theme} indent>
             {words.description}
           </Paragraph>
-          <Slide
-            slides={slides}
-            handleSlide={onSelectSlide}
-            active={currentIndex}
-            theme={theme}
-          />
         </div>
-        {text[currentIndex].length === 0 && (
+        {text.length === 0 && (
           <Fade>
             <div>
               <Paragraph theme={theme} center>
                 {words.empty}
-              </Paragraph>
-              <Paragraph theme={theme} center>
-                {words[currentIndex]}
               </Paragraph>
             </div>
           </Fade>
         )}
         <div className={style.container}>
           <Fade className={style.fade}>
-            {text[currentIndex].map(
+            {text.map(
               (element, index) =>
                 images[element.ref] && (
                   <Card

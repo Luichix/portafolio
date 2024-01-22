@@ -2,16 +2,22 @@
   "es": {
     "hi": "Hola,",
     "name": "Soy Luis Reynaldo",
-    "job": "Desarrollador Web & Administrador de Empresas",
+    "job1": "Desarrollador Web",
+    "job2": "Administrador de Empresas",
+    "introduce1": "¿Cuál es mi mayor fortaleza?",
+    "introduce2": "El pensamiento abstracto!",
     "about": "Es un placer poder compartirte un poco acerca de mí. Aquí podrás encontrar información sobre mis proyectos, habilidades y formación académica.",
-    "contact": "Contáctame"
+    "contact": "Contáctame!"
   },
 
   "en": {
     "hi": "Hello,",
     "name": "I'm Luis Reynaldo",
-    "job": "Full Stack Web Developer & Business Administration",
+    "job1": "Full Stack Developer",
+    "job2": "Business Administration",
+    "introduce1": "What is my greatest strength?",
+    "introduce2": "Abstract Thinking!",
     "about": "It's a pleasure to talk about myself. Here you can find information about my projects, skills, and academic background.",
-    "contact": "Contact me"
+    "contact": "Contact me!"
   }
 }
