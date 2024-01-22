@@ -28,17 +28,21 @@ const Card = ({
   textProject,
 }: CardProps) => {
   return (
-    <div className={styles.item}>
-      <div className={styles.title}>
-        <h4
-          className={classNames(styles.name, {
-            textLight: !theme,
-            textDark: theme,
-          })}
-        >
-          {name}
-        </h4>
-      </div>
+    <div
+      className={classNames(styles.item, {
+        [styles.bgDark]: theme,
+        [styles.bgLight]: !theme,
+      })}
+    >
+      <h4
+        className={classNames(styles.name, {
+          textLight: !theme,
+          textDark: theme,
+        })}
+      >
+        {name}
+      </h4>
+
       <figure className={styles.figure}>
         <img src={image} className={styles.image} alt={alt} />
       </figure>

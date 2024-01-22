@@ -12,6 +12,9 @@ import Container from '@Components/layout/Container'
 
 import { Expand } from '@theme-toggles/react'
 import Language from '@Components/svg/Language'
+import react from '@Assets/ico/react.svg'
+import python from '@Assets/ico/python.svg'
+import nodejs from '@Assets/ico/nodejs.svg'
 
 export function Home() {
   const { language, changeLanguage } = useContext(LanguageContext)
@@ -70,7 +73,12 @@ export function Home() {
           text_dark: theme,
         })}
       >
-        <div className={styles.card}>
+        <div
+          className={classNames(styles.card, {
+            [styles.lightCard]: !theme,
+            [styles.darkCard]: theme,
+          })}
+        >
           <span>{content.job1}</span>
           <span>{content.job2}</span>
         </div>
@@ -97,10 +105,14 @@ export function Home() {
           <BiMessageDetail />
         </Link>
       </div>
-      <div className={styles.group}>
-        <img src={'/src/assets/ico/react.svg'} />
-        <img src={'/src/assets/ico/python.svg'} />
-        <img src={'/src/assets/ico/nodejs.svg'} />
+      <div
+        className={classNames(styles.group, {
+          [styles.bgDark]: theme,
+        })}
+      >
+        <img src={react} />
+        <img src={python} />
+        <img src={nodejs} />
       </div>
     </Container>
   )

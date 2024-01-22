@@ -14,6 +14,7 @@ import Barbershop from '@Assets/img/barbershop.png'
 import GoDigit from '@Assets/img/godigit.png'
 import Livechat from '@Assets/img/livechat.jpeg'
 import Nomina from '@Assets/img/nomina.png'
+import Calendar from '@Assets/img/calendar.png'
 import Medical from '@Assets/img/medical.png'
 import FinancialWeb from '@Assets/img/financial_web.png'
 import FinancialServer from '@Assets/img/financial_server.png'
@@ -31,6 +32,7 @@ const images = {
   GoDigit,
   Livechat,
   Nomina,
+  Calendar,
   FinancialWeb,
   FinancialServer,
 } as any

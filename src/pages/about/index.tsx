@@ -56,6 +56,7 @@ export function About() {
               target="_blank"
               rel="noreferrer"
               className={classNames(style.button, {
+                [style.bgDark]: theme,
                 title_light: !theme,
                 title_dark: theme,
               })}
@@ -70,6 +71,7 @@ export function About() {
               target="_blank"
               rel="noreferrer"
               className={classNames(style.button, {
+                [style.bgDark]: theme,
                 title_light: !theme,
                 title_dark: theme,
               })}

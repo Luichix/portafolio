@@ -1,0 +1,18 @@
+{
+  "es": {
+    "name": "Luis",
+    "middleName": "Reynaldo",
+    "about": "Sobre mi",
+    "skills": "Habilidades",
+    "portfolio": "Proyectos",
+    "contact": "Contacto"
+  },
+  "en": {
+    "name": "Luis",
+    "middleName": "Reynaldo",
+    "about": "About me",
+    "skills": "Skills",
+    "portfolio": "Projects",
+    "contact": "Contact"
+  }
+}

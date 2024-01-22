@@ -25,7 +25,7 @@ a:hover {
 /* theme colors */
 
 .bg_light {
-  background-color: var(--color-light);
+  background-color: var(--color-white);
 }
 
 .bg_dark {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .bga_light {
-  background-color: #efefef;
+  background-color: var(--color-light);
 }
 
 .bga_dark {
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .span_dark {
-  color: var(--text--color-white);
+  color: var(--color-white);
 }
 
 .span_light {
@@ -82,4 +82,31 @@ a:hover {
 .bgs_dark {
   background-color: var(--border--color-water);
   color: var(--text--color-white);
+}
+
+.bg_navbar_dark {
+  background-color: var(--color-ebony);
+}
+
+.bg_navbar_light {
+  background-color: var(--bg--color-water);
+}
+
+.color_navbar_dark,
+.color_navbar_dark a {
+  color: var(--color-pearl);
+}
+.color_navbar_light,
+.color_navbar_light a {
+  color: var(--color-light);
+}
+
+.color_navbar_dark h1:hover,
+.color_navbar_dark a:hover {
+  color: var(--text--color-turqui);
+}
+
+.color_navbar_light h1:hover,
+.color_navbar_light a:hover {
+  color: var(--color-white);
 }

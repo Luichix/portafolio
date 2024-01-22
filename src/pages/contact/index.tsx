@@ -23,13 +23,13 @@ export function Contact() {
     {
       icon: 'map',
       label: text.personal.city,
-      text: 'Chinandega, Nicaragua',
+      text: 'Huntington Station, New York',
       isLink: false,
     },
     {
       icon: 'phone',
       label: text.personal.phone,
-      text: '+ 505 8458-4479',
+      text: '+1 (305) 610 2453',
       isLink: true,
       link: 'https://wa.me/50584584479?text=Hola,%20te%20contacto%20desde%20tu%20pagina%20web',
     },

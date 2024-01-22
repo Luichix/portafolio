@@ -1,29 +1,25 @@
 .item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 14px;
   padding: 10px;
   border-radius: 4px;
-  background-color: var(--color-lobezno);
 }
 
-.title {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.bgLight {
+  background-color: var(--color-light);
+}
+
+.bgDark {
+  background-color: var(--color-lobezno);
 }
 
 .name {
   font-size: 1.25rem;
   font-weight: 600;
-  text-shadow: 2px 2px var(--color-lobezno);
-  text-align: center;
+  text-align: start;
   cursor: pointer;
   transition: color 0.3s ease;
-  color: var(--text-color-dark);
 }
 
 .figure {
@@ -97,26 +93,11 @@
   }
 
   .figure {
-    width: 300px;
+    width: 380px;
     height: 200px;
   }
 
   .links {
     gap: 20px;
-  }
-}
-
-@media (width >= 1280px) {
-  .item {
-    gap: 30px;
-  }
-
-  .figure {
-    width: 400px;
-    height: 300px;
-  }
-
-  .links {
-    gap: 40px;
   }
 }

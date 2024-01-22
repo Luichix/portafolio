@@ -51,7 +51,7 @@
       "ref": "Livechat",
       "link": "https://godigit-app.firebaseapp.com/",
       "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/livechat",
+      "repository": "https://github.com/Luichix/livechat-app",
       "tecnologies": [
         "CSS Modules",
         "Javascript",
@@ -91,6 +91,14 @@
       "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
       "repository": "https://github.com/Luichix/financial-web",
       "tecnologies": ["Astro", "React", "Typescript", "Sass"]
+    },
+    {
+      "title": "Calendar App",
+      "ref": "Calendar",
+      "link": "https://calendar-app-eosin.vercel.app/",
+      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
+      "repository": "https://github.com/Luichix/calendar-app",
+      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
     },
     {
       "title": "Nicaragua Festivo",
@@ -169,7 +177,7 @@
       "ref": "Livechat",
       "link": "https://godigit-app.firebaseapp.com/",
       "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/livechat",
+      "repository": "https://github.com/Luichix/livechat-app",
       "tecnologies": [
         "CSS Modules",
         "Javascript",
@@ -209,6 +217,14 @@
       "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
       "repository": "https://github.com/Luichix/financial-web",
       "tecnologies": ["Astro", "React", "Typescript", "Sass"]
+    },
+    {
+      "title": "Calendar App",
+      "ref": "Calendar",
+      "link": "https://calendar-app-eosin.vercel.app/",
+      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
+      "repository": "https://github.com/Luichix/calendar-app",
+      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
     },
     {
       "title": "Nicaragua Festivo",

@@ -1,18 +1,19 @@
 .footer {
   position: relative;
-  padding: 15px 0;
+  padding: 16px 0;
   color: var(--color-white);
   font-size: 14px;
   width: 100%;
   left: 0;
   bottom: 0;
-  background-color: var(--color-ebony);
   z-index: 0;
 }
 
 .credits {
-  padding-top: 5px;
   text-align: center;
-  font-size: 13px;
-  color: var(--color-white);
+  line-height: 1.5rem;
+  font-size: 14px;
+}
+.credits a {
+  text-decoration: none;
 }

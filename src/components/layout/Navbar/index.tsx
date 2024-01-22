@@ -4,28 +4,40 @@ import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa'
 import { Expand } from '@theme-toggles/react'
 import Language from '@Components/svg/Language'
 import { LanguageContext, ThemeContext } from '@Contexts/index'
+import content from '@Language/navbar.json'
+import classNames from 'classnames'
+
 export function Navbar() {
   const { language, changeLanguage } = useContext(LanguageContext)
   const { theme, changeTheme } = useContext(ThemeContext)
 
+  const text = content[language]
+
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(styles.container, {
+        bg_navbar_dark: theme,
+        bg_navbar_light: !theme,
+        color_navbar_dark: theme,
+        color_navbar_light: !theme,
+      })}
+    >
       <nav className={styles.navigation}>
         <h1 className={styles.name}>
-          <b>Luis</b> Reynaldo
+          <b>{text.name}</b> {text.middleName}
         </h1>
         <ul className={styles.elements}>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{text.about}</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">{text.skills}</a>
           </li>
           <li>
-            <a href="#portfolio">Projects</a>
+            <a href="#portfolio">{text.portfolio}</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{text.contact}</a>
           </li>
         </ul>
         <div className={styles.section}>
@@ -48,20 +60,36 @@ export function Navbar() {
             </a>
           </div>
           <div className={styles.accesibility}>
-            <div className={styles.toggles}>
+            <div
+              className={classNames(styles.toggles, {
+                [styles.toggleDark]: theme,
+                [styles.toggleLight]: !theme,
+              })}
+            >
               <button
                 type="button"
                 onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}
-                className={styles.swithLanguage}
+                className={classNames(styles.swithLanguage, {
+                  [styles.swithDark]: theme,
+                  [styles.swithLight]: !theme,
+                })}
               >
                 <Language className={styles.language} />
               </button>
             </div>
-            <div className={styles.toggles}>
+            <div
+              className={classNames(styles.toggles, {
+                [styles.toggleDark]: theme,
+                [styles.toggleLight]: !theme,
+              })}
+            >
               <Expand
                 toggled={theme}
                 toggle={changeTheme as any}
-                className={styles.swithTheme}
+                className={classNames(styles.swithTheme, {
+                  [styles.swithDark]: theme,
+                  [styles.swithLight]: !theme,
+                })}
               />
             </div>
           </div>

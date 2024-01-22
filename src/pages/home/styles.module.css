@@ -13,11 +13,17 @@
   padding: 4px 12px;
   font-size: 0.95rem;
   font-family: 'Alata', sans-serif;
-  background-color: var(--color-lobezno);
   font-weight: 400;
   line-height: 1.5rem;
+}
 
+.darkCard span {
   color: var(--text--color-turqui);
+  background-color: var(--color-lobezno);
+}
+.lightCard span {
+  color: var(--color-white);
+  background-color: var(--bg--color-water);
 }
 
 .call {
@@ -61,7 +67,6 @@
   align-items: center;
   line-height: 36px;
   border-bottom: 3px solid var(--text--color-turqui);
-  background-color: var(--color-lobezno);
   border-radius: 4px 4px 0 0;
   padding: 4px 12px;
 }
@@ -149,11 +154,14 @@
   align-items: center;
 }
 
+.bgDark img {
+  background-color: var(--color-lobezno);
+}
+
 .group img:nth-child(1) {
   grid-row-start: 4;
   grid-column-end: 3;
   padding: 20px;
-  background-color: var(--color-lobezno);
   border-radius: 50%;
   width: 120px;
 }
@@ -162,7 +170,6 @@
   grid-row-start: 1;
   grid-column-end: 2;
   padding: 20px;
-  background-color: var(--color-lobezno);
   border-radius: 50%;
   width: 90px;
 }
@@ -171,7 +178,6 @@
   grid-row-start: 3;
   grid-column-end: 1;
   padding: 20px;
-  background-color: var(--color-lobezno);
   border-radius: 50%;
   width: 110px;
 }
