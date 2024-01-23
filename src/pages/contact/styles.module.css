@@ -79,9 +79,9 @@
   align-self: center;
 }
 
-.formGroup {
+/* .formGroup {
   padding: 20px;
-}
+} */
 
 .form {
   display: grid;

@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Sidebar, Footer } from '@Components/layout/index'
 import { Home, About, Portfolio, Contact } from '@Pages/index'
 import Skills from '@Pages/skills'
@@ -9,6 +9,15 @@ import { Navbar } from '@Components/layout/Navbar'
 
 function Main() {
   const { theme } = useContext(ThemeContext)
+  /* ----------------------------- toggle sidebar ----------------------------- */
+
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () => {
+    if (toggle) setToggle(false)
+    else setToggle(true)
+  }
+
   return (
     <div
       className={classNames(styles.container, {
@@ -19,8 +28,8 @@ function Main() {
       })}
     >
       <div className={styles.section}>
-        <Navbar />
-        <Sidebar />
+        <Navbar toggle={toggle} handleToggle={handleToggle} />
+        <Sidebar toggle={toggle} setToggle={setToggle} />
         <main
           id="main"
           className={classNames(styles.main, {

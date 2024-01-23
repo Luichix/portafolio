@@ -14,31 +14,17 @@ import perfil from '@Assets/img/perfil.png'
 import { GoHome, GoPerson, GoProject, GoMail } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa'
-import { HiMenu, HiCode, HiArrowCircleUp } from 'react-icons/hi'
+import { HiArrowCircleUp } from 'react-icons/hi'
 import style from './styles.module.css'
 import classNames from 'classnames'
-import { LanguageContext } from '@Contexts/index'
+import { LanguageContext, ThemeContext } from '@Contexts/index'
 
 /* ------------------------------- interfaces ------------------------------- */
 
-interface ModalProps extends PropsWithChildren {
-  onToggle: (event: any) => void
-}
 interface ScrollProps {
   scrollToTop: (event: any) => void
 }
 
-/* ---------------------------- extra components ---------------------------- */
-
-function Menu({ children, onToggle }: ModalProps) {
-  const PortalMenu = document.getElementById('menu')!
-  return ReactDOM.createPortal(
-    <button onClick={onToggle} type="button" className={style.toggle}>
-      {children}
-    </button>,
-    PortalMenu
-  )
-}
 const Scroll = forwardRef<PropsWithRef<HTMLAnchorElement>, ScrollProps>(
   function ScrollButton({ scrollToTop }: ScrollProps, ref) {
     const PortalScroll = document.getElementById('scroll')!
@@ -69,20 +55,18 @@ const icons = [
 
 /* --------------------------------- Sidebar -------------------------------- */
 
-export function Sidebar() {
+export function Sidebar({
+  toggle,
+  setToggle,
+}: {
+  toggle: boolean
+  setToggle: (bool: boolean) => void
+}) {
   /* ------------------------------ text content ------------------------------ */
 
   const { language } = useContext(LanguageContext)
+  const { theme } = useContext(ThemeContext)
   const text = lang[language]
-
-  /* ----------------------------- toggle sidebar ----------------------------- */
-
-  const [toggle, setToggle] = useState(false)
-
-  const handleToggle = () => {
-    if (toggle) setToggle(false)
-    else setToggle(true)
-  }
 
   /* -------------------------- button scroll to top -------------------------- */
 
@@ -114,25 +98,22 @@ export function Sidebar() {
       id="header"
       className={classNames(style.sidenav, {
         [style.show]: toggle,
+        [style.bgLight]: !theme,
+        [style.bgDark]: theme,
       })}
     >
-      <Menu onToggle={handleToggle}>
-        <i
-          className={classNames({
-            [style.rotateFront]: toggle,
-            [style.rotateBack]: !toggle,
-          })}
-        >
-          <HiMenu />
-        </i>
-      </Menu>
       <Scroll scrollToTop={scrollToTop} ref={scrollRef} />
-      <div className={style.container}>
+      <div
+        className={classNames(style.container, {
+          [style.bgLight]: !theme,
+          [style.bgDark]: theme,
+        })}
+      >
         <div className={style.profile}>
           <img src={perfil} alt="Imagen de perfil" className={style.image} />
           <div className={style.group}>
             <h2 className={style.title}>
-              <a href="index.html">Luichix</a>
+              <a href="#">Luichix</a>
             </h2>
             <div className={style.social}>
               <a
@@ -175,7 +156,7 @@ export function Sidebar() {
                     to={item}
                     spy={true}
                     smooth="easeInOutQuint"
-                    offset={0}
+                    offset={-50}
                     duration={1500}
                     onClick={() => setToggle(false)}
                   >

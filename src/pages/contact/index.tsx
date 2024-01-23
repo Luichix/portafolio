@@ -23,7 +23,7 @@ export function Contact() {
     {
       icon: 'map',
       label: text.personal.city,
-      text: 'Huntington Station, New York',
+      text: 'Huntington Station, NY',
       isLink: false,
     },
     {

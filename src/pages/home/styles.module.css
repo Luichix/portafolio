@@ -6,12 +6,18 @@
   padding: 40px 0 0 0;
   gap: 12px;
   align-items: start;
+  justify-content: center;
+  height: 100dvh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card span {
   border-radius: 4px;
   padding: 4px 12px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
@@ -27,9 +33,14 @@
 }
 
 .call {
-  padding: 62px 0 16px 0;
+  padding: 32px 0 0 0;
   display: flex;
   flex-direction: column;
+}
+
+.call p {
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 .section div {
@@ -37,13 +48,8 @@
   gap: 16px;
 }
 
-.call p {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
 .comment {
-  padding: 40px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,11 +149,11 @@
 /* Tecnologies */
 
 .group {
+  display: none;
   position: absolute;
   right: 0;
   width: 40%;
   height: 75%;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   justify-items: right;
@@ -185,16 +191,61 @@
 /* medias queries */
 
 @media (width >= 420px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width >= 460px) {
+  .section {
+    height: 90dvh;
+  }
+
+  .card span {
+    font-size: 0.95rem;
+  }
   .comment p {
     max-width: 80%;
+  }
+
+  .call p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (width > 780px) {
+  .section {
+    height: 80dvh;
+  }
+
   .accesibility {
     display: none;
     top: 10px;
     bottom: auto;
+  }
+  .call p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (width > 1024px) {
+  .group {
+    display: grid;
+  }
+  .call {
+    padding: 84px 0 16px 0;
+  }
+
+  .call p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .comment p {
+    max-width: 65%;
   }
 }
 
@@ -202,8 +253,18 @@
   .section h1 {
     font-size: 4rem;
   }
+
   .section h3 {
     font-size: 1.75rem;
+  }
+
+  .call {
+    padding: 62px 0 16px 0;
+  }
+
+  .call p {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   .comment {
