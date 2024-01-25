@@ -25,16 +25,16 @@ import Container from '@Components/layout/Container'
 
 const images = {
   Medical,
-  Quesos,
   Elina,
-  Nicafest,
-  Barbershop,
   GoDigit,
   Livechat,
   Nomina,
-  Calendar,
   FinancialWeb,
   FinancialServer,
+  // Quesos,
+  // Nicafest,
+  // Barbershop,
+  // Calendar,
 } as any
 
 interface Project {
