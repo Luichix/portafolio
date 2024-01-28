@@ -40,10 +40,10 @@
       "tecnologies": ["Javascript", "React", "Redux"]
     },
     {
-      "title": "Chatbot Management",
+      "title": "Chatbot Manager",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Chatbot Management is a conceptual design and functionality project for a web application aimed at chatbot management. It stands out for its intuitive sections for configuration and payments, an appealing homepage, and an interactive area where users define responses to common questions, allowing efficient management of their chatbots.",
+      "description": "Chatbot Manager is a conceptual design and functionality project for a web application aimed at chatbot management. It stands out for its intuitive sections for configuration and payments, an appealing homepage, and an interactive area where users define responses to common questions, allowing efficient management of their chatbots.",
       "repository": "https://github.com/Luichix/chat-web",
       "tecnologies": [
         "CSS Modules",
@@ -135,10 +135,10 @@
       "tecnologies": ["Javascript", "React", "Redux"]
     },
     {
-      "title": "Chatbot Management",
+      "title": "Chatbot Manager",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Chatbot Management es un proyecto conceptual de diseño y funcionalidad para una aplicación web destinada a la gestión de chatbots. Destaca por sus secciones intuitivas para configuración y pagos, una página de inicio atractiva y un área interactiva donde los usuarios definen respuestas a preguntas comunes, permitiendo una gestión eficiente de sus chatbots.",
+      "description": "Chatbot Manager es un proyecto conceptual de diseño y funcionalidad para una aplicación web destinada a la gestión de chatbots. Destaca por sus secciones intuitivas para configuración y pagos, una página de inicio atractiva y un área interactiva donde los usuarios definen respuestas a preguntas comunes, permitiendo una gestión eficiente de sus chatbots.",
       "repository": "https://github.com/Luichix/chat-web",
       "tecnologies": [
         "CSS Modules",

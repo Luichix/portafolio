@@ -26,6 +26,7 @@
 
 .close {
   position: absolute;
+  z-index: 1000;
   color: var(--text--color-turqui);
   float: right;
   font-size: 28px;
@@ -34,13 +35,13 @@
   right: 0.5rem;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: var(--text--color-turqui);
   text-decoration: none;
-  cursor: pointer;
 }
 
 .title {
