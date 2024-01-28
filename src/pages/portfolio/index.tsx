@@ -22,6 +22,8 @@ import { ThemeContext } from '@Contexts/theme'
 import Paragraph from '@Components/common/Paragraph'
 import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
+import { BsGithub } from 'react-icons/bs'
+import { TbWorld } from 'react-icons/tb'
 
 const images = {
   Medical,
@@ -40,9 +42,8 @@ const images = {
 interface Project {
   title: string
   repository: string
-  details: Record<string, string>[]
+  description: string
   link: string
-  ref: string
   tecnologies: string[]
 }
 
@@ -51,12 +52,18 @@ export function Portfolio() {
   const { language } = useContext(LanguageContext)
   const text = projects[language]
   const words = content[language]
-  const [data, setData] = useState<Project | null>(null)
+  const [data, setData] = useState<Project>({
+    title: '',
+    description: '',
+    tecnologies: [],
+    link: '',
+    repository: '',
+  })
   const modalRef = useRef<HTMLElement | null>(null)
 
-  const openModal = (element: any) => {
+  const openModal = (element: number) => {
     if (modalRef?.current) modalRef.current.style.display = 'flex'
-    setData(element)
+    setData(text[element])
   }
   const closeModal = (event: any) => {
     event.preventDefault()
@@ -66,12 +73,35 @@ export function Portfolio() {
   return (
     <Container id="portfolio" type="separated">
       <Modal onClose={closeModal} ref={modalRef}>
-        <Detail
-          title={data?.title}
-          repository={data?.repository}
-          details={data?.details}
-          link={data?.link}
-        />
+        <div>
+          <Title theme={theme}>{data.title}</Title>
+          <div className={style.tech}>
+            {data.tecnologies.map((item, index) => (
+              <span key={index}>{item}</span>
+            ))}
+          </div>
+        </div>
+        <Paragraph theme={theme}>{data.description}</Paragraph>
+        <div className={style.links}>
+          <a
+            className={style.link}
+            href={data.repository}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+            <span>{words.goCode}</span>
+          </a>
+          <a
+            className={style.link}
+            href={data.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbWorld />
+            <span>{words.goProject}</span>
+          </a>
+        </div>
       </Modal>
       <div>
         <div className={style.section}>
@@ -96,15 +126,12 @@ export function Portfolio() {
                 images[element.ref] && (
                   <Card
                     key={index}
+                    index={index}
                     name={element.title}
                     image={images[element.ref]}
-                    tech={element.tecnologies}
                     alt={element.title}
-                    repository={element.repository}
-                    link={element.link}
                     theme={theme}
-                    textCode={words.goCode}
-                    textProject={words.goProject}
+                    onClick={openModal}
                   />
                 )
             )}

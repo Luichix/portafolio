@@ -14,6 +14,41 @@
   row-gap: 60px;
 }
 
+.tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech span {
+  min-width: 76px;
+  text-align: center;
+  padding: 4px;
+  background-color: var(--text--color-turqui);
+  border-radius: 4px;
+  color: var(--color-lobezno);
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text--color-turqui);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
 .fade {
   justify-self: center;
 }
