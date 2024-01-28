@@ -17,23 +17,16 @@
 
 .content {
   position: relative;
-  display: grid;
-  justify-content: space-evenly;
-  background-color: var(--bg--color-white);
   margin: auto;
-  padding: 2rem;
-  border: 1px solid var(-border--color-gray);
-  overflow-y: auto;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: auto;
+  border-radius: 8px;
   max-width: 90%;
   width: 600px;
-  gap: 24px;
+  overflow-y: auto;
 }
 
 .close {
   position: absolute;
-  color: var(--text--color-sky);
+  color: var(--text--color-turqui);
   float: right;
   font-size: 28px;
   font-weight: bold;

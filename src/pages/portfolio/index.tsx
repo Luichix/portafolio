@@ -24,6 +24,7 @@ import Title from '@Components/common/Title'
 import Container from '@Components/layout/Container'
 import { BsGithub } from 'react-icons/bs'
 import { TbWorld } from 'react-icons/tb'
+import classNames from 'classnames'
 
 const images = {
   Medical,
@@ -43,7 +44,7 @@ interface Project {
   title: string
   repository: string
   description: string
-  link: string
+  link?: string
   tecnologies: string[]
 }
 
@@ -73,34 +74,51 @@ export function Portfolio() {
   return (
     <Container id="portfolio" type="separated">
       <Modal onClose={closeModal} ref={modalRef}>
-        <div>
-          <Title theme={theme}>{data.title}</Title>
-          <div className={style.tech}>
-            {data.tecnologies.map((item, index) => (
-              <span key={index}>{item}</span>
-            ))}
+        <div
+          className={classNames(style.modal, {
+            [style.bgLight]: !theme,
+            [style.bgDark]: theme,
+          })}
+        >
+          <div>
+            <Title theme={theme}>{data.title}</Title>
+            <div className={style.tech}>
+              {data.tecnologies.map((item, index) => (
+                <span
+                  key={index}
+                  className={classNames({
+                    [style.lightSpan]: !theme,
+                    [style.darkSpan]: theme,
+                  })}
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <Paragraph theme={theme}>{data.description}</Paragraph>
-        <div className={style.links}>
-          <a
-            className={style.link}
-            href={data.repository}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsGithub />
-            <span>{words.goCode}</span>
-          </a>
-          <a
-            className={style.link}
-            href={data.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <TbWorld />
-            <span>{words.goProject}</span>
-          </a>
+          <Paragraph theme={theme}>{data.description}</Paragraph>
+          <div className={style.links}>
+            <a
+              className={style.link}
+              href={data.repository}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub />
+              <span>{words.goCode}</span>
+            </a>
+            {data.link && (
+              <a
+                className={style.link}
+                href={data.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <TbWorld />
+                <span>{words.goProject}</span>
+              </a>
+            )}
+          </div>
         </div>
       </Modal>
       <div>

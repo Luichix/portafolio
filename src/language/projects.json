@@ -1,10 +1,26 @@
 {
   "en": [
     {
-      "title": "Medical",
+      "title": "Financial Web",
+      "ref": "FinancialWeb",
+      "link": "https://www.calculofinanciero.com",
+      "description": "Financial Web is a comprehensive web application that functions as a financial blog, offering a wealth of articles, financial tools, and downloadable Excel templates. The platform was crafted using a carefully designed template, ensuring a seamless and visually appealing user experience.",
+      "repository": "https://github.com/Luichix/financial-web",
+      "tecnologies": [
+        "Astro",
+        "React",
+        "Typescript",
+        "Sass",
+        "Tailwind",
+        "Zustand",
+        "IndexedDB"
+      ]
+    },
+    {
+      "title": "Clinical Home",
       "ref": "Medical",
-      "link": "https://medical-web-app.vercel.app/",
-      "description": "Applicación médica como una herramienta útil y práctica para la gestion de citas y la administración de datos del paciente e historiales clinicos.",
+      "link": "https://medical-web-six.vercel.app/",
+      "description": " Clinical Home is a web application designed for patient management in a clinic. It provides functionalities to manage medical records, schedule appointments, visualize and manage patient appointments, and access information about clinic doctors.",
       "repository": "https://github.com/Luichix/medical-web",
       "tecnologies": [
         "Next JS",
@@ -16,42 +32,19 @@
       ]
     },
     {
-      "title": "Nomina",
+      "title": "Nomina Web",
       "ref": "Nomina",
       "link": "https://nomina-web.vercel.app/",
-      "description": "Una herramienta que permita a las empresas calcular y gestionar la nomina de pago de sus empleados, que permita el procesamiento de datos precisos y oportunos, considerando todos los requerimientos legales y politicas de la empresa.",
-      "repository": "https://github.com/Luichix/nomina-monorepo",
-      "tecnologies": [
-        "Next JS",
-        "React",
-        "Javascript",
-        "Express",
-        "Jest",
-        "PostgreSQL",
-        "Typescript"
-      ]
+      "description": "Nomina Web is a frontend interface of an application that aims to simplify payroll preparation. It aspires to provide an intuitive interface for managing time records, personnel data, and other key elements in payroll calculation.",
+      "repository": "https://github.com/Luichix/nomina-web",
+      "tecnologies": ["Javascript", "React", "Redux"]
     },
     {
-      "title": "Go Digital",
+      "title": "Chatbot Management",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
+      "description": "Chatbot Management is a conceptual design and functionality project for a web application aimed at chatbot management. It stands out for its intuitive sections for configuration and payments, an appealing homepage, and an interactive area where users define responses to common questions, allowing efficient management of their chatbots.",
       "repository": "https://github.com/Luichix/chat-web",
-      "tecnologies": [
-        "CSS Modules",
-        "Javascript",
-        "Firebase",
-        "GraphQL",
-        "React",
-        "Vite"
-      ]
-    },
-    {
-      "title": "Live Chat",
-      "ref": "Livechat",
-      "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/livechat-app",
       "tecnologies": [
         "CSS Modules",
         "Javascript",
@@ -65,7 +58,7 @@
       "title": "Clothes Store",
       "ref": "Elina",
       "link": "https://store-monorepo-web.vercel.app/",
-      "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+      "description": "Clothes Store is an under-construction e-commerce platform designed with React and Next.js. Its goal is to provide a modern shopping experience for online clothing stores.",
       "repository": "https://github.com/Luichix/store-monorepo",
       "tecnologies": [
         "Next JS",
@@ -73,64 +66,56 @@
         "Prisma",
         "React",
         "Tailwind",
-        "Typescript"
+        "Typescript",
+        "Turborepo",
+        "Zustand"
+      ]
+    },
+    {
+      "title": "Live Chat",
+      "ref": "Livechat",
+      "description": "Live Chat is a mobile chat application designed for platform users to manage customer messages. It allows visualizing bot responses and responding to messages directly within the application.",
+      "repository": "https://github.com/Luichix/livechat-app",
+      "tecnologies": [
+        "Typescript",
+        "React Native",
+        "Expo",
+        "GraphQL",
+        "SQLite",
+        "Redux"
       ]
     },
     {
       "title": "Financial Server",
       "ref": "FinancialServer",
       "link": "https://financial-server-production.up.railway.app",
-      "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+      "description": "Financial Server is an API designed for handling financial calculations. It performs tasks such as generating loan amortization tables, interest calculations, financial statements reports, and Excel file generation. The project includes tests to validate each API endpoint.",
       "repository": "https://github.com/Luichix/financial-server",
-      "tecnologies": ["Python", "Fastapi"]
-    },
-    {
-      "title": "Cálculo Financiero",
-      "ref": "FinancialWeb",
-      "link": "https://www.calculofinanciero.com",
-      "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
-      "repository": "https://github.com/Luichix/financial-web",
-      "tecnologies": ["Astro", "React", "Typescript", "Sass"]
-    },
-    {
-      "title": "Calendar App",
-      "ref": "Calendar",
-      "link": "https://calendar-app-eosin.vercel.app/",
-      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/calendar-app",
-      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
-    },
-    {
-      "title": "Nicaragua Festivo",
-      "ref": "Nicafest",
-      "link": "https://nicafest-web.vercel.app/",
-      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/nicafest-web",
-      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
-    },
-    {
-      "title": "Quesos El Rey",
-      "ref": "Quesos",
-      "link": "https://king-web-five.vercel.app/",
-      "description": "Pagina web sencilla, diseñada para una empresa familiar dedicada al procesamiento y comercialización de productos lácteos.",
-      "repository": "https://github.com/Luichix/king-web",
-      "tecnologies": ["CSS Modules", "CRA", "Javascript", "Firebase"]
-    },
-    {
-      "title": "Barbershop",
-      "ref": "Barbershop",
-      "link": "https://barber-web.vercel.app/",
-      "description": "Mi proyecto de práctica de barbería es una landing page diseñada para promocionar los servicios de una barbería ficticia.",
-      "repository": "https://github.com/Luichix/barber-web",
-      "tecnologies": ["CSS", "Svelte", "Vite"]
+      "tecnologies": ["Python", "Fastapi", "Pytest", "XlsxWriter", "Docker"]
     }
   ],
   "es": [
     {
-      "title": "Medical",
+      "title": "Cálculo Financiero",
+      "ref": "FinancialWeb",
+      "link": "https://www.calculofinanciero.com",
+      "description": "Calculo Financiero es una aplicación web integral que funciona como un blog financiero, ofreciendo una gran cantidad de artículos, herramientas financieras y plantillas de Excel descargables. La plataforma fue creada utilizando una plantilla cuidadosamente diseñada, asegurando una experiencia de usuario fluida y visualmente atractiva.",
+      "repository": "https://github.com/Luichix/financial-web",
+      "tecnologies": [
+        "Astro",
+        "React",
+        "Typescript",
+        "Sass",
+        "Tailwind",
+        "Zustand",
+        "IndexedDB"
+      ]
+    },
+    {
+      "title": "Clinical Home",
       "ref": "Medical",
-      "link": "https://medical-web-app.vercel.app/",
-      "description": "Applicación médica como una herramienta útil y práctica para la gestion de citas y la administración de datos del paciente e historiales clinicos.",
+      "link": "https://medical-web-six.vercel.app/",
+      "description": "Clinical Home es una aplicación web diseñada para la gestión de pacientes en una clínica. Ofrece funcionalidades para gestionar historias médicas, programar citas, visualizar y gestionar citas de pacientes, y acceder a información sobre los médicos de la clínica.",
       "repository": "https://github.com/Luichix/medical-web",
       "tecnologies": [
         "Next JS",
@@ -142,42 +127,19 @@
       ]
     },
     {
-      "title": "Nomina",
+      "title": "Nomina Web",
       "ref": "Nomina",
       "link": "https://nomina-web.vercel.app/",
-      "description": "Una herramienta que permita a las empresas calcular y gestionar la nomina de pago de sus empleados, que permita el procesamiento de datos precisos y oportunos, considerando todos los requerimientos legales y politicas de la empresa.",
-      "repository": "https://github.com/Luichix/nomina-monorepo",
-      "tecnologies": [
-        "Next JS",
-        "React",
-        "Javascript",
-        "Express",
-        "Jest",
-        "PostgreSQL",
-        "Typescript"
-      ]
+      "description": "Nomina Web es una interfaz frontend de una aplicación que tiene como objetivo simplificar la preparación de nóminas. Aspira a proporcionar una interfaz intuitiva para gestionar registros de tiempo, datos de personal y otros elementos clave en el cálculo de nóminas.",
+      "repository": "https://github.com/Luichix/nomina-web",
+      "tecnologies": ["Javascript", "React", "Redux"]
     },
     {
-      "title": "Go Digital",
+      "title": "Chatbot Management",
       "ref": "GoDigit",
       "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
+      "description": "Chatbot Management es un proyecto conceptual de diseño y funcionalidad para una aplicación web destinada a la gestión de chatbots. Destaca por sus secciones intuitivas para configuración y pagos, una página de inicio atractiva y un área interactiva donde los usuarios definen respuestas a preguntas comunes, permitiendo una gestión eficiente de sus chatbots.",
       "repository": "https://github.com/Luichix/chat-web",
-      "tecnologies": [
-        "CSS Modules",
-        "Javascript",
-        "Firebase",
-        "GraphQL",
-        "React",
-        "Vite"
-      ]
-    },
-    {
-      "title": "Live Chat",
-      "ref": "Livechat",
-      "link": "https://godigit-app.firebaseapp.com/",
-      "description": "Aplicación de administración de chat bot, con el fin de mejorar la eficiencia y la efectividad en la atención al cliente, consiste en un panel de administración de preguntas y respuestas para el bot.",
-      "repository": "https://github.com/Luichix/livechat-app",
       "tecnologies": [
         "CSS Modules",
         "Javascript",
@@ -191,7 +153,7 @@
       "title": "Clothes Store",
       "ref": "Elina",
       "link": "https://store-monorepo-web.vercel.app/",
-      "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+      "description": "Clothes Store es una plataforma de comercio electrónico en construcción diseñada con React y Next.js. Su objetivo es proporcionar una experiencia de compra moderna para tiendas de ropa en línea.",
       "repository": "https://github.com/Luichix/store-monorepo",
       "tecnologies": [
         "Next JS",
@@ -199,56 +161,32 @@
         "Prisma",
         "React",
         "Tailwind",
-        "Typescript"
+        "Typescript",
+        "Turborepo",
+        "Zustand"
+      ]
+    },
+    {
+      "title": "Live Chat",
+      "ref": "Livechat",
+      "description": "Live Chat es una aplicación de chat móvil diseñada para que los usuarios de la plataforma gestionen mensajes de clientes. Permite visualizar respuestas de chatbot y responder a mensajes directamente dentro de la aplicación.",
+      "repository": "https://github.com/Luichix/livechat-app",
+      "tecnologies": [
+        "Typescript",
+        "React Native",
+        "Expo",
+        "GraphQL",
+        "SQLite",
+        "Redux"
       ]
     },
     {
       "title": "Financial Server",
       "ref": "FinancialServer",
       "link": "https://financial-server-production.up.railway.app",
-      "description": "Una aplicacion de tienda de ropa para la demostración de mis habilidades tanto en el desarrollo de la interfaz de usuario como en la programación del lado del servidor. ",
+      "description": "Financial Server es una API diseñada para manejar cálculos financieros. Realiza tareas como la generación de tablas de amortización de préstamos, cálculos de intereses, informes de estados financieros y generación de archivos Excel. El proyecto incluye pruebas para validar cada punto final de la API.",
       "repository": "https://github.com/Luichix/financial-server",
-      "tecnologies": ["Python", "Fastapi"]
-    },
-    {
-      "title": "Cálculo Financiero",
-      "ref": "FinancialWeb",
-      "link": "https://www.calculofinanciero.com",
-      "description": "Utilizando un proyecto de astro de base, he estado construyendo diferentes herramientas de calculos, que estan incluidas en las sección de herramientas.",
-      "repository": "https://github.com/Luichix/financial-web",
-      "tecnologies": ["Astro", "React", "Typescript", "Sass"]
-    },
-    {
-      "title": "Calendar App",
-      "ref": "Calendar",
-      "link": "https://calendar-app-eosin.vercel.app/",
-      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/calendar-app",
-      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
-    },
-    {
-      "title": "Nicaragua Festivo",
-      "ref": "Nicafest",
-      "link": "https://nicafest-web.vercel.app/",
-      "description": "Nicaragua festivo es un proyecto web para mostrar las festividades en todo el territorio de nicaragua.",
-      "repository": "https://github.com/Luichix/nicafest-web",
-      "tecnologies": ["Next JS", "Tailwind", "Typescript"]
-    },
-    {
-      "title": "Quesos El Rey",
-      "ref": "Quesos",
-      "link": "https://king-web-five.vercel.app/",
-      "description": "Pagina web sencilla, diseñada para una empresa familiar dedicada al procesamiento y comercialización de productos lácteos.",
-      "repository": "https://github.com/Luichix/king-web",
-      "tecnologies": ["CSS Modules", "CRA", "Javascript", "Firebase"]
-    },
-    {
-      "title": "Barbershop",
-      "ref": "Barbershop",
-      "link": "https://barber-web.vercel.app/",
-      "description": "Mi proyecto de práctica de barbería es una landing page diseñada para promocionar los servicios de una barbería ficticia.",
-      "repository": "https://github.com/Luichix/barber-web",
-      "tecnologies": ["CSS", "Svelte", "Vite"]
+      "tecnologies": ["Python", "Fastapi", "Pytest", "XlsxWriter", "Docker"]
     }
   ]
 }
