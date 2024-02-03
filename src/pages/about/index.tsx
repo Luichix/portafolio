@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 import style from './styles.module.css'
 import data from '@Language/about.json'
 import classNames from 'classnames'
-import profile from '../../assets/img/profile.jpg'
+import profile from '../../assets/img/perfil.png'
 import pdfCv from '../../assets/pdf/cvoficial.pdf'
 import pdfRIntegral from '../../assets/pdf/rintegralpuesto.pdf'
 import { FaFilePdf } from 'react-icons/fa'
@@ -35,6 +35,42 @@ export function About() {
               <h1 className={style.introduce}>{text.introduce} </h1>
               <Paragraph theme={theme}>{text.salute}</Paragraph>
               <Paragraph theme={theme}>{text.resume}</Paragraph>
+              <div>
+                <span className={style.access}>{text.access}</span>
+                <div className={style.download}>
+                  <a
+                    href={pdfCv}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={classNames(style.button, {
+                      [style.bgDark]: theme,
+                      title_light: !theme,
+                      title_dark: theme,
+                    })}
+                  >
+                    <i>
+                      <FaFilePdf style={{ display: 'block' }} />
+                    </i>
+                    <span>{text.cv}</span>
+                  </a>
+                  <a
+                    href={pdfRIntegral}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={classNames(style.button, {
+                      [style.bgDark]: theme,
+                      title_light: !theme,
+                      title_dark: theme,
+                    })}
+                  >
+                    <i>
+                      <FaFilePdf style={{ display: 'block' }} />
+                    </i>
+
+                    <span>{text.report}</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </Fade>
           <div>
@@ -42,46 +78,10 @@ export function About() {
               <img
                 src={profile}
                 className={style.imagen}
-                width={'350px'}
-                height={'auto'}
+                width={350}
+                height={350}
               />
             </figure>
-          </div>
-        </div>
-        <div>
-          <span className={style.access}>{text.access}</span>
-          <div className={style.download}>
-            <a
-              href={pdfCv}
-              target="_blank"
-              rel="noreferrer"
-              className={classNames(style.button, {
-                [style.bgDark]: theme,
-                title_light: !theme,
-                title_dark: theme,
-              })}
-            >
-              <i>
-                <FaFilePdf style={{ display: 'block' }} />
-              </i>
-              <span>{text.cv}</span>
-            </a>
-            <a
-              href={pdfRIntegral}
-              target="_blank"
-              rel="noreferrer"
-              className={classNames(style.button, {
-                [style.bgDark]: theme,
-                title_light: !theme,
-                title_dark: theme,
-              })}
-            >
-              <i>
-                <FaFilePdf style={{ display: 'block' }} />
-              </i>
-
-              <span>{text.report}</span>
-            </a>
           </div>
         </div>
       </div>

@@ -77,12 +77,6 @@
   padding: 4px 12px;
 }
 
-.button:hover {
-  text-decoration: none;
-  color: var(--color-white);
-  border-color: var(--color-white);
-}
-
 /* Accesibility Language and Theme */
 
 .accesibility {

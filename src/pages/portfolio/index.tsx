@@ -42,7 +42,7 @@ const images = {
 
 interface Project {
   title: string
-  repository: string
+  repository?: string
   description: string
   link?: string
   tecnologies: string[]
@@ -98,15 +98,17 @@ export function Portfolio() {
           </div>
           <Paragraph theme={theme}>{data.description}</Paragraph>
           <div className={style.links}>
-            <a
-              className={style.link}
-              href={data.repository}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub />
-              <span>{words.goCode}</span>
-            </a>
+            {data.repository && (
+              <a
+                className={style.link}
+                href={data.repository}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub />
+                <span>{words.goCode}</span>
+              </a>
+            )}
             {data.link && (
               <a
                 className={style.link}

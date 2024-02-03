@@ -5,7 +5,6 @@
       "ref": "FinancialWeb",
       "link": "https://www.calculofinanciero.com",
       "description": "Financial Web is a comprehensive web application that functions as a financial blog, offering a wealth of articles, financial tools, and downloadable Excel templates. The platform was crafted using a carefully designed template, ensuring a seamless and visually appealing user experience.",
-      "repository": "https://github.com/Luichix/financial-web",
       "tecnologies": [
         "Astro",
         "React",
@@ -100,7 +99,6 @@
       "ref": "FinancialWeb",
       "link": "https://www.calculofinanciero.com",
       "description": "Calculo Financiero es una aplicación web integral que funciona como un blog financiero, ofreciendo una gran cantidad de artículos, herramientas financieras y plantillas de Excel descargables. La plataforma fue creada utilizando una plantilla cuidadosamente diseñada, asegurando una experiencia de usuario fluida y visualmente atractiva.",
-      "repository": "https://github.com/Luichix/financial-web",
       "tecnologies": [
         "Astro",
         "React",
